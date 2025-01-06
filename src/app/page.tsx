@@ -1,101 +1,198 @@
-import Image from "next/image";
+'use client';
+import { useRef } from 'react';
+import Header from '@/components/Header';
+import Link from 'next/link';
+import ProjectCard from '@/components/ProjectCard';
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const contactRef = useRef<HTMLDivElement>(null);
+  
+  const interests = [
+    "Startups",
+    "Applied Machine Learning",
+    "Data Science",
+    "Mathematical Modelling",
+    "Sheet Music",
+    "Applied Math Research",
+    "Quantitative Finance",
+    "Robotics & AI",
+    "Web Development",
+    "Fitness",
+    "Investment Strategies"
+  ];
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+  const scrollToContact = () => {
+    contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const projects = [
+    {
+      title: "TidyTable: Data Cleaning Automation Tool",
+      description: "Developed a Python-based automation tool that speeds up the data cleaning process for large datasets. TidyTable is a no-code tool that intelligently handles missing values, detects outliers, and standardizes data formats, reducing manual cleaning time by up to 70% while maintaining data integrity.",
+      features: ["Features: Automated cleaning, format standardization, outlier detection."],
+      tools: ["Tools: Python, Pandas, NumPy, FastAPI, PostgreSQL, Regular Expressions."],
+      image: {
+        desktop: "/tidytable.jpeg",
+        mobile: "/tidytable-phone.jpeg"
+      },
+      link: {
+        url: "https://data-cleaning-automation.onrender.com/",
+        text: "Check it out!"
+      }
+    },
+    {
+      title: "Credit Default Prediction Model",
+      description: "Developed a machine learning model to predict credit default probabilities using a synthetic dataset of 45,000 records. The model achieves 89% accuracy and includes comprehensive data preprocessing, feature engineering, and handling of imbalanced classes using SMOTENC.",
+      features: ["Dataset: 45,000 synthetic records."],
+      tools: ["Tools: Python, SMOTENC, Pandas, Scikit-learn."],
+    },
+    {
+      title: "Habits: Anonymous Habit Tracking App",
+      description: "Built a minimalist web application for tracking daily habits without the friction of account creation. The app uses local storage for data persistence, allows users to maintain streaks, and ensures user privacy while providing a simplified habit-tracking experience.",
+      features: ["Features: Streak tracking, daily logs, anonymous usage, data persistence."],
+      tools: ["Tools: Next.js, TypeScript, Tailwind CSS, Local Storage API."],
+      image: {
+        desktop: "/habits.jpeg",
+        mobile: "/habits-phone.jpeg"
+      },
+      link: {
+        url: "https://habits-io.vercel.app/",
+        text: "Check it out!"
+      }
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-[#FAF9F6]">
+      <Header />
+      <main className="max-w-4xl mx-auto px-4 py-20">
+        <section className="mb-16">
+          <div className="mb-12">
+            <h1 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-black mb-8">
+              Hi, I'm Michael.
+            </h1>
+            <p className="text-black text-base sm:text-lg lg:text-xl leading-relaxed mb-6">
+              I'm a machine learning-in-finance enthusiast, and a self-taught programmer based in the United States. I'm currently finishing my undergraduate studies in Mathematics and Economics and enjoy working on predictive modelling on financial data with machine learning and data science.
+            </p>
+            <p className="text-black text-base sm:text-lg lg:text-xl leading-relaxed mb-6">
+              I have interests in quant finance and software development and I love working on web development projects in my spare time.
+            </p>
+
+            <div className="mb-10">
+              <h2 className="text-black text-md md:text-xl mb-6">
+                Here are a few other things that interest me:
+              </h2>
+              <div className="flex flex-wrap gap-3">
+                {interests.map((interest) => (
+                  <span
+                    key={interest}
+                    className="px-4 py-2 bg-[#F5F5F1] text-black rounded-full text-base sm:text-lg cursor-default hover:bg-[#EFEEE9] shadow-sm transition-all"
+                  >
+                    {interest}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-10">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-6 text-black">Connect</h3>
+            <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mb-8">
+              <a 
+                href="/resume.pdf" 
+                className="px-5 py-2 bg-[#F5F5F1] text-black rounded-full text-base sm:text-lg hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+              >
+                View My Resume
+              </a>
+              <button 
+                onClick={scrollToContact}
+                className="px-5 py-2 bg-[#F5F5F1] text-black rounded-full text-base sm:text-lg hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+              >
+                Send a Message
+              </button>
+            </div>
+            <div className="flex flex-wrap gap-4">
+              {['Apple', 'Email', 'Google', 'Overcast', 'Spotify', 'YouTube'].map((platform) => (
+                <a key={platform} href="#" className="text-gray-400 hover:text-white transition-colors">
+                  {platform}
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-black mb-8">My Work</h2>
+          
+          <div className="grid gap-6">
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={index}
+                {...project}
+              />
+            ))}
+          </div>
+        </section>
+
+        <section ref={contactRef} className="mb-16">
+          <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-black mb-8">Get In Touch With Me!</h2>
+          
+          <form 
+            action="https://formspree.io/f/mbllpppa"
+            method="POST"
+            className="space-y-8"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+            <div className="space-y-3">
+              <label htmlFor="name" className="block text-black text-lg">
+                Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                className="w-full px-5 py-3 bg-[#F5F5F1] text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#E5E4DF] text-base sm:text-lg"
+                placeholder="Your name"
+              />
+            </div>
+
+            <div className="space-y-3">
+              <label htmlFor="email" className="block text-black text-lg">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                className="w-full px-5 py-3 bg-[#F5F5F1] text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#E5E4DF] text-base sm:text-lg"
+                placeholder="your.email@example.com"
+              />
+            </div>
+
+            <div className="space-y-3">
+              <label htmlFor="message" className="block text-black text-lg">
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                rows={4}
+                className="w-full px-5 py-3 bg-[#F5F5F1] text-black rounded-lg shadow-smfocus:outline-none focus:ring-2 focus:ring-[#E5E4DF] text-base sm:text-lg"
+                placeholder="Your message..."
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
+            >
+              Send Message
+            </button>
+          </form>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
