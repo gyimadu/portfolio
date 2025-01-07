@@ -1,8 +1,8 @@
 'use client';
 import { useRef } from 'react';
 import Header from '@/components/Header';
-import Link from 'next/link';
 import ProjectCard from '@/components/ProjectCard';
+import Image from 'next/image';
 
 export default function Home() {
   const contactRef = useRef<HTMLDivElement>(null);
@@ -68,21 +68,23 @@ export default function Home() {
         <section className="mb-12">
           <div className="mb-10">
             <div className="flex flex-col items-center mb-8">
-              <img 
+              <Image 
                 src="/profile.jpeg" 
                 alt="Michael Gyimadu" 
-                className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover shadow-sm mb-6"
+                width={112}
+                height={112}
+                className="rounded-full object-cover shadow-sm mb-6"
               />
               <h1 className="font-bold text-xl sm:text-2xl lg:text-3xl text-black">
-                Hi, I'm Michael.
+                Hi, I&apos;m Michael.
               </h1>
             </div>
             
             <p className="text-black text-base sm:text-lg lg:text-xl leading-relaxed mb-6">
-              I'm a machine learning-in-finance enthusiast, and a self-taught programmer based in the United States. I'm currently finishing my undergraduate studies in Mathematics and Economics and enjoy working on predictive modelling on financial data with machine learning and data science.
+              I&apos;m a machine learning-in-finance enthusiast, and a self-taught programmer based in the United States. I&apos;m currently finishing my undergraduate studies in Mathematics and Economics and enjoy working on predictive modelling on financial data with machine learning and data science.
             </p>
             <p className="text-black text-base sm:text-lg lg:text-xl leading-relaxed mb-6">
-              I have interests in quant finance and software development and love playing soccer or working on web apps in my spare time.
+              I have interests in quant finance and software development and I&apos;m always excited to work on new projects.
             </p>
 
             <div className="mb-10">
