@@ -1,5 +1,4 @@
 'use client';
-import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -67,7 +66,7 @@ export default function ProjectCard({
           <Link
             href={link.url}
             target="_blank"
-            className="inline-block px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
+            className="inline-block px-4 py-2 text-blue-600 rounded-lg hover:bg-gray-800 transition-colors"
           >
             {link.text}
           </Link>
