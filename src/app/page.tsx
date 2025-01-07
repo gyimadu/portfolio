@@ -84,7 +84,7 @@ export default function Home() {
               I&apos;m a machine learning-in-finance enthusiast, and a self-taught programmer based in the United States. I&apos;m currently finishing my undergraduate studies in Mathematics and Economics and enjoy working on predictive modelling on financial data with machine learning and data science.
             </p>
             <p className="text-black text-base sm:text-lg lg:text-xl leading-relaxed mb-6">
-              I have interests in quant finance and software development and I&apos;m always excited to work on new projects.
+              I have interests in quant finance and software development and love playing soccer or working on web apps in my spare time.
             </p>
 
             <div className="mb-10">
