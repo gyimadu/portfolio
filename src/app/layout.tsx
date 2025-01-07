@@ -11,8 +11,8 @@ const afacad = Afacad({
 });
 
 export const metadata: Metadata = {
-  title: "Gyimadu",
-  description: "Personal portfolio",
+  title: "Home",
+  description: "Michael&apos;s digital resume and random thoughts",
 };
 
 export default function RootLayout({
