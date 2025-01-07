@@ -29,7 +29,7 @@ export default function ProjectCard({ title, description, features, tools, image
         ${isExpanded ? 'ring-1 ring-[#E5E4DF]' : ''}
       `}
     >
-      <h3 className="font-bold text-xl sm:text-2xl lg:text-2xl text-black mb-4">{title}</h3>
+      <h3 className="font-bold text-base sm:text-lg lg:text-xl text-black mb-4">{title}</h3>
       
       <div className={`
         overflow-hidden transition-all duration-300

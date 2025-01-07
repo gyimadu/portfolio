@@ -129,7 +129,7 @@ export default function Home() {
         </section>
 
         <section className="mb-16">
-          <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-black mb-8">My Work</h2>
+          <h2 className="font-bold text-xl sm:text-2xl lg:text-3xl text-black mb-8">Some Stuff I've Worked On</h2>
           
           <div className="grid gap-6">
             {projects.map((project, index) => (
@@ -141,8 +141,13 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="mb-16">
+          <h2 className="font-bold text-xl sm:text-2xl lg:text-3xl text-black mb-8">Publications?</h2>
+          <p className='text-black text-base sm:text-lg lg:text-xl leading-relaxed mb-6'>Updates coming soon...</p>
+        </section>
+
         <section ref={contactRef} className="mb-16">
-          <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-black mb-8">Get In Touch With Me!</h2>
+          <h2 className="font-bold text-xl sm:text-2xl lg:text-3xl text-black mb-8">Get In Touch With Me!</h2>
           
           <form 
             action="https://formspree.io/f/mbllpppa"

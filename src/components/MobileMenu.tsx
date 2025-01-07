@@ -5,11 +5,11 @@ export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="md:hidden">
+    <div className="md:hidden relative">
       {/* Hamburger Button */}
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="text-black p-2 z-50 relative"
+        className="text-black p-2 z-50"
       >
         <div className="space-y-2">
           <span className={`block w-8 h-0.5 bg-black transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-2.5' : ''}`}></span>
@@ -17,23 +17,22 @@ export default function MobileMenu() {
         </div>
       </button>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Dropdown */}
       <div 
         className={`
-          fixed inset-0 bg-[#FAF9F6] z-40
+          absolute right-0 top-full mt-2 w-48
+          bg-[#FAF9F6] rounded-lg shadow-lg z-40
+          border border-gray-200
           transition-all duration-300 ease-in-out
-          ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}
+          ${isOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}
         `}
       >
-        <div className={`
-          flex flex-col items-center justify-center h-full space-y-8
-          transition-all duration-300 ease-in-out
-          ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'}
-        `}>
+        <div className="py-4 px-6 space-y-4">
+          <p className="text-sm text-gray-600 border-b border-gray-200 pb-2">Connect with me on my socials!</p>
           <Link 
             href="https://github.com/gyimadu" 
             target="_blank"
-            className="text-gray-500 hover:text-black transition-colors text-xl"
+            className="block text-gray-500 hover:text-black transition-colors text-base"
             onClick={() => setIsOpen(false)}
           >
             GitHub
@@ -41,7 +40,7 @@ export default function MobileMenu() {
           <Link 
             href="https://twitter.com/gyimaduu" 
             target="_blank"
-            className="text-gray-500 hover:text-black transition-colors text-xl"
+            className="block text-gray-500 hover:text-black transition-colors text-base"
             onClick={() => setIsOpen(false)}
           >
             Twitter
@@ -49,7 +48,7 @@ export default function MobileMenu() {
           <Link 
             href="https://instagram.com/gyimadu_" 
             target="_blank"
-            className="text-gray-500 hover:text-black transition-colors text-xl"
+            className="block text-gray-500 hover:text-black transition-colors text-base"
             onClick={() => setIsOpen(false)}
           >
             Instagram
@@ -57,17 +56,11 @@ export default function MobileMenu() {
           <Link 
             href="https://linkedin.com/in/michael-gyimadu" 
             target="_blank"
-            className="text-gray-500 hover:text-black transition-colors text-xl"
+            className="block text-gray-500 hover:text-black transition-colors text-base"
             onClick={() => setIsOpen(false)}
           >
             LinkedIn
           </Link>
-          <button 
-            onClick={() => setIsOpen(false)}
-            className="text-black hover:text-gray-600 transition-colors text-xl mt-8"
-          >
-            X
-          </button>
         </div>
       </div>
     </div>
