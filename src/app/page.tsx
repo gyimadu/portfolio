@@ -105,7 +105,7 @@ export default function Home() {
           </div>
 
           <div className="mb-10">
-            <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-6 text-black">Let's Work Together</h3>
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-6 text-black">Let&apos;s Work Together</h3>
             <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mb-8">
               <a 
                 href="/resume.pdf" 
