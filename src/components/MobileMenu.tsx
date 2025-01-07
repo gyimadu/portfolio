@@ -44,8 +44,8 @@ export default function MobileMenu() {
         ref={menuRef}
         className={`
           absolute right-0 top-full mt-2 w-48
-          bg-[#FAF9F6] rounded-lg shadow-lg z-40
-          border border-gray-200
+          bg-[#F5F5F1] rounded-lg shadow-lg z-40
+          border border-[#EFEEE9]
           transition-all duration-300 ease-in-out
           ${isOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}
         `}

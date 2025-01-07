@@ -34,8 +34,8 @@ export default function ProjectCard({
       className={`
         bg-[#F5F5F1] p-6 rounded-lg cursor-pointer
         transition-all duration-300 ease-in-out
-        hover:shadow-sm
-        ${isExpanded ? 'ring-1 ring-[#E5E4DF]' : 'shadow-sm'}
+        hover:shadow-md
+        ${isExpanded ? 'ring-1 ring-[#EFEEE9]' : 'shadow-sm'}
       `}
     >
       <h3 className="text-lg sm:text-xl font-semibold mb-4">{title}</h3>
