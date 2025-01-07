@@ -10,14 +10,14 @@ export default function Home() {
   const interests = [
     "Startups",
     "Applied Machine Learning",
+    "Fitness",
     "Mathematical Modelling",
     "Sheet Music",
     "Applied Math Research",
-    "Quantitative Finance",
     "Robotics & AI",
-    "Web Development",
-    "Fitness",
-    "Investment Strategies"
+    "Financial Modelling",
+    "Investment Research",
+    "Travel",
   ];
 
   const scrollToContact = () => {
@@ -82,7 +82,7 @@ export default function Home() {
               I'm a machine learning-in-finance enthusiast, and a self-taught programmer based in the United States. I'm currently finishing my undergraduate studies in Mathematics and Economics and enjoy working on predictive modelling on financial data with machine learning and data science.
             </p>
             <p className="text-black text-base sm:text-lg lg:text-xl leading-relaxed mb-6">
-              I have interests in quant finance and software development and I love working on web development projects in my spare time.
+              I have interests in quant finance and software development and love playing soccer or working on web apps in my spare time.
             </p>
 
             <div className="mb-10">
@@ -103,7 +103,7 @@ export default function Home() {
           </div>
 
           <div className="mb-10">
-            <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-6 text-black">Connect</h3>
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold mb-6 text-black">Let's Work Together</h3>
             <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mb-8">
               <a 
                 href="/resume.pdf" 
@@ -204,6 +204,10 @@ export default function Home() {
             </button>
           </form>
         </section>
+
+        <footer className="text-center text-gray-500 text-sm pb-8">
+          © {new Date().getFullYear()} Michael Gyimadu.
+        </footer>
       </main>
     </div>
   );
