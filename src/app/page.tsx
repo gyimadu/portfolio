@@ -41,8 +41,8 @@ export default function Home() {
     },
     {
       title: "Credit Default Prediction Model",
-      description: "Developed a machine learning model to predict credit default probabilities using a synthetic dataset of 45,000 records. The model achieves 89% accuracy and includes comprehensive data preprocessing, feature engineering, and handling of imbalanced classes using SMOTENC.",
-      features: ["Dataset: 45,000 synthetic records."],
+      description: "Developed a simple logistic regression model to predict loan default probabilities of credit card clients using a synthetic dataset of 30,000+ records. The model includes comprehensive data preprocessing, feature engineering, and handling of imbalanced classes using SMOTENC.",
+      features: ["Dataset: 30,000+ synthetic records."],
       tools: ["Tools: Python, SMOTENC, Pandas, Scikit-learn."],
     },
     {
@@ -107,6 +107,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mb-8">
               <a 
                 href="/resume.pdf" 
+                target='_blank'
                 className="px-5 py-2 bg-[#F5F5F1] text-black rounded-full text-base sm:text-lg hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
               >
                 View My Resume
@@ -117,13 +118,6 @@ export default function Home() {
               >
                 Send a Message
               </button>
-            </div>
-            <div className="flex flex-wrap gap-4">
-              {['Apple', 'Email', 'Google', 'Overcast', 'Spotify', 'YouTube'].map((platform) => (
-                <a key={platform} href="#" className="text-gray-400 hover:text-white transition-colors">
-                  {platform}
-                </a>
-              ))}
             </div>
           </div>
         </section>
@@ -206,7 +200,8 @@ export default function Home() {
         </section>
 
         <footer className="text-center text-gray-500 text-sm pb-8">
-          © {new Date().getFullYear()} Michael Gyimadu.
+          <p className="mb-2">Last Updated: January 2025</p>
+          <p>© {new Date().getFullYear()} Michael Gyimadu.</p>
         </footer>
       </main>
     </div>

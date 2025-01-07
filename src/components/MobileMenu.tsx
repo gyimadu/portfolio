@@ -1,8 +1,22 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="md:hidden relative">
@@ -17,8 +31,17 @@ export default function MobileMenu() {
         </div>
       </button>
 
+      {/* Overlay for closing menu */}
+      {isOpen && (
+        <div 
+          className="fixed inset-0 z-30"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+
       {/* Mobile Menu Dropdown */}
       <div 
+        ref={menuRef}
         className={`
           absolute right-0 top-full mt-2 w-48
           bg-[#FAF9F6] rounded-lg shadow-lg z-40
@@ -28,7 +51,7 @@ export default function MobileMenu() {
         `}
       >
         <div className="py-4 px-6 space-y-4">
-          <p className="text-sm text-gray-600 border-b border-gray-200 pb-2">Connect with me on my socials!</p>
+          <p className="text-sm text-gray-600 border-b border-gray-200 pb-2">Get In Touch With Me!</p>
           <Link 
             href="https://github.com/gyimadu" 
             target="_blank"
