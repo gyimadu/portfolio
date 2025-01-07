@@ -10,7 +10,6 @@ export default function Home() {
   const interests = [
     "Startups",
     "Applied Machine Learning",
-    "Data Science",
     "Mathematical Modelling",
     "Sheet Music",
     "Applied Math Research",
@@ -65,12 +64,20 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#FAF9F6]">
       <Header />
-      <main className="max-w-4xl mx-auto px-4 py-20">
-        <section className="mb-16">
-          <div className="mb-12">
-            <h1 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-black mb-8">
-              Hi, I'm Michael.
-            </h1>
+      <main className="max-w-4xl mx-auto px-4 py-16">
+        <section className="mb-12">
+          <div className="mb-10">
+            <div className="flex flex-col items-center mb-8">
+              <img 
+                src="/profile.jpeg" 
+                alt="Michael Gyimadu" 
+                className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover shadow-sm mb-6"
+              />
+              <h1 className="font-bold text-xl sm:text-2xl lg:text-3xl text-black">
+                Hi, I'm Michael.
+              </h1>
+            </div>
+            
             <p className="text-black text-base sm:text-lg lg:text-xl leading-relaxed mb-6">
               I'm a machine learning-in-finance enthusiast, and a self-taught programmer based in the United States. I'm currently finishing my undergraduate studies in Mathematics and Economics and enjoy working on predictive modelling on financial data with machine learning and data science.
             </p>
