@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react"
 import { Afacad } from "next/font/google";
 import "./globals.css";
 
@@ -21,7 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${afacad.variable}`}>
-      <body className={`${afacad.className} antialiased font-normal`}>{children}</body>
+      <body className={`${afacad.className} antialiased font-normal`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
