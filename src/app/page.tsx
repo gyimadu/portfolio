@@ -71,8 +71,8 @@ export default function Home() {
               <Image 
                 src="/profile.jpeg" 
                 alt="Michael Gyimadu" 
-                width={112}
-                height={112}
+                width={80}
+                height={80}
                 className="rounded-full object-cover shadow-sm mb-6"
               />
               <h1 className="font-bold text-xl sm:text-2xl lg:text-3xl text-black">
