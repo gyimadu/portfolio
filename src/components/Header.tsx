@@ -7,25 +7,31 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="bg-[#FAF9F6] sticky top-0 z-50 border-b border-[#EFEEE9]">
-      <div className="max-w-4xl mx-auto px-4 py-6">
+    <header className="bg-white sticky top-0 z-50 border-b border-gray-100">
+      <div className="max-w-5xl mx-auto px-4 py-4 lg:py-8">
         <nav className="flex justify-between items-center">
-          <Link href="/" className="sm:text-xl md:text-2xl lg:text-2xl text-black hover:text-gray-600 transition-colors">
+          <Link href="/" className="text-base sm:text-lg md:text-2xl text-black hover:text-gray-600 transition-colors font-light">
             MICHAEL GYIMADU
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
             <Link 
               href="/" 
-              className={`text-lg hover:text-gray-600 transition-colors ${pathname === '/' ? 'text-black font-medium' : 'text-gray-500'}`}
+              className={`text-xl hover:text-gray-600 transition-colors ${pathname === '/' ? 'text-black font-light' : 'text-gray-500'}`}
             >
               Home
             </Link>
             <Link 
               href="/portfolio" 
-              className={`text-lg hover:text-gray-600 transition-colors ${pathname === '/portfolio' ? 'text-black font-medium' : 'text-gray-500'}`}
+              className={`text-xl hover:text-gray-600 transition-colors ${pathname === '/portfolio' ? 'text-black font-light' : 'text-gray-500'}`}
             >
               Portfolio
+            </Link>
+            <Link 
+              href="/contact" 
+              className={`text-xl hover:text-gray-600 transition-colors ${pathname === '/contact' ? 'text-black font-light' : 'text-gray-500'}`}
+            >
+              Contact
             </Link>
           </div>
           

@@ -44,7 +44,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#FAF9F6]">
+    <div className="min-h-screen bg-white">
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-16">
         <section className="mb-16">
@@ -61,12 +61,12 @@ export default function Portfolio() {
         </section>
 
         <footer className="text-center text-gray-500 text-sm pb-8">
-        <div className="flex justify-center md:gap-6 mb-4">
+            <div className="flex justify-center md:gap-6 mb-4">
               <a 
                 href="https://github.com/gyimadu" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+                className="p-2 bg-gray-50 text-black rounded-full hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="GitHub Profile"
               >
                 <FaGithub className="w-5 h-5" />

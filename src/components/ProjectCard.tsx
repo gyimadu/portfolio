@@ -32,7 +32,7 @@ export default function ProjectCard({
     <div 
       onClick={() => setIsExpanded(!isExpanded)}
       className={`
-        bg-[#F5F5F1] p-6 rounded-lg cursor-pointer
+        bg-[#f9f9f9] p-6 rounded-lg cursor-pointer
         transition-all duration-300 ease-in-out
         hover:shadow-md
         ${isExpanded ? 'ring-1 ring-[#EFEEE9]' : 'shadow-sm'}
