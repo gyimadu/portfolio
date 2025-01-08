@@ -25,43 +25,6 @@ export default function Home() {
     contactRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const projects = [
-    {
-      title: "TidyTable: Data Cleaning Automation Tool",
-      description: "Developed a Python-based automation tool that speeds up the data cleaning process for large datasets. TidyTable is a no-code tool that intelligently handles missing values, detects outliers, and standardizes data formats, reducing manual cleaning time by up to 70% while maintaining data integrity.",
-      features: ["Features: Automated cleaning, format standardization, outlier detection."],
-      tools: ["Tools: Python, Pandas, NumPy, FastAPI, PostgreSQL, Regular Expressions."],
-      image: {
-        desktop: "/tidytable.jpeg",
-        mobile: "/tidytable-phone.jpeg"
-      },
-      link: {
-        url: "https://data-cleaning-automation.onrender.com/",
-        text: "Check it out!"
-      }
-    },
-    {
-      title: "Credit Default Prediction Model",
-      description: "Developed a simple logistic regression model to predict loan default probabilities of credit card clients using a synthetic dataset of 30,000+ records. The model includes comprehensive data preprocessing, feature engineering, and handling of imbalanced classes using SMOTENC.",
-      features: ["Dataset: 30,000+ synthetic records."],
-      tools: ["Tools: Python, SMOTENC, Pandas, Scikit-learn."],
-    },
-    {
-      title: "Habits: Anonymous Habit Tracking App",
-      description: "Built a minimalist web application for tracking daily habits without the friction of account creation. The app uses local storage for data persistence, allows users to maintain streaks, and ensures user privacy while providing a simplified habit-tracking experience.",
-      features: ["Features: Streak tracking, daily logs, anonymous usage, data persistence."],
-      tools: ["Tools: Next.js, TypeScript, Tailwind CSS, Local Storage API."],
-      image: {
-        desktop: "/habits.jpeg",
-        mobile: "/habits-phone.jpeg"
-      },
-      link: {
-        url: "https://habits-io.vercel.app/",
-        text: "Check it out!"
-      }
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-[#FAF9F6]">
       <Header />
