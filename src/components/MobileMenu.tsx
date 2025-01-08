@@ -1,9 +1,12 @@
+'use client';
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -27,7 +30,7 @@ export default function MobileMenu() {
       >
         <div className="space-y-2">
           <span className={`block w-8 h-0.5 bg-black transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-2.5' : ''}`}></span>
-          <span className={`block w-8 h-0.5 bg-black transition-all duration-300 ${isOpen ? 'opacity-0' : ''}`}></span>
+          <span className={`block w-8 h-0.5 bg-black transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-2.5' : ''}`}></span>
         </div>
       </button>
 
@@ -51,38 +54,19 @@ export default function MobileMenu() {
         `}
       >
         <div className="py-4 px-6 space-y-4">
-          <p className="text-sm text-gray-600 border-b border-gray-200 pb-2">Get In Touch With Me!</p>
           <Link 
-            href="https://github.com/gyimadu" 
-            target="_blank"
-            className="block text-gray-500 hover:text-black transition-colors text-base"
+            href="/" 
+            className={`block text-base transition-colors ${pathname === '/' ? 'text-black font-medium' : 'text-gray-500 hover:text-black'}`}
             onClick={() => setIsOpen(false)}
           >
-            GitHub
+            Home
           </Link>
           <Link 
-            href="https://twitter.com/gyimaduu" 
-            target="_blank"
-            className="block text-gray-500 hover:text-black transition-colors text-base"
+            href="/portfolio" 
+            className={`block text-base transition-colors ${pathname === '/portfolio' ? 'text-black font-medium' : 'text-gray-500 hover:text-black'}`}
             onClick={() => setIsOpen(false)}
           >
-            Twitter
-          </Link>
-          <Link 
-            href="https://instagram.com/gyimadu_" 
-            target="_blank"
-            className="block text-gray-500 hover:text-black transition-colors text-base"
-            onClick={() => setIsOpen(false)}
-          >
-            Instagram
-          </Link>
-          <Link 
-            href="https://linkedin.com/in/michael-gyimadu" 
-            target="_blank"
-            className="block text-gray-500 hover:text-black transition-colors text-base"
-            onClick={() => setIsOpen(false)}
-          >
-            LinkedIn
+            Portfolio
           </Link>
         </div>
       </div>

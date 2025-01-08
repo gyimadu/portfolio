@@ -11,8 +11,17 @@ const afacad = Afacad({
 });
 
 export const metadata: Metadata = {
-  title: "Home",
-  description: "Michael&apos;s digital resume and random thoughts",
+  title: "MICHAEL GYIMADU",
+  description: "Machine Learning Engineer & Software Developer",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+    other: {
+      rel: 'apple-touch-icon',
+      url: '/apple-touch-icon.png',
+    },
+  },
 };
 
 export default function RootLayout({

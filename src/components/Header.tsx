@@ -1,24 +1,37 @@
 'use client';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import MobileMenu from './MobileMenu';
 
 export default function Header() {
+  const pathname = usePathname();
+
   return (
-    <header className="py-8">
-      <nav className="flex justify-between items-center max-w-4xl mx-auto px-4">
-        <Link href="/" className="font-bold sm:text-xl md:text-2xl lg:text-2xl text-blue-600 hover:text-gray-300">
-          GYIMADU
-        </Link>
-        {/* Desktop Menu */}
-        <div className="hidden md:flex text-lg sm:text-md space-x-6">
-          <Link href="https://github.com/gyimadu" target="_blank" className="text-gray-400 hover:text-gray-700 transition-colors">GitHub</Link>
-          <Link href="https://twitter.com/gyimaduu" target="_blank" className="text-gray-400 hover:text-gray-700 transition-colors">Twitter</Link>
-          <Link href="https://instagram.com/gyimadu_" target="_blank" className="text-gray-400 hover:text-gray-700 transition-colors">Instagram</Link>
-          <Link href="https://linkedin.com/in/michael-gyimadu" target="_blank" className="text-gray-400 hover:text-gray-700 transition-colors">LinkedIn</Link>        
-        </div>
-        {/* Mobile Menu */}
-        <MobileMenu />
-      </nav>
+    <header className="bg-[#FAF9F6] sticky top-0 z-50 border-b border-[#EFEEE9]">
+      <div className="max-w-4xl mx-auto px-4 py-4">
+        <nav className="flex justify-between items-center">
+          <Link href="/" className="sm:text-xl md:text-2xl lg:text-2xl text-black hover:text-gray-600 transition-colors">
+            MICHAEL GYIMADU
+          </Link>
+          
+          <div className="hidden md:flex items-center space-x-8">
+            <Link 
+              href="/" 
+              className={`text-lg hover:text-gray-600 transition-colors ${pathname === '/' ? 'text-black font-medium' : 'text-gray-500'}`}
+            >
+              Home
+            </Link>
+            <Link 
+              href="/portfolio" 
+              className={`text-lg hover:text-gray-600 transition-colors ${pathname === '/portfolio' ? 'text-black font-medium' : 'text-gray-500'}`}
+            >
+              Portfolio
+            </Link>
+          </div>
+          
+          <MobileMenu />
+        </nav>
+      </div>
     </header>
   );
 } 
