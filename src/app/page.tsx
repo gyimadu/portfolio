@@ -7,7 +7,6 @@ import { FaXTwitter } from 'react-icons/fa6';
 import Link from 'next/link';
 
 export default function Home() {
-  const contactRef = useRef<HTMLDivElement>(null);
   
   const interests = [
     "Startups",
