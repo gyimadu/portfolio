@@ -22,10 +22,6 @@ export default function Home() {
     "Travel",
   ];
 
-  const scrollToContact = () => {
-    contactRef.current?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <div className="min-h-screen bg-white">
       <Header />
