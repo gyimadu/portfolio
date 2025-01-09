@@ -44,14 +44,14 @@ export default function ProjectCard({
         overflow-hidden transition-all duration-300
         ${isExpanded ? 'max-h-[2000px]' : 'max-h-[84px]'}
       `}>
-        <p className="text-gray-700 text-base sm:text-lg lg:text-xl mb-4">{description}</p>
+        <p className="text-gray-700 text-lg sm:text-lg lg:text-xl mb-4">{description}</p>
         
         {features && features.map((feature, index) => (
-          <p key={index} className="text-gray-600 text-base sm:text-lg lg:text-xl mb-2">{feature}</p>
+          <p key={index} className="text-gray-600 text-lg sm:text-lg lg:text-xl mb-2">{feature}</p>
         ))}
         
         {tools && tools.map((tool, index) => (
-          <p key={index} className="text-gray-600 text-base sm:text-lg lg:text-xl mb-2">{tool}</p>
+          <p key={index} className="text-gray-600 text-lg sm:text-lg lg:text-xl mb-2">{tool}</p>
         ))}
 
         {image && (

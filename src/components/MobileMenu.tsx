@@ -46,7 +46,7 @@ export default function MobileMenu() {
       <div 
         ref={menuRef}
         className={`
-          absolute right-0 top-full mt-2 w-48
+          absolute right-0 top-full mt-2 w-52
           bg-white rounded-lg shadow-lg z-40
           border border-gray-100
           transition-all duration-300 ease-in-out
@@ -56,21 +56,21 @@ export default function MobileMenu() {
         <div className="py-4 px-6 space-y-4">
           <Link 
             href="/" 
-            className={`block text-base transition-colors ${pathname === '/' ? 'text-black font-light' : 'text-gray-500 hover:text-black'}`}
+            className={`block text-lg transition-colors ${pathname === '/' ? 'text-black font-light' : 'text-gray-500 hover:text-black'}`}
             onClick={() => setIsOpen(false)}
           >
             Home
           </Link>
           <Link 
             href="/portfolio" 
-            className={`block text-base transition-colors ${pathname === '/portfolio' ? 'text-black font-light' : 'text-gray-500 hover:text-black'}`}
+            className={`block text-lg transition-colors ${pathname === '/portfolio' ? 'text-black font-light' : 'text-gray-500 hover:text-black'}`}
             onClick={() => setIsOpen(false)}
           >
             Portfolio
           </Link>
           <Link 
             href="/contact" 
-            className={`block text-base transition-colors ${pathname === '/contact' ? 'text-black font-light' : 'text-gray-500 hover:text-black'}`}
+            className={`block text-lg transition-colors ${pathname === '/contact' ? 'text-black font-light' : 'text-gray-500 hover:text-black'}`}
             onClick={() => setIsOpen(false)}
           >
             Contact

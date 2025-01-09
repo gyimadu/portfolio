@@ -13,7 +13,7 @@ export default function Contact() {
           <div className="flex flex-col lg:flex-row lg:gap-16 lg:items-start">
             {/* Left column - 20% */}
             <div className="mb-8 lg:mb-0 lg:w-1/5 lg:sticky lg:top-24">
-              <h2 className="font-bold text-xl sm:text-2xl lg:text-3xl text-black">Get In Touch With Me!</h2>
+              <h2 className="font-bold text-2xl sm:text-2xl lg:text-3xl text-black">Get In Touch With Me!</h2>
             </div>
 
             {/* Right column - 80% */}
@@ -32,7 +32,7 @@ export default function Contact() {
                     id="name"
                     name="name"
                     required
-                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-base sm:text-lg"
+                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-lg sm:text-lg"
                     placeholder="Your name"
                   />
                 </div>
@@ -46,7 +46,7 @@ export default function Contact() {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-base sm:text-lg"
+                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-lg sm:text-lg"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -60,12 +60,12 @@ export default function Contact() {
                     name="message"
                     required
                     rows={4}
-                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-base sm:text-lg"
+                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-lg sm:text-lg"
                     placeholder="Your message..."
                   />
                 </div>
 
-                <div className="flex justify-start">
+                <div className="flex justify-center">
                   <button
                     type="submit"
                     className="px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
@@ -79,7 +79,7 @@ export default function Contact() {
         </section>
 
         <footer className="text-center text-gray-500 text-sm pb-8">
-            <div className="flex justify-center md:gap-6 mb-4">
+            <div className="flex justify-center gap-2 md:gap-6 mb-4">
               <a 
                 href="https://github.com/gyimadu" 
                 target="_blank"
