@@ -48,7 +48,7 @@ export default function Portfolio() {
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-16">
         <section className="mb-16">
-          <h2 className="font-bold text-2xl sm:text-2xl lg:text-3xl text-black mb-8">Portfolio</h2>
+          <h2 className="font-bold text-3xl sm:text-2xl lg:text-3xl text-black mb-8">Portfolio</h2>
           
           <div className="grid gap-10">
             {projects.map((project, index) => (

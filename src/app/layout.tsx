@@ -12,7 +12,7 @@ const afacad = Afacad({
 
 export const metadata: Metadata = {
   title: "MICHAEL GYIMADU",
-  description: "Machine Learning Engineer & Software Developer",
+  description: "My Digital Resume",
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',

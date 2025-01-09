@@ -1,80 +1,70 @@
 'use client';
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
 
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setIsOpen(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
-
   return (
-    <div className="md:hidden relative">
-      {/* Hamburger Button */}
+    <div className="md:hidden">
+      {/* Menu Button */}
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="text-black p-2 z-50"
+        aria-label={isOpen ? "Close Menu" : "Open Menu"}
+        className="relative p-2 z-50"
       >
-        <div className="space-y-2">
-          <span className={`block w-8 h-0.5 bg-black transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-2.5' : ''}`}></span>
-          <span className={`block w-8 h-0.5 bg-black transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-2.5' : ''}`}></span>
+        <div className="w-8 h-8 flex flex-col justify-center items-center gap-1.5">
+          <span 
+            className={`bg-black block h-0.5 w-8 rounded-sm transition-all duration-500 ease-in-out ${
+              isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'
+            }`}
+          />
+          <span 
+            className={`bg-black block h-0.5 w-8 rounded-sm transition-all duration-500 ease-in-out ${
+              isOpen ? '-rotate-45 -translate-y-0.5' : 'translate-y-0.5'
+            }`}
+          />
         </div>
       </button>
 
-      {/* Overlay for closing menu */}
-      {isOpen && (
-        <div 
-          className="fixed inset-0 z-30"
-          onClick={() => setIsOpen(false)}
-        />
-      )}
-
-      {/* Mobile Menu Dropdown */}
-      <div 
-        ref={menuRef}
-        className={`
-          absolute right-0 top-full mt-2 w-52
-          bg-white rounded-lg shadow-lg z-40
-          border border-gray-100
-          transition-all duration-300 ease-in-out
-          ${isOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}
+      {/* Menu Overlay */}
+      <div
+        className={`fixed inset-0 bg-white transition-opacity duration-400 ease-in-out z-40
+          ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}
         `}
       >
-        <div className="py-4 px-6 space-y-4">
-          <Link 
-            href="/" 
-            className={`block text-lg transition-colors ${pathname === '/' ? 'text-black font-light' : 'text-gray-500 hover:text-black'}`}
-            onClick={() => setIsOpen(false)}
-          >
-            Home
-          </Link>
-          <Link 
-            href="/portfolio" 
-            className={`block text-lg transition-colors ${pathname === '/portfolio' ? 'text-black font-light' : 'text-gray-500 hover:text-black'}`}
-            onClick={() => setIsOpen(false)}
-          >
-            Portfolio
-          </Link>
-          <Link 
-            href="/contact" 
-            className={`block text-lg transition-colors ${pathname === '/contact' ? 'text-black font-light' : 'text-gray-500 hover:text-black'}`}
-            onClick={() => setIsOpen(false)}
-          >
-            Contact
-          </Link>
+        <div className="max-w-5xl mx-auto px-4">
+          <nav className="flex flex-col items-start pt-32 space-y-8">
+            <Link
+              href="/"
+              onClick={() => setIsOpen(false)}
+              className={`text-3xl transform transition-all duration-500 ${
+                isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
+              } ${pathname === '/' ? 'text-black' : 'text-gray-500'}`}
+            >
+              Home
+            </Link>
+            <Link
+              href="/portfolio"
+              onClick={() => setIsOpen(false)}
+              className={`text-3xl transform transition-all duration-500 delay-150 ${
+                isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
+              } ${pathname === '/portfolio' ? 'text-black' : 'text-gray-500'}`}
+            >
+              Portfolio
+            </Link>
+            <Link
+              href="/contact"
+              onClick={() => setIsOpen(false)}
+              className={`text-3xl transform transition-all duration-500 delay-300 ${
+                isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
+              } ${pathname === '/contact' ? 'text-black' : 'text-gray-500'}`}
+            >
+              Contact
+            </Link>
+          </nav>
         </div>
       </div>
     </div>
