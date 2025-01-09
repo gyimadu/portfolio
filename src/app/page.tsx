@@ -1,5 +1,4 @@
 'use client';
-import { useRef } from 'react';
 import Header from '@/components/Header';
 import Image from 'next/image';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
