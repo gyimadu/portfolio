@@ -13,7 +13,7 @@ export default function Home() {
     "Fitness",
     "Mathematical Modelling",
     "Sheet Music",
-    "Quantitative Finance",
+    "Algorithmic Trading",
     "Applied Math Research",
     "Robotics & AI",
     "Financial Modelling",
