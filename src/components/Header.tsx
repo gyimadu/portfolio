@@ -31,7 +31,7 @@ export default function Header() {
               href="https://gyimadu.medium.com/"
               target='_blank'
               className="text-gray-500">
-                Blog
+                Blog | <span className='text-black'>Medium</span>
             </Link>
             <Link 
               href="/contact" 

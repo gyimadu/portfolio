@@ -62,7 +62,7 @@ export default function MobileMenu() {
               className={`text-2xl text-gray-500 transform transition-all duration-500 delay-150 ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
               } `}>
-                Blog
+                Blog | <span className='text-black'>Medium</span>
             </Link>
             <Link
               href="/contact"

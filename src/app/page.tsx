@@ -9,16 +9,13 @@ export default function Home() {
   
   const interests = [
     "Startups",
-    "Applied Machine Learning",
     "Fitness",
     "Mathematical Modelling",
     "Sheet Music",
     "Algorithmic Trading",
-    "Applied Math Research",
     "Robotics & AI",
     "Financial Modelling",
     "Investment Research",
-    "Good food",
     "Travel",
   ];
 
@@ -42,7 +39,8 @@ export default function Home() {
               <div className="lg:w-4/5">
                 <div className="text-black text-sm sm:text-sm lg:text-base leading-relaxed mb-2">
                   Hey there! I&apos;m a data scientist and a freelance web developer based in the United States.<br /><br />
-                  I&apos;m also currently completing my undergraduate studies in Mathematics and Economics, and enjoy working on predictive modeling for financial data using machine learning and data science.<br /><br /> 
+                  Many of my projects are cross-domain tech, but I mostly enjoy working on predictive modeling for financial data using machine learning and data science.<br /><br />
+                  I&apos;m currently completing my undergraduate degree in Math and Economics, and love to play soccer in my spare time. <br /><br />
                 </div>
                 
                 
@@ -60,7 +58,7 @@ export default function Home() {
 
                 <div className="mb-10">
                   <div className="text-black text-sm md:text-base mb-6 text-left lg:text-left">
-                    Here are a few other things that interest me:
+                    Here are a few of my other interests:
                   </div>
                   <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
                     {interests.map((interest) => (
