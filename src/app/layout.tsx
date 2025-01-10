@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react"
 import { Afacad } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
 const afacad = Afacad({ 
@@ -9,6 +10,12 @@ const afacad = Afacad({
   display: 'swap',
   variable: '--font-afacad',
 });
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-poppins',
+})
 
 export const metadata: Metadata = {
   title: "MICHAEL GYIMADU",
@@ -30,8 +37,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${afacad.variable}`}>
-      <body className={`${afacad.className} antialiased font-normal`}>
+    <html lang="en" className={`${poppins.variable}`}>
+      <body className={`${poppins.className} antialiased font-extralight`}>
         {children}
         <Analytics />
       </body>

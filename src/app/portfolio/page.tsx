@@ -47,8 +47,8 @@ export default function Portfolio() {
     <div className="min-h-screen bg-white">
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-16">
-        <section className="mb-16">
-          <h2 className="font-bold text-3xl sm:text-2xl lg:text-3xl text-black mb-8">Portfolio</h2>
+        <section className="mb-28 lg:mb-20">
+          <h2 className="text-2xl sm:text-2xl lg:text-3xl text-black mb-8">Portfolio</h2>
           
           <div className="grid gap-10">
             {projects.map((project, index) => (
@@ -60,7 +60,7 @@ export default function Portfolio() {
           </div>
         </section>
 
-        <footer className="text-center text-gray-500 text-sm pb-8">
+        <footer className="text-center text-gray-500 text-xs lg:text-sm pb-8">
             <div className="flex justify-center gap-2 md:gap-6 mb-4">
               <a 
                 href="https://github.com/gyimadu" 
@@ -69,7 +69,7 @@ export default function Portfolio() {
                 className="p-2 bg-gray-50 text-black rounded-full hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="GitHub Profile"
               >
-                <FaGithub className="w-5 h-5" />
+                <FaGithub className="w-4 h-4" />
               </a>
               <a 
                 href="https://twitter.com/gyimaduu" 
@@ -78,7 +78,7 @@ export default function Portfolio() {
                 className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="X (Twitter) Profile"
               >
-                <FaXTwitter className="w-5 h-5" />
+                <FaXTwitter className="w-4 h-4" />
               </a>
               <a 
                 href="https://instagram.com/gyimadu_" 
@@ -87,7 +87,7 @@ export default function Portfolio() {
                 className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="Instagram Profile"
               >
-                <FaInstagram className="w-5 h-5" />
+                <FaInstagram className="w-4 h-4" />
               </a>
               <a 
                 href="https://linkedin.com/in/michael-gyimadu" 
@@ -96,7 +96,7 @@ export default function Portfolio() {
                 className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="LinkedIn Profile"
               >
-                <FaLinkedin className="w-5 h-5" />
+                <FaLinkedin className="w-4 h-4" />
               </a>
             </div>
           <p className="mb-2">Last Updated: January 2025</p>

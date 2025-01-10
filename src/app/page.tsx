@@ -13,6 +13,7 @@ export default function Home() {
     "Fitness",
     "Mathematical Modelling",
     "Sheet Music",
+    "Quantitative Finance",
     "Applied Math Research",
     "Robotics & AI",
     "Financial Modelling",
@@ -38,7 +39,13 @@ export default function Home() {
               </div>
 
               <div className="lg:w-4/5">
-                <p className="text-black text-lg sm:text-xl lg:text-xl leading-relaxed mb-6">
+                <div className="text-black text-sm sm:text-sm lg:text-base leading-relaxed mb-2">
+                  Hey there! I’m a data scientist and freelance web developer based in the United States.<br /><br />
+                  I'm also currently completing my undergraduate studies in Mathematics and Economics, and enjoy working on predictive modeling for financial data using machine learning and data science.<br /><br /> 
+                </div>
+                
+                
+                {/*<p className="text-black text-lg sm:text-xl lg:text-xl leading-relaxed mb-6">
                   Hey there! I&apos;m a machine learning-in-finance enthusiast, a self-taught programmer, and a data scientist based in the United States.
                 </p>
 
@@ -48,17 +55,17 @@ export default function Home() {
 
                 <p className="text-black text-lg sm:text-xl lg:text-xl leading-relaxed mb-6">
                   I have interests in quant finance and software development and love playing soccer or working on web apps in my spare time.
-                </p>
+                </p>*/}
 
                 <div className="mb-10">
-                  <h2 className="text-black text-lg md:text-xl mb-6">
+                  <div className="text-black text-sm md:text-base mb-6">
                     Here are a few other things that interest me:
-                  </h2>
+                  </div>
                   <div className="flex flex-wrap gap-3">
                     {interests.map((interest) => (
                       <span
                         key={interest}
-                        className="px-4 py-2 bg-gray-50 text-black rounded-full text-base sm:text-lg cursor-default hover:bg-gray-100 shadow-sm transition-all"
+                        className="px-4 py-2 bg-gray-50 text-black rounded-full text-xs sm:text-lg lg:text-sm cursor-default hover:bg-gray-100 shadow-sm transition-all"
                       >
                         {interest}
                       </span>
@@ -70,20 +77,22 @@ export default function Home() {
           </div>
 
           <div className="mb-10">
-            <h3 className="text-2xl sm:text-2xl lg:text-3xl font-bold mb-6 text-black">Connect With Me</h3>
-            <p className="text-black text-lg sm:text-lg lg:text-xl leading-relaxed mb-6">Want to learn more about my work or interested in hiring me for a project? Feel free to reach out to me here:</p>
+            <h3 className="text-xl sm:text-2xl lg:text-2xl font-bold mb-6 text-black">Connect With Me</h3>
+            <div className="text-black text-sm sm:text-lg lg:text-base leading-relaxed mb-6">
+              Want to learn more about my work or interested in hiring me for a project? Feel free to reach out to me here:
+            </div>
 
             <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mb-4">
               <a 
                 href="/resume.pdf" 
                 target='_blank'
-                className="px-4 py-1.5 bg-gray-50 text-black rounded-full text-base sm:text-base lg:text-lg hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
+                className="px-4 py-1.5 bg-gray-50 text-black rounded-full text-sm sm:text-base lg:text-sm hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
               >
                 View My Resume
               </a>
               <Link
                 href="/contact"
-                className="px-4 py-1.5 bg-gray-50 text-black rounded-full text-base sm:text-base lg:text-lg hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
+                className="px-4 py-1.5 bg-gray-50 text-black rounded-full text-sm sm:text-base lg:text-sm hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
               >
                 Send a Message
               </Link>
@@ -96,7 +105,7 @@ export default function Home() {
                 className="p-2 bg-gray-50 text-black rounded-full hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="GitHub Profile"
               >
-                <FaGithub className="w-5 h-5" />
+                <FaGithub className="w-4 h-4" />
               </a>
               <a 
                 href="https://twitter.com/gyimaduu" 
@@ -105,7 +114,7 @@ export default function Home() {
                 className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="X (Twitter) Profile"
               >
-                <FaXTwitter className="w-5 h-5" />
+                <FaXTwitter className="w-4 h-4" />
               </a>
               <a 
                 href="https://instagram.com/gyimadu_" 
@@ -114,7 +123,7 @@ export default function Home() {
                 className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="Instagram Profile"
               >
-                <FaInstagram className="w-5 h-5" />
+                <FaInstagram className="w-4 h-4" />
               </a>
               <a 
                 href="https://linkedin.com/in/michael-gyimadu" 
@@ -123,19 +132,21 @@ export default function Home() {
                 className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="LinkedIn Profile"
               >
-                <FaLinkedin className="w-5 h-5" />
+                <FaLinkedin className="w-4 h-4" />
               </a>
             </div>
           </div>
         </section>
 
-        <section className="mb-16">
-          <h2 className="font-bold text-2xl sm:text-2xl lg:text-3xl text-black mb-8">Publications?</h2>
-          <p className="text-black text-lg sm:text-lg lg:text-xl leading-relaxed mb-6">Updates coming soon...</p>
+        <section className="mb-28 lg:mb-28">
+          <h2 className="font-bold text-xl sm:text-2xl lg:text-2xl text-black mb-8">Publications?</h2>
+          <div className="text-black text-sm sm:text-lg lg:text-base leading-relaxed mb-6">
+            Updates coming soon...
+          </div>
         </section>
 
-        <footer className="text-center text-gray-500 text-sm pb-8">
-          <p className="mb-2">Last Updated: January 2025</p>
+        <footer className="text-center text-gray-500 text-xs lg:text-sm pb-5">
+          <div className="mb-2">Last Updated: January 2025</div>
           <p>© {new Date().getFullYear()} Michael Gyimadu.</p>
         </footer>
       </main>

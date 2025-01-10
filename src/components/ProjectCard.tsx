@@ -38,20 +38,20 @@ export default function ProjectCard({
         ${isExpanded ? 'ring-1 ring-[#EFEEE9]' : 'shadow-sm'}
       `}
     >
-      <h3 className="text-lg sm:text-xl font-semibold mb-4">{title}</h3>
+      <div className="text-base lg:text-base sm:text-xl mb-4">{title}</div>
       
       <div className={`
         overflow-hidden transition-all duration-300
         ${isExpanded ? 'max-h-[2000px]' : 'max-h-[84px]'}
       `}>
-        <p className="text-gray-700 text-lg sm:text-lg lg:text-xl mb-4">{description}</p>
+        <div className="text-black text-sm sm:text-lg lg:text-base mb-4">{description}</div>
         
         {features && features.map((feature, index) => (
-          <p key={index} className="text-gray-600 text-lg sm:text-lg lg:text-xl mb-2">{feature}</p>
+          <div key={index} className="text-black text-sm sm:text-lg lg:text-base mb-2">{feature}</div>
         ))}
         
         {tools && tools.map((tool, index) => (
-          <p key={index} className="text-gray-600 text-lg sm:text-lg lg:text-xl mb-2">{tool}</p>
+          <div key={index} className="text-black text-sm sm:text-lg lg:text-base mb-2">{tool}</div>
         ))}
 
         {image && (
@@ -82,7 +82,7 @@ export default function ProjectCard({
             <Link
               href={link.url}
               target="_blank"
-              className="inline-block px-4 py-2 text-blue-600 rounded-lg hover:bg-gray-800 transition-colors"
+              className="inline-block px-4 py-2 text-blue-600 text-sm rounded-lg hover:bg-gray-800 transition-colors"
               onClick={(e) => e.stopPropagation()}
             >
               {link.text}

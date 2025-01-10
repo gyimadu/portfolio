@@ -8,28 +8,34 @@ export default function Header() {
 
   return (
     <header className="bg-white sticky top-0 z-50 border-b border-gray-100">
-      <div className="max-w-5xl mx-auto px-4 py-5 lg:py-8">
+      <div className="max-w-7xl mx-auto px-4 py-4 lg:py-6">
         <nav className="flex justify-between items-center">
-          <Link href="/" className="text-xl sm:text-lg md:text-2xl text-black hover:text-gray-600 transition-colors font-medium">
+          <Link href="/" className="text-base sm:text-lg lg:text-2xl text-black hover:text-gray-600 transition-colors font-normal">
             MICHAEL GYIMADU
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
             <Link 
               href="/" 
-              className={`text-xl hover:text-gray-600 transition-colors ${pathname === '/' ? 'text-black font-light' : 'text-gray-500'}`}
+              className={`text-base hover:text-gray-600 transition-colors ${pathname === '/' ? 'text-black font-light' : 'text-gray-500'}`}
             >
               Home
             </Link>
             <Link 
               href="/portfolio" 
-              className={`text-xl hover:text-gray-600 transition-colors ${pathname === '/portfolio' ? 'text-black font-light' : 'text-gray-500'}`}
+              className={`text-base hover:text-gray-600 transition-colors ${pathname === '/portfolio' ? 'text-black font-light' : 'text-gray-500'}`}
             >
               Portfolio
             </Link>
+            <Link
+              href="https://gyimadu.medium.com/"
+              target='_blank'
+              className="text-gray-500">
+                Blog
+            </Link>
             <Link 
               href="/contact" 
-              className={`text-xl hover:text-gray-600 transition-colors ${pathname === '/contact' ? 'text-black font-light' : 'text-gray-500'}`}
+              className={`text-base hover:text-gray-600 transition-colors ${pathname === '/contact' ? 'text-black font-light' : 'text-gray-500'}`}
             >
               Contact
             </Link>
