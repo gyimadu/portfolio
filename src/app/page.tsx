@@ -40,8 +40,8 @@ export default function Home() {
 
               <div className="lg:w-4/5">
                 <div className="text-black text-sm sm:text-sm lg:text-base leading-relaxed mb-2">
-                  Hey there! I’m a data scientist and freelance web developer based in the United States.<br /><br />
-                  I'm also currently completing my undergraduate studies in Mathematics and Economics, and enjoy working on predictive modeling for financial data using machine learning and data science.<br /><br /> 
+                  Hey there! I&apos;m a data scientist and freelance web developer based in the United States.<br /><br />
+                  I&apos;m also currently completing my undergraduate studies in Mathematics and Economics, and enjoy working on predictive modeling for financial data using machine learning and data science.<br /><br /> 
                 </div>
                 
                 
