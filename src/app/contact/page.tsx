@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="max-w-5xl mx-auto px-4 py-16">
+      <main className="max-w-5xl mx-auto px-8 sm:px-4 py-16">
         <section className="mb-20">
           <div className="flex flex-col lg:flex-row lg:gap-16 lg:items-start">
             {/* Left column - 20% */}
@@ -32,7 +32,7 @@ export default function Contact() {
                     id="name"
                     name="name"
                     required
-                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-sm lg:text-base sm:text-lg"
+                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-xs lg:text-base sm:text-lg"
                     placeholder="Your name"
                   />
                 </div>
@@ -46,7 +46,7 @@ export default function Contact() {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-sm sm:text-lg lg:text-base"
+                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-xs sm:text-lg lg:text-base"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -60,7 +60,7 @@ export default function Contact() {
                     name="message"
                     required
                     rows={4}
-                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-sm sm:text-lg lg:text-base"
+                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-xs sm:text-lg lg:text-base"
                     placeholder="Your message..."
                   />
                 </div>
@@ -78,7 +78,7 @@ export default function Contact() {
           </div>
         </section>
 
-        <footer className="text-center text-black text-sm pb-10">
+        <footer className="text-center border-t sm:border-t-0 border-gray-200 pt-8 text-black text-xs pb-8">
             <div className="flex justify-center gap-2 md:gap-6 mb-6">
               <a 
                 href="https://github.com/gyimadu" 

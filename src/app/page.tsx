@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="max-w-5xl mx-auto px-4 py-16">
+      <main className="max-w-5xl mx-auto px-8 sm:px-4 py-16">
         <section className="mb-12">
           <div className="mb-10">
             <div className="flex flex-col lg:flex-row lg:gap-16 lg:items-start">
@@ -41,7 +41,7 @@ export default function Home() {
 
               <div className="lg:w-4/5">
                 <div className="text-black text-sm sm:text-sm lg:text-base leading-relaxed mb-2">
-                  Hey there! I&apos;m a data scientist and freelance web developer based in the United States.<br /><br />
+                  Hey there! I&apos;m a data scientist and a freelance web developer based in the United States.<br /><br />
                   I&apos;m also currently completing my undergraduate studies in Mathematics and Economics, and enjoy working on predictive modeling for financial data using machine learning and data science.<br /><br /> 
                 </div>
                 
@@ -59,14 +59,14 @@ export default function Home() {
                 </p>*/}
 
                 <div className="mb-10">
-                  <div className="text-black text-sm md:text-base mb-6">
+                  <div className="text-black text-sm md:text-base mb-6 text-left lg:text-left">
                     Here are a few other things that interest me:
                   </div>
-                  <div className="flex flex-wrap gap-3">
+                  <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
                     {interests.map((interest) => (
                       <span
                         key={interest}
-                        className="px-4 py-2 bg-gray-50 text-black rounded-full text-xs sm:text-lg lg:text-sm cursor-default hover:bg-gray-100 shadow-sm transition-all"
+                        className="px-4 py-2 bg-gray-50 text-black rounded-full text-xs sm:text-sm lg:text-sm cursor-default hover:bg-gray-100 shadow-sm transition-all"
                       >
                         {interest}
                       </span>
@@ -146,9 +146,9 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="text-center text-gray-500 text-xs lg:text-sm pb-5">
+        <footer className="text-center border-t sm:border-t-0 border-gray-200 pt-8 text-black text-xs pb-8">
           <div className="mb-2">Last Updated: January 2025</div>
-          <p>© {new Date().getFullYear()} Michael Gyimadu.</p>
+          <div>© {new Date().getFullYear()} Michael Gyimadu.</div>
         </footer>
       </main>
     </div>
