@@ -17,13 +17,13 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-8">
             <Link 
               href="/" 
-              className={`text-base hover:text-gray-600 transition-colors ${pathname === '/' ? 'text-black font-light' : 'text-gray-500'}`}
+              className={`text-base hover:text-gray-600 transition-colors ${pathname === '/' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
             >
               Home
             </Link>
             <Link 
               href="/portfolio" 
-              className={`text-base hover:text-gray-600 transition-colors ${pathname === '/portfolio' ? 'text-black font-light' : 'text-gray-500'}`}
+              className={`text-base hover:text-gray-600 transition-colors ${pathname === '/portfolio' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
             >
               Portfolio
             </Link>
@@ -35,7 +35,7 @@ export default function Header() {
             </Link>
             <Link 
               href="/contact" 
-              className={`text-base hover:text-gray-600 transition-colors ${pathname === '/contact' ? 'text-black font-light' : 'text-gray-500'}`}
+              className={`text-base hover:text-gray-600 transition-colors ${pathname === '/contact' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
             >
               Contact
             </Link>

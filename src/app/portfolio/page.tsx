@@ -48,7 +48,7 @@ export default function Portfolio() {
       <Header />
       <main className="max-w-4xl mx-auto px-4 py-16">
         <section className="mb-28 lg:mb-20">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl text-black mb-8">Portfolio</h2>
+          <h2 className="text-xl sm:text-2xl lg:text-2xl text-black mb-8">Portfolio</h2>
           
           <div className="grid gap-10">
             {projects.map((project, index) => (
@@ -60,7 +60,7 @@ export default function Portfolio() {
           </div>
         </section>
 
-        <footer className="text-center text-gray-500 text-xs lg:text-sm pb-8">
+        <footer className="text-center text-black text-xs lg:text-sm pb-8">
             <div className="flex justify-center gap-2 md:gap-6 mb-4">
               <a 
                 href="https://github.com/gyimadu" 
@@ -99,8 +99,8 @@ export default function Portfolio() {
                 <FaLinkedin className="w-4 h-4" />
               </a>
             </div>
-          <p className="mb-2">Last Updated: January 2025</p>
-          <p>© {new Date().getFullYear()} Michael Gyimadu.</p>
+          <div className="mb-2">Last Updated: January 2025</div>
+          <div>© {new Date().getFullYear()} Michael Gyimadu.</div>
         </footer>
       </main>
     </div>
