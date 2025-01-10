@@ -12,7 +12,6 @@ export function useScrollSpy() {
       for (let i = 0; i < sections.length; i++) {
         const section = sections[i];
         const rect = section.getBoundingClientRect();
-        const sectionMiddle = rect.top + rect.height / 2;
 
         // If the middle of the section is within the middle portion of the viewport
         if (rect.top < viewportMiddle && rect.bottom > viewportMiddle) {

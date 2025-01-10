@@ -1,5 +1,4 @@
 'use client';
-import { useRef, useEffect } from 'react';
 import Header from '@/components/Header';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
