@@ -38,7 +38,7 @@ export default function ProjectCard({
         ${isExpanded ? 'ring-1 ring-[#EFEEE9]' : 'shadow-sm'}
       `}
     >
-      <div className="text-base lg:text-base sm:text-xl mb-4">{title}</div>
+      <div className="text-sm lg:text-base sm:text-xl font-medium mb-4">{title}</div>
       
       <div className={`
         overflow-hidden transition-all duration-300

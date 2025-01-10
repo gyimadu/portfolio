@@ -17,12 +17,12 @@ export default function MobileMenu() {
       >
         <div className="w-8 h-8 flex flex-col justify-center items-center gap-1">
           <span 
-            className={`bg-black block h-0.5 w-8 rounded-sm transition-all duration-500 ease-in-out ${
+            className={`bg-black block h-px w-9 rounded-sm transition-all duration-500 ease-in-out ${
               isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'
             }`}
           />
           <span 
-            className={`bg-black block h-0.5 w-8 rounded-sm transition-all duration-500 ease-in-out ${
+            className={`bg-black block h-px w-9 rounded-sm transition-all duration-500 ease-in-out ${
               isOpen ? '-rotate-45 -translate-y-0.5' : 'translate-y-0.5'
             }`}
           />
@@ -42,7 +42,7 @@ export default function MobileMenu() {
               onClick={() => setIsOpen(false)}
               className={`text-2xl transform transition-all duration-500 ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
-              } ${pathname === '/' ? 'text-black' : 'text-gray-500'}`}
+              } ${pathname === '/' ? 'text-black underline underline-offset-4' : 'text-gray-500'}`}
             >
               Home
             </Link>
@@ -51,7 +51,7 @@ export default function MobileMenu() {
               onClick={() => setIsOpen(false)}
               className={`text-2xl transform transition-all duration-500 delay-150 ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
-              } ${pathname === '/portfolio' ? 'text-black' : 'text-gray-500'}`}
+              } ${pathname === '/portfolio' ? 'text-black underline underline-offset-4' : 'text-gray-500'}`}
             >
               Portfolio
             </Link>
@@ -69,7 +69,7 @@ export default function MobileMenu() {
               onClick={() => setIsOpen(false)}
               className={`text-2xl transform transition-all duration-500 delay-300 ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
-              } ${pathname === '/contact' ? 'text-black' : 'text-gray-500'}`}
+              } ${pathname === '/contact' ? 'text-black underline underline-offset-4' : 'text-gray-500'}`}
             >
               Contact
             </Link>

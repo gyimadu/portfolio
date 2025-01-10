@@ -18,6 +18,7 @@ export default function Home() {
     "Robotics & AI",
     "Financial Modelling",
     "Investment Research",
+    "Good food",
     "Travel",
   ];
 
