@@ -1,6 +1,6 @@
 'use client';
 import Header from '@/components/Header';
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaPinterest } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
 
@@ -115,6 +115,15 @@ export default function Contact() {
                 aria-label="LinkedIn Profile"
               >
                 <FaLinkedin className="w-4 h-4" />
+              </a>
+              <a 
+                href="https://pin.it/31jFT8j7h" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+                aria-label="Pinterest Profile"
+              >
+                <FaPinterest className="w-4 h-4" />
               </a>
             </div>
             <div className="mb-2">Last Updated: January 2025</div>
