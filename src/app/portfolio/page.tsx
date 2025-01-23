@@ -10,6 +10,12 @@ export default function Portfolio() {
   
   const projects = [
     {
+      title: "AlgoTrade Bot with Risk Management",
+      description: "Developed a lightweight algorithmic trading bot that uses historical financial data to automate trading decisions using moving average crossover strategies. The bot is deisgned for small-scale algorithmic trading and integrates risk management techniques to optimize positions and minimize losses.",
+      features: ["Features: Market data integration, signal generation, automated portfolio updates, risk management"],
+      tools: ["Tools: Python, Pandas, NumPy, yFinance, Object-Oriented Programming"]
+    },
+    {
       title: "TidyTable: Data Cleaning Automation Tool",
       description: "TidyTable is a Python-based automation tool that speeds up the data cleaning process for large datasets. It handles missing values, detects outliers, and standardizes data formats, reducing manual cleaning time while maintaining data integrity.",
       features: ["Features: Automated cleaning, format standardization, outlier detection."],
@@ -45,7 +51,7 @@ export default function Portfolio() {
       <main className="max-w-5xl mx-auto px-8 sm:px-4 py-16 relative">
         {/* Left side - scrollable content */}
         <div className="lg:w-[48%]">
-          <h2 className="text-xl sm:text-2xl lg:text-2xl text-black mb-10">Portfolio</h2>
+          <div className="text-xl font-medium sm:text-2xl lg:text-2xl text-black mb-10">Portfolio</div>
           
           <div className="space-y-16 lg:space-y-32">
             {projects.map((project, index) => (
@@ -129,12 +135,12 @@ export default function Portfolio() {
 
         {/* Centered footer */}
         <footer className="border-t sm:border-t-0 border-gray-200 pt-8 text-center text-black text-xs pb-8 mt-16">
-          <div className="flex justify-center gap-2 md:gap-6 mb-4">
+          <div className="flex justify-center gap-2 md:gap-4 mb-4">
             <a 
               href="https://github.com/gyimadu" 
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 bg-gray-50 text-black rounded-full hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
+              className="p-2 bg-gray-50 text-black rounded-xl hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
               aria-label="GitHub Profile"
             >
               <FaGithub className="w-4 h-4" />
@@ -143,7 +149,7 @@ export default function Portfolio() {
               href="https://twitter.com/gyimaduu" 
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+              className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
               aria-label="X (Twitter) Profile"
             >
               <FaXTwitter className="w-4 h-4" />
@@ -152,7 +158,7 @@ export default function Portfolio() {
               href="https://instagram.com/gyimadu_" 
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+              className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
               aria-label="Instagram Profile"
             >
               <FaInstagram className="w-4 h-4" />
@@ -161,7 +167,7 @@ export default function Portfolio() {
               href="https://linkedin.com/in/michael-gyimadu" 
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+              className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
               aria-label="LinkedIn Profile"
             >
               <FaLinkedin className="w-4 h-4" />
@@ -170,7 +176,7 @@ export default function Portfolio() {
               href="https://pin.it/31jFT8j7h" 
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+              className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
               aria-label="Pinterest Profile"
             >
               <FaPinterest className="w-4 h-4" />

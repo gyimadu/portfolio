@@ -26,14 +26,15 @@ export default function Home() {
         <section className="mb-12">
           <div className="mb-10">
             <div className="flex flex-col lg:flex-row lg:gap-16 lg:items-start">
-              <div className="flex flex-col items-center mb-4 lg:mb-0 lg:w-1/5 lg:sticky lg:top-24">
-                <Image 
+              <div className="flex flex-col items-left lg:mb-0 lg:w-1/5 lg:sticky lg:top-24">
+                {/*<Image 
                   src="/profile.jpeg" 
                   alt="Michael Gyimadu" 
                   width={80}
                   height={80}
-                  className="rounded-full object-cover shadow-sm mb-6"
-                />
+                  className="w-20 h-20 ounded-full object-cover shadow-sm mb-5"
+                />*/}
+                <div className='text-xl font-medium sm:text-2xl lg:text-2xl mb-6 text-black'>Connect With Me</div>
               </div>
 
               <div className="lg:w-4/5">
@@ -76,7 +77,7 @@ export default function Home() {
           </div>
 
           <div className="mb-10">
-            <h3 className="text-xl sm:text-2xl lg:text-2xl font-bold mb-6 text-black">Connect With Me</h3>
+            <div className="text-xl font-medium sm:text-2xl lg:text-2xl mb-6 text-black">Contact Me</div>
             <div className="text-black text-sm sm:text-lg lg:text-base leading-relaxed mb-6">
               Want to learn more about my work or interested in hiring me for a project? Feel free to reach out to me here:
             </div>
@@ -85,23 +86,23 @@ export default function Home() {
               <a 
                 href="/resume.pdf" 
                 target='_blank'
-                className="px-4 py-1.5 bg-gray-50 text-black rounded-full text-sm sm:text-base lg:text-sm hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
+                className="px-4 py-1.5 bg-gray-50 text-black rounded-xl text-sm sm:text-base lg:text-sm hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
               >
                 View My Resume
               </a>
               <Link
                 href="/contact"
-                className="px-4 py-1.5 bg-gray-50 text-black rounded-full text-sm sm:text-base lg:text-sm hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
+                className="px-4 py-1.5 bg-gray-50 text-black rounded-xl text-sm sm:text-base lg:text-sm hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
               >
                 Send a Message
               </Link>
             </div>
-            <div className="flex justify-center gap-2 md:gap-8 mb-4">
+            <div className="flex justify-center gap-2 md:gap-4 mb-4">
               <a 
                 href="https://github.com/gyimadu" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-gray-50 text-black rounded-full hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
+                className="p-2 bg-gray-50 text-black rounded-xl hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="GitHub Profile"
               >
                 <FaGithub className="w-4 h-4" />
@@ -110,7 +111,7 @@ export default function Home() {
                 href="https://twitter.com/gyimaduu" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+                className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="X (Twitter) Profile"
               >
                 <FaXTwitter className="w-4 h-4" />
@@ -119,7 +120,7 @@ export default function Home() {
                 href="https://instagram.com/gyimadu_" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+                className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="Instagram Profile"
               >
                 <FaInstagram className="w-4 h-4" />
@@ -128,7 +129,7 @@ export default function Home() {
                 href="https://linkedin.com/in/michael-gyimadu" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+                className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="LinkedIn Profile"
               >
                 <FaLinkedin className="w-4 h-4" />
@@ -137,7 +138,7 @@ export default function Home() {
                 href="https://pin.it/31jFT8j7h" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+                className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="Pinterest Profile"
               >
                 <FaPinterest className="w-4 h-4" />
@@ -147,7 +148,7 @@ export default function Home() {
         </section>
 
         <section className="mb-28 lg:mb-28">
-          <h2 className="font-bold text-xl sm:text-2xl lg:text-2xl text-black mb-8">Publications?</h2>
+          <div className="text-xl font-medium sm:text-2xl lg:text-2xl text-black mb-8">Publications?</div>
           <div className="text-black text-sm sm:text-lg lg:text-base leading-relaxed mb-6">
             Updates coming soon...
           </div>

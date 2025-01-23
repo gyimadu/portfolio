@@ -13,7 +13,7 @@ export default function Contact() {
           <div className="flex flex-col lg:flex-row lg:gap-16 lg:items-start">
             {/* Left column - 20% */}
             <div className="mb-8 lg:mb-0 lg:w-1/5 lg:sticky lg:top-24">
-              <h2 className="font-bold text-xl sm:text-2xl lg:text-2xl text-black">Get In Touch With Me!</h2>
+              <div className="font-medium text-xl sm:text-2xl lg:text-2xl text-black">Get In Touch With Me!</div>
             </div>
 
             {/* Right column - 80% */}
@@ -32,7 +32,7 @@ export default function Contact() {
                     id="name"
                     name="name"
                     required
-                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-xs lg:text-base sm:text-lg"
+                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-xs lg:text-base sm:text-lg"
                     placeholder="Your name"
                   />
                 </div>
@@ -46,7 +46,7 @@ export default function Contact() {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-xs sm:text-lg lg:text-base"
+                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-xs sm:text-lg lg:text-base"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -60,7 +60,7 @@ export default function Contact() {
                     name="message"
                     required
                     rows={4}
-                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-xs sm:text-lg lg:text-base"
+                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-xs sm:text-lg lg:text-base"
                     placeholder="Your message..."
                   />
                 </div>
@@ -68,7 +68,7 @@ export default function Contact() {
                 <div className="flex justify-center">
                   <button
                     type="submit"
-                    className="px-6 py-2 bg-black text-white text-sm lg:text-sm rounded-lg hover:bg-gray-800 transition-colors"
+                    className="px-6 py-2 bg-black text-white text-sm lg:text-sm rounded-md hover:bg-gray-800 transition-colors"
                   >
                     Send Message
                   </button>
@@ -79,12 +79,12 @@ export default function Contact() {
         </section>
 
         <footer className="text-center border-t sm:border-t-0 border-gray-200 pt-8 text-black text-xs pb-8">
-            <div className="flex justify-center gap-2 md:gap-6 mb-6">
+            <div className="flex justify-center gap-2 md:gap-4 mb-6">
               <a 
                 href="https://github.com/gyimadu" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-gray-50 text-black rounded-full hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
+                className="p-2 bg-gray-50 text-black rounded-xl hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="GitHub Profile"
               >
                 <FaGithub className="w-4 h-4" />
@@ -93,7 +93,7 @@ export default function Contact() {
                 href="https://twitter.com/gyimaduu" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+                className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="X (Twitter) Profile"
               >
                 <FaXTwitter className="w-4 h-4" />
@@ -102,7 +102,7 @@ export default function Contact() {
                 href="https://instagram.com/gyimadu_" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+                className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="Instagram Profile"
               >
                 <FaInstagram className="w-4 h-4" />
@@ -111,7 +111,7 @@ export default function Contact() {
                 href="https://linkedin.com/in/michael-gyimadu" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+                className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="LinkedIn Profile"
               >
                 <FaLinkedin className="w-4 h-4" />
@@ -120,7 +120,7 @@ export default function Contact() {
                 href="https://pin.it/31jFT8j7h" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-[#F5F5F1] text-black rounded-full hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+                className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
                 aria-label="Pinterest Profile"
               >
                 <FaPinterest className="w-4 h-4" />
