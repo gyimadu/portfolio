@@ -11,6 +11,7 @@ export default function Home() {
     "Fitness",
     "Mathematical Modelling",
     "Sheet Music",
+    "3D Design",
     "Algorithmic Trading",
     "Robotics & AI",
     "Financial Modelling",
@@ -40,7 +41,7 @@ export default function Home() {
                 <div className="text-black text-sm sm:text-sm lg:text-base leading-relaxed mb-2">
                   Hey there! I&apos;m a data scientist and a freelance web developer based in the United States.<br /><br />
                   Many of my projects are cross-domain tech, but I mostly enjoy working on predictive modeling for financial data using machine learning and data science.<br /><br />
-                  I&apos;m currently completing my undergraduate degree in Math and Economics, and love to play soccer in my spare time. <br /><br />
+                  I&apos;m currently completing my undergraduate degree in Mathematics and Economics, and my research interests lie in Applied and Computational Mathematics. <br /><br />
                 </div>
                 
                 
