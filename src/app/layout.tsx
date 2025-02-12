@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react"
 import { Poppins } from "next/font/google";
+import { EB_Garamond } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ['300', '400', '500', '600', '700'],
   variable: '--font-poppins',
+})
+
+const garamond = EB_Garamond({
+  weight: ['400', '500', '600', '700'],
+  subsets: ['latin'],
+  variable: '--font-garamond',
 })
 
 export const metadata: Metadata = {
@@ -51,8 +58,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${poppins.variable}`}>
-      <body className={`${poppins.className} antialiased font-extralight`}>
+    <html lang="en" className={`${garamond.variable}`}>
+      <body className={`${garamond.className} antialiased font-extralight`}>
         {children}
         <Analytics />
       </body>

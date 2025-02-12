@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="max-w-5xl mx-auto px-8 sm:px-4 py-16">
+      <main className="max-w-4xl mx-auto px-8 sm:px-4 py-16">
         <section className="mb-12">
           <div className="mb-10">
             <div className="flex flex-col lg:flex-row lg:gap-16 lg:items-start">

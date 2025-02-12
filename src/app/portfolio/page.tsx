@@ -48,7 +48,7 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="max-w-5xl mx-auto px-8 sm:px-4 py-16 relative">
+      <main className="max-w-4xl mx-auto px-8 sm:px-4 py-16 relative">
         {/* Left side - scrollable content */}
         <div className="lg:w-[48%]">
           <div className="text-xl font-medium sm:text-2xl lg:text-2xl text-black mb-10">Portfolio</div>

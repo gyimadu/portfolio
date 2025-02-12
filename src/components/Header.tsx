@@ -8,9 +8,9 @@ export default function Header() {
 
   return (
     <header className="bg-white sticky top-0 z-50 ">
-      <div className="max-w-7xl mx-auto px-8 sm:px-4 py-4 lg:py-6">
+      <div className="max-w-5xl mx-auto px-8 sm:px-4 py-4 lg:py-6">
         <nav className="flex justify-between items-center">
-          <Link href="/" className="text-base sm:text-lg lg:text-2xl text-black hover:text-gray-600 transition-colors font-normal">
+          <Link href="/" className="text-base sm:text-lg lg:text-xl text-black hover:text-gray-600 transition-colors font-normal">
             MICHAEL GYIMADU
           </Link>
           
