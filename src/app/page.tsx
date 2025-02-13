@@ -156,7 +156,7 @@ export default function Home() {
 
         <footer className="text-center border-t sm:border-t-0 border-gray-200 pt-8 text-black text-xs pb-8">
           <div className='mb-2 text-gray-400 italic'>Please hire me ^_^</div>
-          <div className="mb-2">Last Updated: January 2025</div>
+          <div className="mb-2">Last Updated: February 2025</div>
           <div>© {new Date().getFullYear()} Michael Gyimadu.</div>
         </footer>
       </main>
