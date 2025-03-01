@@ -3,20 +3,22 @@ import Header from '@/components/Header';
 import { FaGithub, FaInstagram, FaLinkedin, FaPinterest } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   
   const interests = [
-    "Startups",
+    "Investment Analysis & Research",
     "Fitness",
-    "Mathematical Modelling",
+    "Financial Analysis",
     "Sheet Music",
+    "Machine learning & AI Research",
     "3D Design",
     "Algorithmic Trading",
-    "Robotics & AI",
-    "Financial Modelling",
-    "Investment Research",
+    "Robotics",
+    "Mathematical Modelling",
     "Travel",
+    "Startups",
   ];
 
   return (
@@ -25,16 +27,16 @@ export default function Home() {
       <main className="max-w-4xl mx-auto px-8 sm:px-4 py-16">
         <section className="mb-12">
           <div className="mb-10">
-            <div className="flex flex-col lg:flex-row lg:gap-16 lg:items-start">
+            <div className="flex flex-col lg:flex-row lg:gap-10 lg:items-start">
               <div className="flex flex-col items-left lg:mb-0 lg:w-1/5 lg:sticky lg:top-24">
-                {/*<Image 
-                  src="/profile.jpeg" 
+                <Image 
+                  src="/profile1.jpeg" 
                   alt="Michael Gyimadu" 
-                  width={80}
-                  height={80}
-                  className="w-20 h-20 ounded-full object-cover shadow-sm mb-5"
-                />*/}
-                <div className='text-xl font-medium sm:text-2xl lg:text-2xl mb-6 text-black'>Connect With Me</div>
+                  width={100}
+                  height={100}
+                  className="w-30 h-30 rounded-full object-cover shadow-sm mb-5 hidden lg:block"
+                />
+                {/*<div className='text-xl font-medium sm:text-2xl lg:text-2xl mb-6 text-black'>Connect With Me</div>*/}
               </div>
 
               <div className="lg:w-4/5">
