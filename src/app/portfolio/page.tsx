@@ -9,12 +9,12 @@ export default function Portfolio() {
   const activeSection = useScrollSpy();
   
   const projects = [
-    {
+    /*{
       title: "AlgoTrade Bot with Risk Management",
       description: "Developed a lightweight algorithmic trading bot that uses historical financial data to automate trading decisions using moving average crossover strategies. The bot is deisgned for small-scale algorithmic trading and integrates risk management techniques to optimize positions and minimize losses.",
       features: ["Features: Market data integration, signal generation, automated portfolio updates, risk management"],
       tools: ["Tools: Python, Pandas, NumPy, yFinance, Object-Oriented Programming"]
-    },
+    },*/
     {
       title: "TidyTable: Data Cleaning Automation Tool",
       description: "TidyTable is a Python-based automation tool that speeds up the data cleaning process for large datasets. It handles missing values, detects outliers, and standardizes data formats, reducing manual cleaning time while maintaining data integrity.",
