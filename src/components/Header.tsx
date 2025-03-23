@@ -11,7 +11,7 @@ export default function Header() {
       <div className="max-w-5xl mx-auto px-8 sm:px-4 py-4 lg:pt-14">
         <nav className="flex justify-between items-center">
           <Link href="/" className="text-base sm:text-lg lg:text-xl text-black hover:text-gray-600 font-f1 transition-colors font-normal">
-            MICHAEL GYIMADU
+            GYIMADU
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
