@@ -25,9 +25,9 @@ export default function Home() {
           <div className="mb-10">
             <div className="flex flex-col lg:flex-col lg:gap-10">
               <div className='flex flex-col justify-center lg:pt-10 lg:px-14 mb-6'>
-                <div className='font-f1 text-lg lg:text-4xl mb-7'>Hi,<br></br>I'm Michael Gyimadu!</div>
-                <div className='text-sm sm:text-lg lg:text-base'>I'm a Machine Learning Researcher focused on predictive modelling for financial data.<br /><br />
-                    Additionally, I'm a sophomore at Wingate University, pursuing a degree in Mathematics and Economics.<br />                    
+                <div className='font-f1 text-lg lg:text-4xl mb-7'>Hi,<br></br>I&aposm Michael Gyimadu!</div>
+                <div className='text-sm sm:text-lg lg:text-base'>I&aposm a Machine Learning Researcher focused on predictive modelling for financial data.<br /><br />
+                    Additionally, I&aposm a sophomore at Wingate University, pursuing a degree in Mathematics and Economics.<br />                    
                 </div>
               </div>
 
