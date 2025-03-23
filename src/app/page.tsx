@@ -25,7 +25,7 @@ export default function Home() {
           <div className="mb-10">
             <div className="flex flex-col lg:flex-col lg:gap-10">
               <div className='flex flex-col justify-center lg:pt-10 lg:px-14 mb-6'>
-                <div className='font-f1 text-xl sm:text-3xl lg:text-4xl mb-7'>Hi,<br></br>I&apo;sm Michael Gyimadu!</div>
+                <div className='font-f1 text-xl sm:text-3xl lg:text-4xl mb-7'>Hi,<br></br>I&apos;m Michael Gyimadu!</div>
                 <div className='text-sm sm:text-lg lg:text-base'>I&apos;m a Machine Learning Researcher focused on predictive modelling for financial data.<br /><br />
                     Additionally, I&apos;m a sophomore at Wingate University, pursuing a degree in Mathematics and Economics.<br />                    
                 </div>
@@ -127,8 +127,8 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="text-center border-t sm:border-t-0 border-gray-200 pt-8 text-black text-xs pb-8">
-          <div className="mb-2">Last Updated: February 2025</div>
+        <footer className="text-center font-f1 border-t sm:border-t-0 border-gray-200 pt-8 text-black text-xs pb-8">
+          <div className="mb-2">Last Updated: Mar 2025</div>
           <div>© {new Date().getFullYear()} Michael Gyimadu.</div>
         </footer>
       </main>
