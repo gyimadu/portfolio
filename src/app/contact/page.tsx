@@ -12,12 +12,12 @@ export default function Contact() {
         <section className="mb-20">
           <div className="flex flex-col lg:flex-row lg:gap-16 lg:items-start">
             {/* Left column - 20% */}
-            <div className="mb-8 lg:mb-0 lg:w-1/5 lg:sticky lg:top-24">
-              <div className="font-medium text-xl sm:text-2xl lg:text-2xl text-black">Get In Touch With Me!</div>
+            <div className="mb-8 lg:mb-0 lg:w-1/4 lg:sticky lg:top-24">
+              <div className="font-medium font-f1 text-xl sm:text-2xl lg:text-2xl text-black">Get In Touch With Me!</div>
             </div>
 
             {/* Right column - 80% */}
-            <div className="lg:w-4/5">
+            <div className="lg:w-3/4">
               <form 
                 action="https://formspree.io/f/mbllpppa"
                 method="POST"
@@ -68,7 +68,7 @@ export default function Contact() {
                 <div className="flex justify-center">
                   <button
                     type="submit"
-                    className="px-6 py-2 bg-black text-white text-sm lg:text-sm rounded-md hover:bg-gray-800 transition-colors"
+                    className="px-6 py-2 font-f1 bg-black text-white text-sm lg:text-sm rounded-md hover:bg-gray-800 transition-colors"
                   >
                     Send Message
                   </button>

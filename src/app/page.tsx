@@ -3,16 +3,12 @@ import Header from '@/components/Header';
 import { FaGithub, FaInstagram, FaLinkedin, FaPinterest } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export default function Home() {
   
   const interests = [
     "Investment Analysis & Research",
-    "Fitness",
-    "Financial Analysis",
     "Sheet Music",
-    "Machine learning & AI Research",
     "3D Design",
     "Algorithmic Trading",
     "Robotics",
@@ -27,59 +23,34 @@ export default function Home() {
       <main className="max-w-4xl mx-auto px-8 sm:px-4 py-16">
         <section className="mb-12">
           <div className="mb-10">
-            <div className="flex flex-col lg:flex-row lg:gap-10 lg:items-start">
-              <div className="flex flex-col items-left lg:mb-0 lg:w-1/5 lg:sticky lg:top-24">
-                <Image 
-                  src="/profile1.jpeg" 
-                  alt="Michael Gyimadu" 
-                  width={100}
-                  height={100}
-                  className="w-30 h-30 rounded-full object-cover shadow-sm mb-5 hidden lg:block"
-                />
-                {/*<div className='text-xl font-medium sm:text-2xl lg:text-2xl mb-6 text-black'>Connect With Me</div>*/}
+            <div className="flex flex-col lg:flex-col lg:gap-10">
+              <div className='flex flex-col justify-center lg:pt-10 lg:px-14 mb-6'>
+                <div className='font-f1 text-lg lg:text-4xl mb-7'>Hi,<br></br>I'm Michael Gyimadu!</div>
+                <div className='text-sm sm:text-lg lg:text-base'>I'm a Machine Learning Researcher focused on predictive modelling for financial data.<br /><br />
+                    Additionally, I'm a sophomore at Wingate University, pursuing a degree in Mathematics and Economics.<br />                    
+                </div>
               </div>
 
-              <div className="lg:w-4/5">
-                <div className="text-black text-sm sm:text-sm lg:text-base leading-relaxed mb-2">
-                  Hey there! I&apos;m a data scientist and a freelance web developer based in the United States.<br /><br />
-                  Many of my projects are cross-domain tech, but I mostly enjoy working on predictive modeling for financial data using machine learning and data science.<br /><br />
-                  I&apos;m currently completing my undergraduate degree in Mathematics and Economics, and my research interests lie in Applied and Computational Mathematics. <br /><br />
-                </div>
-                
-                
-                {/*<p className="text-black text-lg sm:text-xl lg:text-xl leading-relaxed mb-6">
-                  Hey there! I&apos;m a machine learning-in-finance enthusiast, a self-taught programmer, and a data scientist based in the United States.
-                </p>
-
-                <p className="text-black text-lg sm:text-xl lg:text-xl leading-relaxed mb-6">
-                  I&apos;m currently finishing my undergraduate studies in Mathematics and Economics and enjoy working on predictive modelling on financial data with machine learning and data science.
-                </p>
-
-                <p className="text-black text-lg sm:text-xl lg:text-xl leading-relaxed mb-6">
-                  I have interests in quant finance and software development and love playing soccer or working on web apps in my spare time.
-                </p>*/}
-
-                <div className="mb-10">
-                  <div className="text-black text-sm md:text-base mb-6 text-left lg:text-left">
+              <div className="mb-10">
+                  <div className="text-black text-sm sm:text-lg lg:text-base mb-6 text-left lg:text-left">
                     Here are a few of my other interests:
                   </div>
-                  <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+                  <div className="flex flex-wrap gap-3 justify-start lg:justify-start">
                     {interests.map((interest) => (
                       <span
                         key={interest}
-                        className="px-4 py-2 bg-gray-50 text-black rounded-full text-xs sm:text-sm lg:text-sm cursor-default hover:bg-gray-100 shadow-sm transition-all"
+                        className="px-4 py-2 bg-gray-50 text-black rounded-full text-xs sm:text-sm lg:text-xs cursor-default hover:bg-gray-100 shadow-sm transition-all"
                       >
                         {interest}
                       </span>
                     ))}
                   </div>
-                </div>
               </div>
             </div>
           </div>
 
           <div className="mb-10">
-            <div className="text-xl font-medium sm:text-2xl lg:text-2xl mb-6 text-black">Contact Me</div>
+            <div className="text-xl font-medium sm:text-2xl lg:text-xl mb-6 font-f1 text-black">Contact Me</div>
             <div className="text-black text-sm sm:text-lg lg:text-base leading-relaxed mb-6">
               Want to learn more about my work or interested in hiring me for a project? Feel free to reach out to me here:
             </div>
@@ -150,7 +121,7 @@ export default function Home() {
         </section>
 
         <section className="mb-28 lg:mb-28">
-          <div className="text-xl font-medium sm:text-2xl lg:text-2xl text-black mb-8">Publications?</div>
+          <div className="text-xl font-f1 font-medium sm:text-2xl lg:text-xl text-black mb-8">Publications?</div>
           <div className="text-black text-sm sm:text-lg lg:text-base leading-relaxed mb-6">
             Updates coming soon...
           </div>

@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-afacad)', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+        'f1': ['var(--font-f1-atomic)', 'sans-serif'],
       },
     },
   },

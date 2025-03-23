@@ -51,7 +51,7 @@ export default function Portfolio() {
       <main className="max-w-4xl mx-auto px-8 sm:px-4 py-16 relative">
         {/* Left side - scrollable content */}
         <div className="lg:w-[48%]">
-          <div className="text-xl font-medium sm:text-2xl lg:text-2xl text-black mb-10">Portfolio</div>
+          <div className="text-xl font-f1 font-medium sm:text-2xl lg:text-2xl text-black mb-10">Portfolio</div>
           
           <div className="space-y-16 lg:space-y-32">
             {projects.map((project, index) => (
@@ -60,7 +60,7 @@ export default function Portfolio() {
                 className="project-section"
                 data-index={index}
               >
-                <h3 className="text-sm lg:text-base sm:text-2xl font-medium mb-4">{project.title}</h3>
+                <h3 className="text-sm font-f1 lg:text-base sm:text-2xl font-medium mb-4">{project.title}</h3>
                 <div className="text-black text-sm lg:text-base mb-4">{project.description}</div>
                 
                 {project.features && project.features.map((feature, idx) => (
