@@ -27,7 +27,7 @@ export default function Home() {
               <div className='flex flex-col justify-center lg:pt-10 mb-6'>
                 <div className='font-f1 text-2xl sm:text-3xl lg:text-3xl mb-7'>Hi,<br></br>I&apos;m Michael Gyimadu!</div>
                 <div className='text-sm sm:text-lg lg:text-base'>I&apos;m a Machine Learning Researcher focused on predictive modelling for financial data.
-                    Additionally, I&apos;m a sophomore at Wingate University, pursuing a degree in Mathematics and Economics.<br />                    
+                    <br />Additionally, I&apos;m a sophomore at Wingate University, pursuing a degree in Mathematics and Economics.<br />                    
                 </div>
               </div>
 
