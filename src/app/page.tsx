@@ -25,7 +25,7 @@ export default function Home() {
           <div className="mb-2">
             <div className="flex flex-col lg:flex-col lg:gap-10">
               <div className='flex flex-col justify-center lg:pt-10 mb-6'>
-                <div className='text-sm sm:text-lg lg:text-base'>I&apos'm a Math and Economics student in the Department of Mathematics at Wingate University. <br /><br />I&apos'm interested in optimization systems, machine learning, algorithm trading and love building software.                  
+                <div className='text-sm sm:text-lg lg:text-base'>I&apos;'m a Math and Economics student in the Department of Mathematics at Wingate University. <br /><br />I&apos;'m interested in optimization systems, machine learning, algorithm trading and love building software.                  
                 </div>
               </div>
 
