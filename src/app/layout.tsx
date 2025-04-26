@@ -1,14 +1,21 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react"
 import { Oxygen } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import localfont from 'next/font/local';
 
-{/*const poppins = Poppins({
+const poppins = Poppins({
   subsets: ["latin"],
   weight: ['300', '400', '500', '600', '700'],
   variable: '--font-poppins',
-})*/}
+})
+
+const montserrat = {
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-montserrat"
+}
 
 const f1Atomic = localfont({
   src: './fonts/f1_atomic.woff2',
@@ -63,7 +70,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${f1Atomic.variable} ${oxygen.variable}`}>
+    <html lang="en" className={`${f1Atomic.variable} ${poppins.variable}`}>
       <body className="antialiased font-light">
         {children}
         <Analytics />

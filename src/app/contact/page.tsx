@@ -8,12 +8,12 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="max-w-4xl mx-auto px-8 sm:px-4 py-16">
+      <main className="max-w-3xl mx-auto px-8 sm:px-4 py-16">
         <section className="mb-20">
           <div className="flex flex-col lg:flex-row lg:gap-16 lg:items-start">
             {/* Left column - 20% */}
             <div className="mb-8 lg:mb-0 lg:w-1/4 lg:sticky lg:top-24">
-              <div className="font-medium font-f1 text-xl sm:text-2xl lg:text-2xl text-black">Get In Touch With Me!</div>
+              <div className="font-medium text-xl sm:text-2xl lg:text-2xl text-black">Get In Touch With Me!</div>
             </div>
 
             {/* Right column - 80% */}

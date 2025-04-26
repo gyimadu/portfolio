@@ -20,18 +20,16 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="max-w-4xl mx-auto px-8 sm:px-4 py-16">
+      <main className="max-w-3xl mx-auto px-8 sm:px-4 py-16">
         <section className="mb-12">
-          <div className="mb-10">
+          <div className="mb-2">
             <div className="flex flex-col lg:flex-col lg:gap-10">
               <div className='flex flex-col justify-center lg:pt-10 mb-6'>
-                <div className='font-f1 text-2xl sm:text-3xl lg:text-3xl mb-7'>Hi,<br></br>I&apos;m Michael Gyimadu!</div>
-                <div className='text-sm sm:text-lg lg:text-base'>I&apos;m a Machine Learning Researcher focused on predictive modelling for financial data.
-                    <br />Additionally, I&apos;m a sophomore at Wingate University, pursuing a degree in Mathematics and Economics.<br />                    
+                <div className='text-sm sm:text-lg lg:text-base'>I'm a Math and Economics student in the Department of Mathematics at Wingate University. <br /><br />I'm interested in optimization systems, machine learning, algorithm trading and love building software.                  
                 </div>
               </div>
 
-              <div className="mb-10">
+              {/*<div className="mb-10">
                   <div className="text-black text-sm sm:text-lg lg:text-base mb-6 text-left lg:text-left">
                     Here are a few of my other interests:
                   </div>
@@ -45,17 +43,16 @@ export default function Home() {
                       </span>
                     ))}
                   </div>
-              </div>
+              </div>*/}
             </div>
           </div>
 
           <div className="mb-10">
-            <div className="text-xl font-medium sm:text-2xl lg:text-xl mb-6 font-f1 text-black">Contact Me</div>
             <div className="text-black text-sm sm:text-lg lg:text-base leading-relaxed mb-6">
-              Want to learn more about my work or interested in hiring me for a project? Feel free to reach out to me here:
+              Want to learn more about my work or interested in hiring me for a project? Reach out to me here:
             </div>
 
-            <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mb-4">
+            <div className="flex flex-col sm:flex-row justify-center sm:space-x-4 space-y-4 sm:space-y-0 mb-20">
               <a 
                 href="/resume.pdf" 
                 target='_blank'
@@ -120,12 +117,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mb-28 lg:mb-28">
+        {/*<section className="mb-28 lg:mb-28">
           <div className="text-xl font-f1 font-medium sm:text-2xl lg:text-xl text-black mb-8">Publications?</div>
           <div className="text-black text-sm sm:text-lg lg:text-base leading-relaxed mb-6">
             Updates coming soon...
           </div>
-        </section>
+        </section>*/}
 
         <footer className="text-center border-t sm:border-t-0 border-gray-200 pt-8 text-black text-xs pb-8">
           <div className="mb-2">Last Updated: Mar 2025</div>
