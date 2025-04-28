@@ -14,7 +14,7 @@ export default function Header() {
             MICHAEL GYIMADU
           </Link>
           
-          <div className="hidden sm:hidden lg:hidden md:flex items-center space-x-8">
+          <div className="md:flex items-center space-x-8">
             <Link 
               href="/" 
               className={`text-base hover:text-gray-600 transition-colors ${pathname === '/' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
