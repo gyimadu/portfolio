@@ -36,11 +36,11 @@ export default function MobileMenu() {
         `}
       >
         <div className="max-w-5xl mx-auto px-4">
-          <nav className="flex font-f1 flex-col items-start pt-28 space-y-8">
+          <nav className="flex uppercase flex-col items-start pt-28 space-y-8">
             <Link
               href="/"
               onClick={() => setIsOpen(false)}
-              className={`text-2xl transform transition-all duration-500 ${
+              className={`text-xl transform transition-all duration-500 ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
               } ${pathname === '/' ? 'text-black underline underline-offset-4' : 'text-gray-500'}`}
             >
@@ -49,25 +49,25 @@ export default function MobileMenu() {
             <Link
               href="/portfolio"
               onClick={() => setIsOpen(false)}
-              className={`text-2xl transform transition-all duration-500 delay-150 ${
+              className={`text-xl transform transition-all duration-500 delay-150 ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
               } ${pathname === '/portfolio' ? 'text-black underline underline-offset-4' : 'text-gray-500'}`}
             >
               Portfolio
             </Link>
             <Link
-              href="https://gyimadu.medium.com/"
+              href="/blog"
               onClick={() => setIsOpen(false)}
-              target='_blank'
-              className={`text-2xl text-gray-500 transform transition-all duration-500 delay-150 ${
+              className={`text-xl transform transition-all duration-500 delay-150 ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
-              } `}>
-                Blog | <span className='text-black'>Medium</span>
+              } ${pathname === '/blog' ? 'text-black underline underline-offset-4' : 'text-gray-500'}`}
+            >
+              Blog
             </Link>
             <Link
               href="/contact"
               onClick={() => setIsOpen(false)}
-              className={`text-2xl transform transition-all duration-500 delay-300 ${
+              className={`text-xl transform transition-all duration-500 delay-300 ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
               } ${pathname === '/contact' ? 'text-black underline underline-offset-4' : 'text-gray-500'}`}
             >

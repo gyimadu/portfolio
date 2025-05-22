@@ -8,13 +8,13 @@ export default function Header() {
 
   return (
     <header className="bg-white sticky top-0 z-50 ">
-      <div className="max-w-3xl mx-auto px-8 sm:px-4 py-4 lg:pt-14">
+      <div className="max-w-3xl mx-auto px-4 sm:px-4 py-4 lg:pt-14">
         <nav className="flex justify-between items-center">
-          <Link href="/" className="text-base sm:text-lg lg:text-xl text-black hover:text-gray-600 transition-colors font-medium">
+          <Link href="/" className="text-xl md:text-xl text-black hover:text-gray-600 transition-colors font-medium">
             MICHAEL GYIMADU
           </Link>
           
-          <div className="md:flex items-center space-x-8">
+          <div className="md:flex hidden items-center space-x-8">
             <Link 
               href="/" 
               className={`text-base hover:text-gray-600 transition-colors ${pathname === '/' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
@@ -28,10 +28,10 @@ export default function Header() {
               Portfolio
             </Link>
             <Link
-              href="https://gyimadu.medium.com/"
-              target='_blank'
-              className="text-gray-500">
-                Blog | <span className='text-black'>Medium</span>
+              href="/blog"
+              className={`text-base hover:text-gray-600 transition-colors ${pathname === '/blog' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
+            >
+              Blog
             </Link>
             <Link 
               href="/contact" 

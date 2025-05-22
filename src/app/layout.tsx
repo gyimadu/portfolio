@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react"
-import { Poppins } from "next/font/google";
 import "./globals.css";
 import localfont from 'next/font/local';
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-poppins',
-})
 
 const f1Atomic = localfont({
   src: './fonts/f1_atomic.woff2',
@@ -57,7 +50,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${f1Atomic.variable} ${poppins.variable}`}>
+    <html lang="en" className={f1Atomic.variable}>
+      <head>
+        <style>
+          {`@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Exile&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');`}
+        </style>
+      </head>
       <body className="antialiased font-light">
         {children}
         <Analytics />

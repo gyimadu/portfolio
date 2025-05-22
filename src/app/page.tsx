@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import { FaGithub, FaInstagram, FaLinkedin, FaPinterest } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import Link from 'next/link';
+import NeuralNetworkBall from '@/components/NeuralNetworkBall';
 
 export default function Home() {
   
@@ -20,12 +21,25 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="max-w-3xl mx-auto px-8 sm:px-4 py-16">
+      <div className="md:hidden">
+        <NeuralNetworkBall />
+      </div>
+      <main className="max-w-3xl mx-auto px-4 md:px-4 py-12 md:py-16">
         <section className="mb-12">
           <div className="mb-2">
             <div className="flex flex-col lg:flex-col lg:gap-10">
               <div className='flex flex-col justify-center lg:pt-10 mb-6'>
-                <div className='text-sm sm:text-lg lg:text-base'>I&apos;m a Math and Economics student in the Department of Mathematics at Wingate University. <br /><br />I&apos;m interested in optimization systems, machine learning, algorithm trading and love building software.                  
+                <div className='text-xl md:text-xl mb-6'>
+                  I&apos;m a machine learning developer + researcher studying Math and Economics at Wingate University. I&apos;m studying how machine learning and design can help reshape how people interact with financial markets.               
+                </div>
+                <div className='text-xl md:text-xl mb-6'>
+                  I build predictive models and optimization tools to test out trading strategies. These days, I&apos;m also focused on building smarter financial tools that learn from user behavior, and currently lead product design and machine learning at an early-stage fintech startup.                  
+                </div>
+                <div className='text-xl md:text-xl mb-6'>
+                  Based between Charlotte and San Francisco.
+                </div>
+                <div className='text-xl md:text-xl mb-6'>
+                  Reach out to me <Link href="/contact" className='text-blue-600'>here</Link> or through email at <a href="mailto:mkwabenagyimadu@gmail.com" className='text-blue-600'>mkwabenagyimadu@gmail.com</a>.
                 </div>
               </div>
 
@@ -48,10 +62,6 @@ export default function Home() {
           </div>
 
           <div className="mb-10">
-            <div className="text-black text-sm sm:text-lg lg:text-base leading-relaxed mb-6">
-              Want to learn more about my work or interested in hiring me for a project? Reach out to me here:
-            </div>
-
             <div className="flex flex-col sm:flex-row justify-center sm:space-x-4 space-y-4 sm:space-y-0 mb-20">
               <a 
                 href="/resume.pdf" 
