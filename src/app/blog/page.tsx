@@ -2,7 +2,6 @@
 import Header from '@/components/Header';
 import { FaGithub, FaInstagram, FaLinkedin, FaPinterest } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
-import NeuralNetworkBall from '@/components/NeuralNetworkBall';
 
 export default function Blog() {
   return (
