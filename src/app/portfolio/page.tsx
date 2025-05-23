@@ -17,11 +17,12 @@ export default function Portfolio() {
     },*/
     {
       title: "BulTrade // Founder",
-      description: "I lead product and machine learning at BulTrade, where we're building a visual-first, behavioral-aware retail investing platform. Designed and built the frontend architecture, developing early user feedback loops, and working on stock-screening logic. Currently preparing for closed beta with personalized filters and preliminary stock screening.",
+      description: "Building a retail investing platform that uses behavioral data to personalize stock discovery. Designed and built the frontend architecture, currently developing early user feedback loops, and stock-screening logic. Closed beta with personalized filters and preliminary stock screening launches early 2026.",
       image: {
         desktop: "/bultrade.png",
         mobile: "/bultrade.png"
-      }
+      },
+      link: "https://bull-app.vercel.app/"
     },
     {
       title: "TidyTable: Data Cleaning Automation Tool",
@@ -56,11 +57,8 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="max-w-4xl mx-auto px-5 sm:px-4 py-16 relative">
-        {/* Left side - scrollable content */}
-        <div className="lg:w-[48%]">
-          <div className="text-2xl font-f1 font-medium md:text-2xl text-black mb-10">Projects</div>
-          
+      <main className="max-w-6xl mx-auto px-4 py-16 relative">
+        <div className="w-full">          
           <div className="space-y-16 lg:space-y-32">
             {projects.map((project, index) => (
               <div
@@ -77,56 +75,53 @@ export default function Portfolio() {
                           alt={project.title}
                           width={300}
                           height={680}
-                          className="shadow-sm w-full h-auto"
+                          className="w-full h-auto"
                         />
                       </div>
                     </div>
                   )}
                 </div>
 
-                <h3 className="text-xl md:text-2xl font-semibold mb-4">{project.title}</h3>
-                <div className="text-black text-lg md:text-xl mb-4">{project.description}</div>
-                
-                {project.features && project.features.map((feature, idx) => (
-                  <div key={idx} className="text-black text-lg md:text-base mb-2">{feature}</div>
-                ))}
-                
-                {project.tools && project.tools.map((tool, idx) => (
-                  <div key={idx} className="text-black text-lg md:text-base mb-2">{tool}</div>
-                ))}
-              </div>
-            ))}
-          </div>
-        </div>
+                <div className="md:flex md:gap-8 md:items-start">
+                  {project.image && (
+                    <div className="hidden md:block md:w-1/2">
+                      <div className="relative">
+                        <Image
+                          src={project.image.desktop}
+                          alt={project.title}
+                          width={800}
+                          height={600}
+                          className="shadow-sm w-full h-[320px]"
+                        />
+                      </div>
+                    </div>
+                  )}
 
-        {/* Right side - fixed image with transitions */}
-        <div className="hidden lg:block fixed top-[13rem] right-8 w-[42%]">
-          <div className="relative aspect-[3/2] w-[90%]">
-            {projects.map((project, index) => (
-              project.image && project.link && (
-                <a
-                  key={index}
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="absolute inset-0 w-full h-full transition-all duration-1000 ease-out group"
-                  style={{
-                    opacity: activeSection === index ? 1 : 0,
-                    transform: `scale(${activeSection === index ? 1 : 0.99}) translateY(${activeSection === index ? '0' : '8px'})`,
-                    visibility: activeSection === index ? 'visible' : 'visible',
-                    zIndex: activeSection === index ? 1 : 0
-                  }}
-                >
-                  <Image
-                    src={project.image.desktop}
-                    alt={project.title}
-                    fill
-                    className="object-cover object-center rounded-lg shadow-lg transition-transform duration-500 group-hover:scale-[1.02]"
-                    priority={index === 0}
-                  />
-                  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-lg" />
-                </a>
-              )
+                  <div className="lg:w-1/2">
+                    <h3 className="text-xl md:text-3xl font-bold mb-4 font-sans">{project.title}</h3>
+                    <div className="text-black text-lg md:text-xl mb-4">{project.description}</div>
+                    
+                    {project.features && project.features.map((feature, idx) => (
+                      <div key={idx} className="text-black text-lg md:text-base mb-2">{feature}</div>
+                    ))}
+                    
+                    {project.tools && project.tools.map((tool, idx) => (
+                      <div key={idx} className="text-black text-lg md:text-base mb-2">{tool}</div>
+                    ))}
+
+                    {project.link && (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block mt-4 text-blue-600 hover:text-blue-800 transition-colors"
+                      >
+                        {project.title === "BulTrade // Founder" ? "VIEW LANDING PAGE" : "VIEW PROJECT"}
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>

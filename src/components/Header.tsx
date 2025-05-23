@@ -7,14 +7,14 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="bg-white sticky top-0 z-50 ">
-      <div className="max-w-3xl mx-auto px-4 sm:px-4 py-3 lg:pt-14">
-        <nav className="flex justify-between items-center">
-          <Link href="/" className="text-3xl md:text-3xl text-black hover:text-gray-600 transition-colors font-medium">
-            MICHAEL GYIMADU
+    <header className="bg-white md:bg-transparent sticky top-0 z-50">
+      <div className="max-w-full mx-auto px-4 py-3 md:pt-8">
+        <nav className="flex justify-between items-center md:items-start md:px-4">
+          <Link href="/" className="text-2xl md:text-3xl hover:text-gray-600 transition-colors font-medium">
+            <span className="gradient-text font-mouse">MICHAEL GYIMADU</span>
           </Link>
           
-          <div className="md:flex hidden items-center space-x-8">
+          <div className="md:flex md:flex-col hidden items-end justify-between space-y-1">
             <Link 
               href="/" 
               className={`text-xl hover:text-gray-600 transition-colors ${pathname === '/' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}

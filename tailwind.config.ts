@@ -13,7 +13,7 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['Rethink Sans', 'sans-serif'],
       },
     },
   },

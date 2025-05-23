@@ -36,7 +36,7 @@ export default function MobileMenu() {
         `}
       >
         <div className="max-w-5xl mx-auto px-10">
-          <nav className="flex uppercase flex-col items-start pt-28 space-y-8">
+          <nav className="flex uppercase flex-col items-start pt-28 space-y-4">
             <Link
               href="/"
               onClick={() => setIsOpen(false)}

@@ -24,19 +24,25 @@ export default function Home() {
       <div className="md:hidden">
         <NeuralNetworkBall />
       </div>
-      <main className="max-w-3xl mx-auto px-4 md:px-4 py-12 md:py-16">
+      <main className="max-w-3xl mx-auto px-4 md:px-4 py-12 md:py-8">
         <section className="mb-12">
           <div className="mb-2">
             <div className="flex flex-col lg:flex-col lg:gap-10">
-              <div className='flex flex-col justify-center text-gray-700 lg:pt-10 mb-6'>
-                <div className='text-lg md:text-lg mb-6'>
-                  I&apos;m a machine learning developer + researcher studying Math and Economics at Wingate University. I&apos;m studying how machine learning and design can help reshape how people interact with financial markets.               
+              <div className='flex flex-col justify-center text-gray-700 md:pt-0 mb-6'>
+                <div className='text-2xl md:text-4xl mb-6 text-gray-800'>
+                  Hi, I&apos;m Michael.
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
-                  I build predictive models and optimization tools to test out trading strategies. These days, I&apos;m also focused on building smarter financial tools that learn from user behavior, and currently lead product design and machine learning at an early-stage fintech startup.                  
+                  I&apos;m a machine learning developer + researcher studying Math and Economics at Wingate University. I&apos;m studying how machine learning and optimization techniques can be applied to financial theory to make markets more efficient.               
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
-                  Based between Charlotte and San Francisco.
+                  I've experimented with several predictive models and portfolio optimization techniques to model financial data and test out trading strategies.               
+                </div>
+                <div className='text-lg md:text-lg mb-6'>
+                  I also focus on building financial tools that learn from user behavior, and currently lead product design and machine learning at an early-stage fintech startup.                  
+                </div>
+                <div className='text-lg md:text-lg mb-6'>
+                  Currently to-and-from Charlotte and San Francisco.
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
                   Reach out to me <Link href="/contact" className='text-blue-600'>here</Link> or through email at <a href="mailto:mkwabenagyimadu@gmail.com" className='text-blue-600'>mkwabenagyimadu@gmail.com</a>.
