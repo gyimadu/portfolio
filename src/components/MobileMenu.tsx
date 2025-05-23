@@ -35,12 +35,12 @@ export default function MobileMenu() {
           ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}
         `}
       >
-        <div className="max-w-5xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-10">
           <nav className="flex uppercase flex-col items-start pt-28 space-y-8">
             <Link
               href="/"
               onClick={() => setIsOpen(false)}
-              className={`text-xl transform transition-all duration-500 ${
+              className={`text-3xl transform transition-all duration-500 ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
               } ${pathname === '/' ? 'text-black underline underline-offset-4' : 'text-gray-500'}`}
             >
@@ -49,16 +49,16 @@ export default function MobileMenu() {
             <Link
               href="/portfolio"
               onClick={() => setIsOpen(false)}
-              className={`text-xl transform transition-all duration-500 delay-150 ${
+              className={`text-3xl transform transition-all duration-500 delay-150 ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
               } ${pathname === '/portfolio' ? 'text-black underline underline-offset-4' : 'text-gray-500'}`}
             >
-              Portfolio
+              Work
             </Link>
             <Link
               href="/blog"
               onClick={() => setIsOpen(false)}
-              className={`text-xl transform transition-all duration-500 delay-150 ${
+              className={`text-3xl transform transition-all duration-500 delay-150 ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
               } ${pathname === '/blog' ? 'text-black underline underline-offset-4' : 'text-gray-500'}`}
             >
@@ -67,7 +67,7 @@ export default function MobileMenu() {
             <Link
               href="/contact"
               onClick={() => setIsOpen(false)}
-              className={`text-xl transform transition-all duration-500 delay-300 ${
+              className={`text-3xl transform transition-all duration-500 delay-300 ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
               } ${pathname === '/contact' ? 'text-black underline underline-offset-4' : 'text-gray-500'}`}
             >

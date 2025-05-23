@@ -16,13 +16,21 @@ export default function Portfolio() {
       tools: ["Tools: Python, Pandas, NumPy, yFinance, Object-Oriented Programming"]
     },*/
     {
+      title: "BulTrade // Founder",
+      description: "I lead product and machine learning at BulTrade, where we're building a visual-first, behavioral-aware retail investing platform. Designed and built the frontend architecture, developing early user feedback loops, and working on stock-screening logic. Currently preparing for closed beta with personalized filters and preliminary stock screening.",
+      image: {
+        desktop: "/bultrade.png",
+        mobile: "/bultrade.png"
+      }
+    },
+    {
       title: "TidyTable: Data Cleaning Automation Tool",
       description: "TidyTable is a Python-based automation tool that speeds up the data cleaning process for large datasets. It handles missing values, detects outliers, and standardizes data formats, reducing manual cleaning time while maintaining data integrity.",
       features: ["Features: Automated cleaning, format standardization, outlier detection."],
       tools: ["Tools: Python, Pandas, NumPy, FastAPI, PostgreSQL, Regular Expressions."],
       image: {
         desktop: "/tidytable.jpeg",
-        mobile: "/tidytable-phone.jpeg"
+        mobile: "/tidytable.jpeg"
       },
       link: "https://data-cleaning-automation.onrender.com/"
     },
@@ -48,10 +56,10 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="max-w-4xl mx-auto px-8 sm:px-4 py-16 relative">
+      <main className="max-w-4xl mx-auto px-5 sm:px-4 py-16 relative">
         {/* Left side - scrollable content */}
         <div className="lg:w-[48%]">
-          <div className="text-xl font-f1 font-medium sm:text-2xl lg:text-2xl text-black mb-10">Portfolio</div>
+          <div className="text-2xl font-f1 font-medium md:text-2xl text-black mb-10">Projects</div>
           
           <div className="space-y-16 lg:space-y-32">
             {projects.map((project, index) => (
@@ -60,42 +68,32 @@ export default function Portfolio() {
                 className="project-section"
                 data-index={index}
               >
-                <h3 className="text-sm font-f1 lg:text-base sm:text-2xl font-medium mb-4">{project.title}</h3>
-                <div className="text-black text-sm lg:text-base mb-4">{project.description}</div>
-                
-                {project.features && project.features.map((feature, idx) => (
-                  <div key={idx} className="text-black text-sm lg:text-base mb-2">{feature}</div>
-                ))}
-                
-                {project.tools && project.tools.map((tool, idx) => (
-                  <div key={idx} className="text-black text-sm lg:text-base mb-2">{tool}</div>
-                ))}
-
-                <div className="lg:hidden mt-4">
-                  {project.image && project.link && (
-                    <div className="w-screen relative left-1/2 right-1/2 -mx-[50vw] bg-[#e0e0e0] pt-8 pb-0">
-                      <div className="max-w-5xl mx-auto px-8">
-                        <a
-                          href={project.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block w-full max-w-[320px] mx-auto group translate-y-8"
-                        >
-                          <div className="relative">
-                            <Image
-                              src={project.image.mobile}
-                              alt={project.title}
-                              width={300}
-                              height={640}
-                              className="rounded-lg shadow-sm transition-transform duration-300 group-hover:scale-[1.02] w-full h-auto"
-                            />
-                            <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-lg" />
-                          </div>
-                        </a>
+                <div className="lg:hidden mb-4">
+                  {project.image && (
+                    <div className="w-full">
+                      <div className="relative">
+                        <Image
+                          src={project.image.mobile}
+                          alt={project.title}
+                          width={300}
+                          height={680}
+                          className="shadow-sm w-full h-auto"
+                        />
                       </div>
                     </div>
                   )}
                 </div>
+
+                <h3 className="text-xl md:text-2xl font-semibold mb-4">{project.title}</h3>
+                <div className="text-black text-lg md:text-xl mb-4">{project.description}</div>
+                
+                {project.features && project.features.map((feature, idx) => (
+                  <div key={idx} className="text-black text-lg md:text-base mb-2">{feature}</div>
+                ))}
+                
+                {project.tools && project.tools.map((tool, idx) => (
+                  <div key={idx} className="text-black text-lg md:text-base mb-2">{tool}</div>
+                ))}
               </div>
             ))}
           </div>

@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
-import localfont from 'next/font/local';
-
-const f1Atomic = localfont({
-  src: './fonts/f1_atomic.woff2',
-  variable: '--font-f1-atomic',
-})
 
 export const metadata: Metadata = {
   title: "MICHAEL GYIMADU",
@@ -50,13 +44,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={f1Atomic.variable}>
-      <head>
-        <style>
-          {`@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Exile&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');`}
-        </style>
-      </head>
-      <body className="antialiased font-light">
+    <html lang="en">
+      <body className="antialiased">
         {children}
         <Analytics />
       </body>

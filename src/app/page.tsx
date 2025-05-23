@@ -28,17 +28,17 @@ export default function Home() {
         <section className="mb-12">
           <div className="mb-2">
             <div className="flex flex-col lg:flex-col lg:gap-10">
-              <div className='flex flex-col justify-center lg:pt-10 mb-6'>
-                <div className='text-xl md:text-xl mb-6'>
+              <div className='flex flex-col justify-center text-gray-700 lg:pt-10 mb-6'>
+                <div className='text-lg md:text-lg mb-6'>
                   I&apos;m a machine learning developer + researcher studying Math and Economics at Wingate University. I&apos;m studying how machine learning and design can help reshape how people interact with financial markets.               
                 </div>
-                <div className='text-xl md:text-xl mb-6'>
+                <div className='text-lg md:text-lg mb-6'>
                   I build predictive models and optimization tools to test out trading strategies. These days, I&apos;m also focused on building smarter financial tools that learn from user behavior, and currently lead product design and machine learning at an early-stage fintech startup.                  
                 </div>
-                <div className='text-xl md:text-xl mb-6'>
+                <div className='text-lg md:text-lg mb-6'>
                   Based between Charlotte and San Francisco.
                 </div>
-                <div className='text-xl md:text-xl mb-6'>
+                <div className='text-lg md:text-lg mb-6'>
                   Reach out to me <Link href="/contact" className='text-blue-600'>here</Link> or through email at <a href="mailto:mkwabenagyimadu@gmail.com" className='text-blue-600'>mkwabenagyimadu@gmail.com</a>.
                 </div>
               </div>

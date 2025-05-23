@@ -23,8 +23,23 @@ export default function NeuralNetworkBall() {
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
 
-    // Neural network ball properties
-    const nodes: { x: number; y: number; vx: number; vy: number }[] = [];
+    // Color palette
+    const colors = [
+      '#FF6B6B', // Coral Red
+      '#4ECDC4', // Turquoise
+      '#45B7D1', // Sky Blue
+      '#96CEB4', // Sage Green
+      '#FFEEAD', // Cream
+      '#D4A5A5', // Dusty Rose
+      '#9B59B6', // Purple
+      '#3498DB', // Blue
+      '#E67E22', // Orange
+      '#2ECC71', // Emerald
+      '#F1C40F', // Yellow
+      '#1ABC9C'  // Teal
+    ];
+
+    const nodes: { x: number; y: number; vx: number; vy: number; color: string }[] = [];
     const numNodes = 12;
     const nodeRadius = 2;
     const connectionDistance = 100;
@@ -36,7 +51,8 @@ export default function NeuralNetworkBall() {
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
         vx: (Math.random() - 0.5) * speed,
-        vy: (Math.random() - 0.5) * speed
+        vy: (Math.random() - 0.5) * speed,
+        color: colors[i]
       });
     }
 
@@ -60,7 +76,7 @@ export default function NeuralNetworkBall() {
         // Draw node
         ctx.beginPath();
         ctx.arc(node.x, node.y, nodeRadius, 0, Math.PI * 2);
-        ctx.fillStyle = '#000';
+        ctx.fillStyle = node.color;
         ctx.fill();
 
         // Draw connections
@@ -73,7 +89,9 @@ export default function NeuralNetworkBall() {
             ctx.beginPath();
             ctx.moveTo(node.x, node.y);
             ctx.lineTo(otherNode.x, otherNode.y);
-            ctx.strokeStyle = `rgba(0, 0, 0, ${1 - distance / connectionDistance * 0.8})`;
+            // Blend the colors of connected nodes
+            const opacity = 1 - distance / connectionDistance * 0.8;
+            ctx.strokeStyle = `rgba(0, 0, 0, ${opacity})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }

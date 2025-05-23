@@ -8,36 +8,36 @@ export default function Header() {
 
   return (
     <header className="bg-white sticky top-0 z-50 ">
-      <div className="max-w-3xl mx-auto px-4 sm:px-4 py-4 lg:pt-14">
+      <div className="max-w-3xl mx-auto px-4 sm:px-4 py-3 lg:pt-14">
         <nav className="flex justify-between items-center">
-          <Link href="/" className="text-xl md:text-xl text-black hover:text-gray-600 transition-colors font-medium">
+          <Link href="/" className="text-3xl md:text-3xl text-black hover:text-gray-600 transition-colors font-medium">
             MICHAEL GYIMADU
           </Link>
           
           <div className="md:flex hidden items-center space-x-8">
             <Link 
               href="/" 
-              className={`text-base hover:text-gray-600 transition-colors ${pathname === '/' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
+              className={`text-xl hover:text-gray-600 transition-colors ${pathname === '/' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
             >
-              Home
+              HOME
             </Link>
             <Link 
               href="/portfolio" 
-              className={`text-base hover:text-gray-600 transition-colors ${pathname === '/portfolio' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
+              className={`text-xl hover:text-gray-600 transition-colors ${pathname === '/portfolio' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
             >
-              Portfolio
+              WORK
             </Link>
             <Link
               href="/blog"
-              className={`text-base hover:text-gray-600 transition-colors ${pathname === '/blog' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
+              className={`text-xl hover:text-gray-600 transition-colors ${pathname === '/blog' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
             >
-              Blog
+              BLOG
             </Link>
             <Link 
               href="/contact" 
-              className={`text-base hover:text-gray-600 transition-colors ${pathname === '/contact' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
+              className={`text-xl hover:text-gray-600 transition-colors ${pathname === '/contact' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
             >
-              Contact
+              CONTACT
             </Link>
           </div>
           
