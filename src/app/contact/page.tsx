@@ -8,12 +8,12 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="max-w-3xl mx-auto px-8 sm:px-4 py-16">
+      <main className="max-w-3xl mx-auto px-4 py-12 md:py-8">
         <section className="mb-20">
-          <div className="flex flex-col lg:flex-row lg:gap-16 lg:items-start">
+          <div className="flex flex-col md:flex-row md:gap-16 md:items-start">
             {/* Left column - 20% */}
-            <div className="mb-8 lg:mb-0 lg:w-1/4 lg:sticky lg:top-24">
-              <div className="font-medium text-xl sm:text-2xl lg:text-2xl text-black">Get In Touch With Me!</div>
+            <div className="mb-8 md:mb-0 md:w-1/4 md:sticky md:top-24">
+              <div className="text-xl md:text-2xl font-bold text-black">Get In Touch!</div>
             </div>
 
             {/* Right column - 80% */}
@@ -21,10 +21,10 @@ export default function Contact() {
               <form 
                 action="https://formspree.io/f/mbllpppa"
                 method="POST"
-                className="space-y-8"
+                className="space-y-6 md:space-y-8"
               >
                 <div className="space-y-3">
-                  <label htmlFor="name" className="block text-black text-sm lg:text-base">
+                  <label htmlFor="name" className="block text-black text-lg md:text-lg">
                     Name
                   </label>
                   <input
@@ -32,13 +32,13 @@ export default function Contact() {
                     id="name"
                     name="name"
                     required
-                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-xs lg:text-base sm:text-lg"
+                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-base lg:text-base"
                     placeholder="Your name"
                   />
                 </div>
 
                 <div className="space-y-3">
-                  <label htmlFor="email" className="block text-black text-sm lg:text-base">
+                  <label htmlFor="email" className="block text-black text-lg md:text-lg">
                     Email
                   </label>
                   <input
@@ -46,13 +46,13 @@ export default function Contact() {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-xs sm:text-lg lg:text-base"
+                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-base md:text-base"
                     placeholder="your.email@example.com"
                   />
                 </div>
 
                 <div className="space-y-3">
-                  <label htmlFor="message" className="block text-black text-sm lg:text-base">
+                  <label htmlFor="message" className="block text-black text-lg md:text-lg">
                     Message
                   </label>
                   <textarea
@@ -60,7 +60,7 @@ export default function Contact() {
                     name="message"
                     required
                     rows={4}
-                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-xs sm:text-lg lg:text-base"
+                    className="w-full px-5 py-3 bg-gray-50 text-black rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-base md:text-base"
                     placeholder="Your message..."
                   />
                 </div>
@@ -68,9 +68,9 @@ export default function Contact() {
                 <div className="flex justify-center">
                   <button
                     type="submit"
-                    className="px-6 py-2 font-f1 bg-black text-white text-sm lg:text-sm rounded-md hover:bg-gray-800 transition-colors"
+                    className="px-6 py-2 font-f1 bg-black text-white text-base md:text-lg rounded-md hover:bg-gray-800 transition-colors"
                   >
-                    Send Message
+                    SEND MESSAGE
                   </button>
                 </div>
               </form>

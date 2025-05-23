@@ -4,6 +4,7 @@ import { FaGithub, FaInstagram, FaLinkedin, FaPinterest } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import Link from 'next/link';
 import NeuralNetworkBall from '@/components/NeuralNetworkBall';
+import PolaroidImages from '@/components/PolaroidImages';
 
 export default function Home() {
   
@@ -69,18 +70,18 @@ export default function Home() {
 
           <div className="mb-10">
             <div className="flex flex-col sm:flex-row justify-center sm:space-x-4 space-y-4 sm:space-y-0 mb-20">
-              <a 
-                href="/resume.pdf" 
+              <a
+                href="/resume.pdf"
                 target='_blank'
                 className="px-4 py-1.5 bg-gray-50 text-black rounded-xl text-sm sm:text-base lg:text-sm hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
               >
                 View My Resume
               </a>
               <Link
-                href="/contact"
+                href="/portfolio"
                 className="px-4 py-1.5 bg-gray-50 text-black rounded-xl text-sm sm:text-base lg:text-sm hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
               >
-                Send a Message
+                View Projects
               </Link>
             </div>
             <div className="flex justify-center gap-2 md:gap-4 mb-4">
@@ -93,7 +94,7 @@ export default function Home() {
               >
                 <FaGithub className="w-4 h-4" />
               </a>
-              <a 
+              <a
                 href="https://twitter.com/gyimaduu" 
                 target="_blank"
                 rel="noopener noreferrer"
@@ -130,6 +131,7 @@ export default function Home() {
                 <FaPinterest className="w-4 h-4" />
               </a>
             </div>
+            <PolaroidImages />
           </div>
         </section>
 
@@ -140,8 +142,8 @@ export default function Home() {
           </div>
         </section>*/}
 
-        <footer className="text-center border-t sm:border-t-0 border-gray-200 pt-8 text-black text-xs pb-8">
-          <div className="mb-2">Last Updated: Mar 2025</div>
+        <footer className="text-center border-t sm:border-t-0 border-gray-200 pt-4 text-black text-xs pb-4 mt-24">
+          <div className="mb-2">Last Updated: May 2025</div>
           <div>© {new Date().getFullYear()} Michael Gyimadu.</div>
         </footer>
       </main>

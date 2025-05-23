@@ -16,7 +16,7 @@ export default function Portfolio() {
       tools: ["Tools: Python, Pandas, NumPy, yFinance, Object-Oriented Programming"]
     },*/
     {
-      title: "BulTrade // Founder",
+      title: "BulTrade // Founder & Product Lead",
       description: "Building a retail investing platform that uses behavioral data to personalize stock discovery. Designed and built the frontend architecture, currently developing early user feedback loops, and stock-screening logic. Closed beta with personalized filters and preliminary stock screening launches early 2026.",
       image: {
         desktop: "/bultrade.png",
