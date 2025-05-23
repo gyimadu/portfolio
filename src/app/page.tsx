@@ -37,7 +37,7 @@ export default function Home() {
                   I&apos;m a machine learning developer + researcher studying Math and Economics at Wingate University. I&apos;m studying how machine learning and optimization techniques can be applied to financial theory to make markets more efficient.               
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
-                  I've experimented with several predictive models and portfolio optimization techniques to model financial data and test out trading strategies.               
+                  I&apos;ve experimented with several predictive models and portfolio optimization techniques to model financial data and test out trading strategies.               
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
                   I also focus on building financial tools that learn from user behavior, and currently lead product design and machine learning at an early-stage fintech startup.                  

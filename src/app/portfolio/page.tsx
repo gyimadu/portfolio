@@ -6,7 +6,6 @@ import Image from 'next/image';
 import { useScrollSpy } from '@/hooks/useScrollSpy';
 
 export default function Portfolio() {
-  const activeSection = useScrollSpy();
   
   const projects = [
     /*{
