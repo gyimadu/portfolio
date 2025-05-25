@@ -14,6 +14,11 @@ export default function Portfolio() {
       tools: ["Tools: Python, Pandas, NumPy, yFinance, Object-Oriented Programming"]
     },*/
     {
+      title: "Macro Signal Builder",
+      description: "Built a macro signal builder that analyzes real economic indicators: GDP growth, inflation, unemployment, and interest rates, applies them across historical data for different asset classes and translates them into rule-based investment signals.",
+      link: "https://github.com/gyimadu/"
+    },
+    {
       title: "BulTrade // Founder & Product Lead",
       description: "Building a retail investing platform that uses behavioral data to personalize stock discovery. Designed and built the frontend architecture, currently developing early user feedback loops, and stock-screening logic. Closed beta with personalized filters and preliminary stock screening launches early 2026.",
       image: {
