@@ -7,13 +7,14 @@ export default function Blog() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="max-w-4xl mx-auto px-4 py-16">
-        <div className="text-xl font-f1 font-medium sm:text-2xl lg:text-2xl text-black mb-10">Blog</div>
+      <main className="max-w-3xl mx-auto px-4 py-16">
+        <div className="text-2xl font-bold md::text-3xl text-black mb-10">Blog</div>
+        <div className="text-lg md:text-xl mb-6">Thoughts, ideas, reflections</div>
         
         <div className="space-y-16">
           {/* Blog posts will be added here */}
           <div className="text-gray-500 text-center py-20">
-            Coming soon...
+            Soon...
           </div>
         </div>
 
