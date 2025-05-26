@@ -17,31 +17,31 @@ export default function Header() {
           <div className="md:flex md:flex-col hidden items-end justify-between space-y-1">
             <Link 
               href="/" 
-              className={`text-xl hover:text-gray-600 transition-colors ${pathname === '/' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
+              className={`text-2xl hover:text-gray-600 transition-colors ${pathname === '/' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
             >
               HOME
             </Link>
             <Link 
               href="/portfolio" 
-              className={`text-xl hover:text-gray-600 transition-colors ${pathname === '/portfolio' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
+              className={`text-2xl hover:text-gray-600 transition-colors ${pathname === '/portfolio' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
             >
               WORK
             </Link>
             <Link 
               href="/papers" 
-              className={`text-xl hover:text-gray-600 transition-colors ${pathname === '/papers' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
+              className={`text-2xl hover:text-gray-600 transition-colors ${pathname === '/papers' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
             >
               PAPERS
             </Link>
             <Link
               href="/blog"
-              className={`text-xl hover:text-gray-600 transition-colors ${pathname === '/blog' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
+              className={`text-2xl hover:text-gray-600 transition-colors ${pathname === '/blog' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
             >
               BLOG
             </Link>
             <Link 
               href="/contact" 
-              className={`text-xl hover:text-gray-600 transition-colors ${pathname === '/contact' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
+              className={`text-2xl hover:text-gray-600 transition-colors ${pathname === '/contact' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
             >
               CONTACT
             </Link>

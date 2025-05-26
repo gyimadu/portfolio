@@ -9,7 +9,7 @@ export default function Papers() {
     {
       title: "Linear Algebra",
       description: "A comparative analysis of principal component analysis and singular value decomposition as dimensionality reduction techniques.",
-      link: "https://github.com/gyimadu/"
+      link: "https://drive.google.com/file/d/1VY1hDUbMIqwJSzUZPlH8gLfar4OAkbu0/view?usp=sharing"
     },
   ];
 
@@ -36,7 +36,7 @@ export default function Papers() {
                             rel="noopener noreferrer"
                             className="inline-block mt-4 text-blue-600 hover:text-blue-800 transition-colors"
                         >
-                            VIEW PAPER
+                            [ 📄 View Paper ]
                         </a>
                         )}
                     </div>

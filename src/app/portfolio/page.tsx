@@ -119,7 +119,7 @@ export default function Portfolio() {
                         rel="noopener noreferrer"
                         className="inline-block mt-4 text-blue-600 hover:text-blue-800 transition-colors"
                       >
-                        {project.title === "BulTrade // Founder" ? "VIEW LANDING PAGE" : "VIEW PROJECT"}
+                        {project.title === "BulTrade // Founder" ? "View Landing Page" : "View Project"}
                       </a>
                     )}
                   </div>
