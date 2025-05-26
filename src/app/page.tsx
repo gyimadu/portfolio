@@ -34,13 +34,13 @@ export default function Home() {
                   Hi, I&apos;m Michael.
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
-                  I&apos;m a machine learning developer + researcher studying Math and Economics at Wingate University. I&apos;m studying how machine learning and optimization techniques can be applied to financial theory to make markets more efficient.               
+                  I&apos;m a junior undergraduate studying math and economics at Wingate University. I study how machine learning and computational methods can be applied to financial theory to improve forecasting, risk management and investment decision-making.            
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
-                  I&apos;ve experimented with several predictive models and portfolio optimization techniques to model financial data and test out trading strategies.               
+                  I&apos;ve built predictive models for market behavior, developed portfolio optimization algorithms, and created signal-based trading strategies using real financial data. My work spans model development, backtesting, and performance assessment.
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
-                  I also focus on building financial tools that learn from user behavior, and currently lead product design and machine learning at an early-stage fintech startup.                  
+                  Lately, I&apos;ve been exploring how adaptive systems can learn from user behavior patterns to personalize investment strategies, and currently working on behavioral modeling at an early-stage fintech startup.                  
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
                   Currently to-and-from Charlotte and San Francisco.
