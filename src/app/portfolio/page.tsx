@@ -16,7 +16,7 @@ export default function Portfolio() {
     {
       title: "Macro Signal Builder",
       description: "Built a macro signal builder that analyzes real economic indicators: GDP growth, inflation, unemployment, and interest rates, applies them across historical data for different asset classes and translates them into rule-based investment signals.",
-      link: "https://github.com/gyimadu/"
+      link: "https://github.com/gyimadu/macro-signal-builder"
     },
     {
       title: "BulTrade // Founder & Product Lead",
@@ -102,7 +102,7 @@ export default function Portfolio() {
 
                   <div className="lg:w-1/2">
                     <h3 className="text-xl md:text-3xl font-bold mb-4 font-sans">{project.title}</h3>
-                    <div className="text-black text-lg md:text-xl mb-4">{project.description}</div>
+                    <div className="text-black text-lg md:text-xl mb-2">{project.description}</div>
                     
                     {project.features && project.features.map((feature, idx) => (
                       <div key={idx} className="text-black text-lg md:text-base mb-2">{feature}</div>
