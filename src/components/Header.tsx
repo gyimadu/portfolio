@@ -27,6 +27,12 @@ export default function Header() {
             >
               WORK
             </Link>
+            <Link 
+              href="/papers" 
+              className={`text-xl hover:text-gray-600 transition-colors ${pathname === '/papers' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
+            >
+              PAPERS
+            </Link>
             <Link
               href="/blog"
               className={`text-xl hover:text-gray-600 transition-colors ${pathname === '/blog' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
