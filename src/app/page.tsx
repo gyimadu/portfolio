@@ -30,8 +30,8 @@ export default function Home() {
           <div className="mb-2">
             <div className="flex flex-col lg:flex-col lg:gap-10">
               <div className='flex flex-col justify-center text-gray-700 md:pt-0 mb-6'>
-                <div className='text-2xl md:text-4xl mb-6 text-gray-800'>
-                  Hi, I&apos;m Michael.
+                <div className='text-2xl md:text-4xl mb-4 text-gray-800'>
+                  Hi!
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
                   I&apos;m a junior studying math and economics at Wingate University. I study how machine learning and computational methods can be applied to financial theory to improve risk management and investment decision-making.            
