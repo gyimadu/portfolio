@@ -34,13 +34,13 @@ export default function Home() {
                   Hi, I&apos;m Michael.
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
-                  I&apos;m a junior undergraduate studying math and economics at Wingate University. I study how machine learning and computational methods can be applied to financial theory to improve forecasting, risk management and investment decision-making.            
+                  I&apos;m a junior studying math and economics at Wingate University. I study how machine learning and other computational methods can be applied to financial theory to improve risk modeling and investment decision-making.            
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
-                  I&apos;ve built predictive models for market behavior, developed portfolio optimization algorithms, and created signal-based trading strategies using real financial data. My work spans model development, backtesting, and performance assessment.
+                  I&apos;ve built predictive models, portfolio optimization algorithms, and signal-based trading strategies to simulate and assess market behavior using real financial data. My work spans model development, backtesting, and performance assessment.
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
-                  Lately, I&apos;ve been exploring how adaptive systems can learn from user behavior patterns to personalize investment strategies, and currently working on behavioral modeling at an early-stage fintech startup.                  
+                  Lately, I&apos;ve been exploring how adaptive systems can be used to personalize investment strategies based on user behavior patterns, and currently working on behavioral modeling at an early-stage fintech startup.                  
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
                   Currently to-and-from Charlotte and San Francisco.
