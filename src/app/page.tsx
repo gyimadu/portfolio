@@ -40,7 +40,7 @@ export default function Home() {
                   I build predictive models, portfolio optimization algorithms, and signal-based trading strategies to simulate and assess market behavior using economic and market data.
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
-                  Lately, I&apos;ve been exploring how adaptive systems can be used to personalize investment strategies based on user behavior patterns; also working on behavioral modeling projects at an early-stage fintech startup.                  
+                  Lately, I&apos;ve been exploring how adaptive systems can be used to personalize investment strategies based on user behavior patterns; also applying this at an early-stage fintech startup.                  
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
                   Currently to-and-from Charlotte and San Francisco.
