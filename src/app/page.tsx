@@ -25,7 +25,7 @@ export default function Home() {
       <div className="md:hidden">
         <NeuralNetworkBall />
       </div>
-      <main className="max-w-3xl mx-auto px-4 md:px-4 py-12 md:py-8">
+      <main className="max-w-3xl mx-auto px-4 md:px-4 py-12 md:pb-8 md:-pt-10">
         <section className="mb-12">
           <div className="mb-2">
             <div className="flex flex-col lg:flex-col lg:gap-10">

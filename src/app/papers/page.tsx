@@ -16,18 +16,18 @@ export default function Papers() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="max-w-6xl mx-auto px-4 py-16 relative">
+      <main className="max-w-3xl mx-auto px-4 py-16 relative">
         <div className="w-full">          
-          <div className="space-y-16 lg:space-y-32">
+          <div className="space-y-16 md:space-y-24">
             {projects.map((paper, index) => (
                 <div
                     key={index}
                     className="paper-section"
                     data-index={index}
                 >
-                    <div className="lg:w-1/2">
+                    <div className="w-full">
                         <h3 className="text-xl md:text-3xl font-bold mb-4 font-sans">{paper.title}</h3>
-                        <div className="text-black text-lg md:text-xl mb-4">{paper.description}</div>
+                        <div className="text-black text-lg md:text-xl mb-2">{paper.description}</div>
 
                         {paper.link && (
                         <a
