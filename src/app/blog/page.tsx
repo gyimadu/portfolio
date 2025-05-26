@@ -9,7 +9,6 @@ export default function Blog() {
       <Header />
       <main className="max-w-3xl mx-auto px-4 py-16">
         <div className="text-2xl font-bold md::text-3xl text-black mb-10">Blog</div>
-        <div className="text-lg md:text-xl mb-6">Thoughts, ideas, reflections</div>
         
         <div className="space-y-16">
           {/* Blog posts will be added here */}
