@@ -37,10 +37,10 @@ export default function Home() {
                   I&apos;m a junior studying math and economics at Wingate University. I study how machine learning and computational methods can be applied to financial theory to improve risk management and investment decision-making.            
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
-                  I&apos;ve built predictive models, portfolio optimization algorithms, and signal-based trading strategies to simulate and assess market behavior using economic and market data.
+                  I build predictive models, portfolio optimization algorithms, and signal-based trading strategies to simulate and assess market behavior using economic and market data.
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
-                  Lately, I&apos;ve been exploring how adaptive systems can be used to personalize investment strategies based on user behavior patterns, and currently working on behavioral modeling at an early-stage fintech startup.                  
+                  Lately, I&apos;ve been exploring how adaptive systems can be used to personalize investment strategies based on user behavior patterns, and applying this in behavioral modeling projects at an early-stage fintech startup.                  
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
                   Currently to-and-from Charlotte and San Francisco.
