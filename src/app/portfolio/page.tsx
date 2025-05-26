@@ -16,7 +16,7 @@ export default function Portfolio() {
     {
       title: "Macro Signal Builder",
       description: "Built a macro signal builder that analyzes real economic indicators: GDP growth, inflation, unemployment, and interest rates, applies them across historical data for different asset classes and translates them into rule-based investment signals.",
-      link: "https://github.com/gyimadu/"
+      link: "https://github.com/gyimadu/macro-signal-builder"
     },
     {
       title: "BulTrade // Founder & Product Lead",
