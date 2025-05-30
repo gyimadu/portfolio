@@ -45,7 +45,7 @@ export default function Papers() {
           </div>
         </div>
 
-        {/* Centered footer */}
+        {/* Centered footer
         <footer className="border-t sm:border-t-0 border-gray-200 pt-8 text-center text-black text-xs pb-8 mt-16">
           <div className="flex justify-center gap-2 md:gap-4 mb-4">
             <a 
@@ -96,7 +96,7 @@ export default function Papers() {
           </div>
           <div className="mb-2">Last Updated: January 2025</div>
           <div>© {new Date().getFullYear()} Michael Gyimadu.</div>
-        </footer>
+        </footer> */}
       </main>
     </div>
   );
