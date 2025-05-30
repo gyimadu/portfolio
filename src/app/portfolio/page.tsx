@@ -41,7 +41,7 @@ export default function Portfolio() {
       description: "A minimalist web application for tracking daily habits without the friction of account creation. The app uses local storage for data persistence, allows users to maintain streaks, and ensures user privacy all in a simplified habit-tracking interface.",
       image: {
         desktop: "/habits.png",
-        mobile: "/habits-phone.jpeg"
+        mobile: "/habits.png"
       },
       link: "https://habits-io.vercel.app/"
     },

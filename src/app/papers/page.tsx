@@ -7,7 +7,7 @@ export default function Papers() {
   
   const projects = [
     {
-      title: "Linear Algebra",
+      title: "Mathematical Foundations of ML",
       description: "A comparative analysis of principal component analysis and singular value decomposition as dimensionality reduction techniques.",
       link: "https://drive.google.com/file/d/1VY1hDUbMIqwJSzUZPlH8gLfar4OAkbu0/view?usp=sharing"
     },
