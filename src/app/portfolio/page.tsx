@@ -73,7 +73,7 @@ export default function Portfolio() {
                           alt={project.title}
                           width={300}
                           height={680}
-                          className="w-full h-auto border-1 border-gray-200 rounded-lg"
+                          className="w-full h-auto border-2 border-gray-200 rounded-lg"
                         />
                       </div>
                     </div>
@@ -110,7 +110,7 @@ export default function Portfolio() {
                         rel="noopener noreferrer"
                         className="inline-block mt-4 text-blue-600 hover:text-blue-800 transition-colors"
                       >
-                        {project.title === "Equity Screening Platform" || project.title === "Habits: Anonymous Habit Tracking App" ? "Check it out" : "View Project"}
+                        {project.title === "Equity Screening Platform" || project.title === "Habits: Anonymous Habit Tracking App" ? "View Project" : "View Project"}
                       </a>
                     )}
                   </div>
