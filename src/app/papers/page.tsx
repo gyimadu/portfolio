@@ -1,7 +1,7 @@
 'use client';
 import Header from '@/components/Header';
-import { FaGithub, FaInstagram, FaLinkedin, FaPinterest } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
+// import { FaGithub, FaInstagram, FaLinkedin, FaPinterest } from 'react-icons/fa';
+// import { FaXTwitter } from 'react-icons/fa6';
 
 export default function Papers() {
   
