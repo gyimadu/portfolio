@@ -20,7 +20,7 @@ export default function Portfolio() {
     },
     {
       title: "Equity Screening Platform",
-      description: "A custom-built stock screener that helps you filter and discover US equities by valuation, yield, volatility, price changes and more in a responsive user-friendly interface. Built in Pythonwith FastAPI, PostgreSQL, and Next.JS.",
+      description: "A custom-built stock screener that helps you filter and discover US equities by valuation, yield, volatility, price changes and more in a responsive user-friendly interface. Built in Python with FastAPI, PostgreSQL, and Next.JS.",
       image: {
         desktop: "/bultrade.png",
         mobile: "/bultrade.png"
