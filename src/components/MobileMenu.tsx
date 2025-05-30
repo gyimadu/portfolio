@@ -73,7 +73,7 @@ export default function MobileMenu() {
             >
               Blog
             </Link>
-            {/* <Link
+            <Link
               href="/contact"
               onClick={() => setIsOpen(false)}
               className={`text-3xl transform transition-all duration-500 delay-300 ${
@@ -81,7 +81,7 @@ export default function MobileMenu() {
               } ${pathname === '/contact' ? 'text-black underline underline-offset-4' : 'text-gray-500'}`}
             >
               Contact
-            </Link> */}
+            </Link>
           </nav>
           
         </div>
