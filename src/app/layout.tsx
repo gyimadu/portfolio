@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "MICHAEL GYIMADU",
-  description: "My Digital Resume",
+  description: "---",
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
