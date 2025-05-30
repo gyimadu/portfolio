@@ -73,7 +73,7 @@ export default function Portfolio() {
                           alt={project.title}
                           width={300}
                           height={680}
-                          className="w-full h-auto"
+                          className="w-full h-auto border-1 border-gray-200 rounded-lg"
                         />
                       </div>
                     </div>
