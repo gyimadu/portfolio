@@ -20,7 +20,7 @@ export default function Portfolio() {
     },
     {
       title: "Equity Screening Platform",
-      description: "A custom-built stock screener for filtering US equities by valuation, yield, volatility, and other metrics in a responsive user-friendly interface. Built with FastAPI, PostgreSQL, and Next.JS.",
+      description: "A custom-built stock screener that helps you filter and discover US equities by valuation, yield, volatility, price changes and more in a responsive user-friendly interface. Built in Pythonwith FastAPI, PostgreSQL, and Next.JS.",
       image: {
         desktop: "/bultrade.png",
         mobile: "/bultrade.png"
@@ -28,10 +28,8 @@ export default function Portfolio() {
       link: "https://bull-app.vercel.app/screener"
     },
     {
-      title: "TidyTable: Data Cleaning Automation Tool",
-      description: "TidyTable is a Python-based automation tool that speeds up the data cleaning process for large datasets. It handles missing values, detects outliers, and standardizes data formats, reducing manual cleaning time while maintaining data integrity.",
-      features: ["Features: Automated cleaning, format standardization, outlier detection."],
-      tools: ["Tools: Python, Pandas, NumPy, FastAPI, PostgreSQL, Regular Expressions."],
+      title: "TidyTable",
+      description: "TidyTable is a Python-based data cleaning automation tool that speeds up the data cleaning process for large datasets. Performs commom data preprocessings tasks like duplicates removals, missing value imputations, outliers detection, and standardizing data formats.",
       image: {
         desktop: "/tidytable.jpeg",
         mobile: "/tidytable.jpeg"
@@ -40,9 +38,7 @@ export default function Portfolio() {
     },
     {
       title: "Habits: Anonymous Habit Tracking App",
-      description: "A minimalist web application for tracking daily habits without the friction of account creation. The app uses local storage for data persistence, allows users to maintain streaks, and ensures user privacy while providing a simplified habit-tracking experience.",
-      features: ["Features: Streak tracking, daily logs, anonymous usage, data persistence."],
-      tools: ["Tools: Next.js, TypeScript, Tailwind CSS, Local Storage API."],
+      description: "A minimalist web application for tracking daily habits without the friction of account creation. The app uses local storage for data persistence, allows users to maintain streaks, and ensures user privacy all in a simplified habit-tracking interface.",
       image: {
         desktop: "/habits.png",
         mobile: "/habits-phone.jpeg"
@@ -52,7 +48,6 @@ export default function Portfolio() {
     {
       title: "Credit Default Prediction Model",
       description: "Developed a simple logistic regression model to predict loan default probabilities of credit card clients using a synthetic dataset of 30,000+ records. The model includes comprehensive data preprocessing, feature engineering, and handling of imbalanced classes using SMOTENC.",
-      features: ["Dataset: 30,000+ synthetic records."],
       tools: ["Tools: Python, SMOTENC, Pandas, Scikit-learn."],
     }
   ];
@@ -104,10 +99,6 @@ export default function Portfolio() {
                     <h3 className="text-xl md:text-3xl font-bold mb-4 font-sans">{project.title}</h3>
                     <div className="text-black text-lg md:text-xl mb-2">{project.description}</div>
                     
-                    {project.features && project.features.map((feature, idx) => (
-                      <div key={idx} className="text-black text-lg md:text-base mb-2">{feature}</div>
-                    ))}
-                    
                     {project.tools && project.tools.map((tool, idx) => (
                       <div key={idx} className="text-black text-lg md:text-base mb-2">{tool}</div>
                     ))}
@@ -119,7 +110,7 @@ export default function Portfolio() {
                         rel="noopener noreferrer"
                         className="inline-block mt-4 text-blue-600 hover:text-blue-800 transition-colors"
                       >
-                        {project.title === "BulTrade // Founder & Product Lead" ? "View Landing Page" : "View Project"}
+                        {project.title === "Equity Screening Platform" || project.title === "Habits: Anonymous Habit Tracking App" ? "Check it out" : "View Project"}
                       </a>
                     )}
                   </div>
