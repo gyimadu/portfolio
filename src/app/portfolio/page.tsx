@@ -19,13 +19,13 @@ export default function Portfolio() {
       link: "https://github.com/gyimadu/macro-signal-builder"
     },
     {
-      title: "BulTrade // Founder & Product Lead",
-      description: "Building a retail investing platform that uses behavioral data to personalize stock discovery. Designed and built the frontend architecture, currently developing early user feedback loops, and stock-screening logic. Closed beta with personalized filters and preliminary stock screening launches early 2026.",
+      title: "Equity Screening Platform",
+      description: "A custom-built stock screener for filtering US equities by valuation, yield, volatility, and other metrics in a responsive user-friendly interface. Built with FastAPI, PostgreSQL, and Next.JS.",
       image: {
         desktop: "/bultrade.png",
         mobile: "/bultrade.png"
       },
-      link: "https://bull-app.vercel.app/"
+      link: "https://bull-app.vercel.app/screener"
     },
     {
       title: "TidyTable: Data Cleaning Automation Tool",
