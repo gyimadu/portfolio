@@ -126,7 +126,7 @@ export default function Contact() {
                 <FaPinterest className="w-4 h-4" />
               </a>
             </div>
-            <div className="mb-2">Last Updated: January 2025</div>
+            <div className="mb-2">Last Updated: May 2025</div>
             <div>© {new Date().getFullYear()} Michael Gyimadu.</div>
         </footer>
       </main>

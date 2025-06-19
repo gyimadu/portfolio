@@ -48,7 +48,6 @@ export default function Portfolio() {
     {
       title: "Credit Default Prediction Model",
       description: "Developed a simple logistic regression model to predict loan default probabilities of credit card clients using a synthetic dataset of 30,000+ records. The model includes comprehensive data preprocessing, feature engineering, and handling of imbalanced classes using SMOTENC.",
-      tools: ["Tools: Python, SMOTENC, Pandas, Scikit-learn."],
     }
   ];
 
@@ -97,11 +96,7 @@ export default function Portfolio() {
 
                   <div className="lg:w-1/2">
                     <h3 className="text-xl md:text-3xl font-bold mb-4 font-sans">{project.title}</h3>
-                    <div className="text-black text-lg md:text-xl mb-2">{project.description}</div>
-                    
-                    {project.tools && project.tools.map((tool, idx) => (
-                      <div key={idx} className="text-black text-lg md:text-base mb-2">{tool}</div>
-                    ))}
+                    <div className="text-black text-lg md:text-lg mb-2">{project.description}</div>
 
                     {project.link && (
                       <a
@@ -169,7 +164,7 @@ export default function Portfolio() {
               <FaPinterest className="w-4 h-4" />
             </a>
           </div>
-          <div className="mb-2">Last Updated: January 2025</div>
+          <div className="mb-2">Last Updated: May 2025</div>
           <div>© {new Date().getFullYear()} Michael Gyimadu.</div>
         </footer>
       </main>
