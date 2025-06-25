@@ -54,7 +54,7 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="max-w-6xl mx-auto px-4 py-16 relative">
+      <main className="max-w-5xl mx-auto px-4 py-16 relative">
         <div className="w-full">          
           <div className="space-y-16 lg:space-y-32">
             {projects.map((project, index) => (
