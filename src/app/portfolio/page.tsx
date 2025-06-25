@@ -37,8 +37,8 @@ export default function Portfolio() {
       link: "https://data-cleaning-automation.onrender.com/"
     },
     {
-      title: "Habits: Anonymous Habit Tracking App",
-      description: "A minimalist web application for tracking daily habits without the friction of account creation. The app uses local storage for data persistence, allows users to maintain streaks, and ensures user privacy all in a simplified habit-tracking interface.",
+      title: "Grit: Workout Tracking App",
+      description: "A minimalist web application for tracking workouts. This web app features personalized workout suggestions, visual streak tracking, and a mobile-optimized interface for easy progress monitoring.",
       image: {
         desktop: "/habits.png",
         mobile: "/habits.png"
