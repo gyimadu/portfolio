@@ -56,7 +56,7 @@ export const blogPosts: BlogPostData[] = [
               <p className="font-medium text-blue-900 mb-2">
                 <span className="text-blue-600">1.</span> If GDP growth is negative and inflation is falling
               </p>
-              <p className="px-2 md:px-0">
+              <p className="px-4 md:px-0">
                 <strong>Action:</strong> Buy bonds. A weakening economy with falling inflation reduces pressure on bonds, making them more attractive.
               </p>
             </div>
@@ -65,7 +65,7 @@ export const blogPosts: BlogPostData[] = [
               <p className="font-medium mb-2">
                 <span className="text-blue-600">2.</span> If unemployment rate is dropping and GDP is rising
               </p>
-              <p className="px-2 md:px-0">
+              <p className="px-4 md:px-0">
                 <strong>Action:</strong> Buy equities. A strong labor market combined with economic growth typically leads to better earnings and stock returns.
               </p>
             </div>
@@ -74,7 +74,7 @@ export const blogPosts: BlogPostData[] = [
               <p className="font-medium mb-2">
                 <span className="text-blue-600">3.</span> If interest rates are rising
               </p>
-              <p className="px-2 md:px-0">
+              <p className="px-4 md:px-0">
                 <strong>Action:</strong> Buy the dollar. Higher interest rates attract global capital to USD-denominated assets, strengthening the dollar.
               </p>
             </div>
