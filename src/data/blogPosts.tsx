@@ -47,35 +47,35 @@ export const blogPosts: BlogPostData[] = [
         
         <p className='mb-4 text-lg font-semibold'>Signal Logic</p>
         <p className="mb-6">
-          The signal logic for this project is rule based, inspired by how long term macro investors think: Are growth and inflation accelerating or decelerating?<br/> What regime are we in, and what kind of asset classes historically perform well under those conditions? 
+          The signal logic for this project is rule based, inspired by how long term macro investors think: Are growth and inflation accelerating or decelerating? What regime are we in, and what kind of asset classes historically perform well under those conditions? 
         </p>
         <p className="mb-4 text-lg font-semibold">The signal logic is as follows:</p>
         
         <div className="space-y-4 mb-6">
             <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg">
               <p className="font-medium text-blue-900 mb-2">
-                <span className="text-blue-600">1</span> If GDP growth is negative and inflation is falling
+                <span className="text-blue-600">1.</span> If GDP growth is negative and inflation is falling
               </p>
               <p className="text-blue-800">
-                <strong>Action:</strong> Buy bonds: A weakening economy with falling inflation reduces pressure on bonds, making them more attractive.
+                <strong>Action:</strong> Buy bonds. A weakening economy with falling inflation reduces pressure on bonds, making them more attractive.
               </p>
             </div>
             
             <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
               <p className="font-medium text-green-900 mb-2">
-                <span className="text-green-600">2</span> If unemployment rate is dropping and GDP is rising
+                <span className="text-green-600">2.</span> If unemployment rate is dropping and GDP is rising
               </p>
               <p className="text-green-800">
-                <strong>Action:</strong> Buy equities: A strong labor market combined with economic growth typically leads to better earnings and stock returns.
+                <strong>Action:</strong> Buy equities. A strong labor market combined with economic growth typically leads to better earnings and stock returns.
               </p>
             </div>
             
             <div className="bg-purple-50 border-l-4 border-purple-400 p-4 rounded-r-lg">
               <p className="font-medium text-purple-900 mb-2">
-                <span className="text-purple-600">3</span> If interest rates are rising
+                <span className="text-purple-600">3.</span> If interest rates are rising
               </p>
               <p className="text-purple-800">
-                <strong>Action:</strong> Buy the dollar: Higher interest rates attract global capital to USD-denominated assets, strengthening the dollar.
+                <strong>Action:</strong> Buy the dollar. Higher interest rates attract global capital to USD-denominated assets, strengthening the dollar.
               </p>
             </div>
           </div>
