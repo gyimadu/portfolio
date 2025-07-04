@@ -52,29 +52,29 @@ export const blogPosts: BlogPostData[] = [
         <p className="mb-4 text-lg font-semibold">The signal logic is as follows:</p>
         
         <div className="space-y-4 mb-6">
-            <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg">
+            <div className="">
               <p className="font-medium text-blue-900 mb-2">
                 <span className="text-blue-600">1.</span> If GDP growth is negative and inflation is falling
               </p>
-              <p className="text-blue-800 px-2 md:px-0">
+              <p className="px-2 md:px-0">
                 <strong>Action:</strong> Buy bonds. A weakening economy with falling inflation reduces pressure on bonds, making them more attractive.
               </p>
             </div>
             
-            <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
-              <p className="font-medium text-green-900 mb-2">
-                <span className="text-green-600">2.</span> If unemployment rate is dropping and GDP is rising
+            <div className="">
+              <p className="font-medium mb-2">
+                <span className="text-blue-600">2.</span> If unemployment rate is dropping and GDP is rising
               </p>
-              <p className="text-green-800 px-2 md:px-0">
+              <p className="px-2 md:px-0">
                 <strong>Action:</strong> Buy equities. A strong labor market combined with economic growth typically leads to better earnings and stock returns.
               </p>
             </div>
             
-            <div className="bg-purple-50 border-l-4 border-purple-400 p-4 rounded-r-lg">
-              <p className="font-medium text-purple-900 mb-2">
-                <span className="text-purple-600">3.</span> If interest rates are rising
+            <div className="">
+              <p className="font-medium mb-2">
+                <span className="text-blue-600">3.</span> If interest rates are rising
               </p>
-              <p className="text-purple-800 px-2 md:px-0">
+              <p className="px-2 md:px-0">
                 <strong>Action:</strong> Buy the dollar. Higher interest rates attract global capital to USD-denominated assets, strengthening the dollar.
               </p>
             </div>
