@@ -8,7 +8,7 @@ export default function Papers() {
   const projects = [
     {
       title: "Mathematical Foundations of ML",
-      description: "A comparative analysis of principal component analysis and singular value decomposition as dimensionality reduction techniques.",
+      description: "A Comparative Analysis of Principal Component Analysis and Singular Value Decomposition as Dimensionality Reduction Techniques.",
       link: "https://arxiv.org/abs/2506.16663"
     },
   ];
@@ -26,8 +26,8 @@ export default function Papers() {
                     data-index={index}
                 >
                     <div className="w-full">
-                        <h3 className="text-xl md:text-3xl font-bold mb-4 font-sans">{paper.title}</h3>
-                        <div className="text-gray-600 text-base md:text-lg mb-2">{paper.description}</div>
+                        <h3 className="text-2xl md:text-3xl font-bold mb-4 font-sans">{paper.title}</h3>
+                        <div className="text-gray-500 text-lg md:text-lg mb-2">{paper.description}</div>
 
                         {paper.link && (
                         <a
