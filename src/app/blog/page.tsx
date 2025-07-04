@@ -1,5 +1,7 @@
 'use client';
 import Header from '@/components/Header';
+import BlogPost from '@/components/BlogPost';
+import { blogPosts } from '@/data/blogPosts';
 import { FaGithub, FaInstagram, FaLinkedin, FaPinterest } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
@@ -10,11 +12,10 @@ export default function Blog() {
       <main className="max-w-3xl mx-auto px-4 py-16">
         <div className="text-2xl font-bold md:text-3xl text-black mb-10">Blog</div>
         
-        <div className="space-y-16">
-          {/* Blog posts will be added here */}
-          <div className="text-gray-500 text-center py-20">
-            Soon...
-          </div>
+        <div className="space-y-0">
+          {blogPosts.map((post) => (
+            <BlogPost key={post.id} post={post} />
+          ))}
         </div>
 
         {/* Footer */}
