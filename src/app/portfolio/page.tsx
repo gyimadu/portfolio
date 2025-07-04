@@ -96,7 +96,7 @@ export default function Portfolio() {
 
                   <div className="lg:w-1/2">
                     <h3 className="text-xl md:text-3xl font-bold mb-4 font-sans">{project.title}</h3>
-                    <div className="text-black text-lg md:text-lg mb-2">{project.description}</div>
+                    <div className="text-gray-600 text-base md:text-lg mb-2">{project.description}</div>
 
                     {project.link && (
                       <a

@@ -27,7 +27,7 @@ export default function Papers() {
                 >
                     <div className="w-full">
                         <h3 className="text-xl md:text-3xl font-bold mb-4 font-sans">{paper.title}</h3>
-                        <div className="text-black text-lg md:text-xl mb-2">{paper.description}</div>
+                        <div className="text-gray-600 text-base md:text-lg mb-2">{paper.description}</div>
 
                         {paper.link && (
                         <a
