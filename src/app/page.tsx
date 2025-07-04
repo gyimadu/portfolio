@@ -29,23 +29,23 @@ export default function Home() {
         <section className="mb-12">
           <div className="mb-2">
             <div className="flex flex-col lg:flex-col lg:gap-10">
-              <div className='flex flex-col justify-center text-gray-700 md:pt-0 mb-6'>
+              <div className='flex flex-col justify-center text-gray-600 md:pt-0 mb-6'>
                 <div className='text-2xl md:text-4xl mb-4 text-gray-800'>
                   Hi!
                 </div>
-                <div className='text-lg md:text-lg mb-6'>
+                <div className='text-base md:text-lg mb-6'>
                   I&apos;m a junior studying math and economics at Wingate University. I&apos;m studying how machine learning and computational methods can be applied to financial theory to improve risk management and investment decision-making.            
                 </div>
-                <div className='text-lg md:text-lg mb-6'>
+                <div className='text-base md:text-lg mb-6'>
                   I build predictive models, portfolio optimization algorithms, and signal-based trading strategies to simulate and assess market behavior using economic and market data.
                 </div>
-                <div className='text-lg md:text-lg mb-6'>
+                <div className='text-base md:text-lg mb-6'>
                   Lately, I&apos;ve been exploring how adaptive systems can be used to personalize investment strategies based on user behavior patterns; also applying this at an early-stage fintech startup.                  
                 </div>
-                <div className='text-lg md:text-lg mb-6'>
+                <div className='text-base md:text-lg mb-6'>
                   Currently to-and-from Charlotte and San Francisco.
                 </div>
-                <div className='text-lg md:text-lg mb-6'>
+                <div className='text-base md:text-lg mb-6'>
                   Reach out to me <Link href="/contact" className='text-blue-600'>here</Link> or through email at <a href="mailto:mkwabenagyimadu@gmail.com" className='text-blue-600'>mkwabenagyimadu@gmail.com</a>.
                 </div>
               </div>
