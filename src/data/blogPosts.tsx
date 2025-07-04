@@ -13,7 +13,7 @@ export const blogPosts: BlogPostData[] = [
     content: (
       <div>
         <p className="mb-6">
-          There is a constant inflow of macroeconomic data, from consumer price indices to unemployment rates and GDP growth rates. Tracking and reading these trends is such a difficult task to take on manually, which is why I built this signal engine to analyze and explore how macroeconomic indicators can be translated into investment signals across major asset classes specifically focusing on stocks, bonds, and currencies.       
+          There is a constant inflow of macroeconomic data, from consumer price indices to unemployment rates and GDP growth rates. <br/><br/>Tracking and reading these trends is such a difficult task to take on manually, which is why I built this signal engine to analyze and explore how macroeconomic indicators can be translated into investment signals across major asset classes specifically focusing on stocks, bonds, and currencies.       
         </p>
 
         <p className="mb-6">
@@ -31,7 +31,7 @@ export const blogPosts: BlogPostData[] = [
         <p className="text-xl font-semibold mb-4 text-black">How the Signal Builder Works</p>
         <p className='mb-4 text-lg font-semibold'>Data Collection</p>
         <p className="mb-6">
-          The four macro indicators used in this project are GDP growth rate, which gives an overall economic picture of the economy, Consumer Price Index, to give an idea of the price levels in the economy, unemployment rate to gauge the labor market strength, and the Federal Funds rate, to provide information on monetary policy stance, all of which was collected from the Federal Reserve Bank of St. Louis through the Fred API.
+          The four macro indicators used in this project are GDP growth rate, which gives an overall economic picture of the economy, Consumer Price Index, to give an idea of the price levels in the economy, unemployment rate to gauge the labor market strength, and the Federal Funds rate, to provide information on monetary policy stance.<br/><br/> All this data was collected from the Federal Reserve Bank of St. Louis through the Fred API.
         </p>
         <p className="mb-6">
           The asset classes used here span stocks (SPY, QQQ), bonds (TLT, HYG), the dollar (UUP), and commodities (GLD).
@@ -42,54 +42,45 @@ export const blogPosts: BlogPostData[] = [
           Each data source had unique quirks; varying reporting periods, missing values, and inconsistent timelines. To align them, GDP growth was repeated monthly within each reported quarter, and asset classes with differing start dates were consolidated into a unified dataset from 2008 to 2025. CPI was converted to inflation to better capture its relationship with asset prices.
         </p>
         <p className="mb-6">
-          All data was collected in a raw format, with some missing values and inconsistent formatting. To make it easier to analyze, the data was cleaned and normalized. The data was then split into training, validation and testing sets, with the training set being used to train the model and the validation and testing sets being used to evaluate the model.
+          The data was then split into training, validation and testing sets, with the training set being used to train the model and the validation and testing sets being used to evaluate the model.
         </p>
         
         <p className='mb-4 text-lg font-semibold'>Signal Logic</p>
         <p className="mb-6">
-          The signal logic for this project is rule based inspired by how long term macro investors think: Are growth and inflation accelerating or decelerating? What regime are we in, and what kind of asset classes historically perform well under those conditions? 
+          The signal logic for this project is rule based, inspired by how long term macro investors think: Are growth and inflation accelerating or decelerating?<br/> What regime are we in, and what kind of asset classes historically perform well under those conditions? 
         </p>
         <p className="mb-4 text-lg font-semibold">The signal logic is as follows:</p>
         
         <div className="space-y-4 mb-6">
             <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded-r-lg">
               <p className="font-medium text-blue-900 mb-2">
-                <span className="text-blue-600">→</span> If GDP growth is negative and inflation is falling
+                <span className="text-blue-600">1</span> If GDP growth is negative and inflation is falling
               </p>
               <p className="text-blue-800">
-                <strong>Action:</strong> Buy bonds
-              </p>
-              <p className="text-blue-700 text-sm mt-1">
-                A weakening economy with falling inflation reduces pressure on bonds, making them more attractive.
+                <strong>Action:</strong> Buy bonds: A weakening economy with falling inflation reduces pressure on bonds, making them more attractive.
               </p>
             </div>
             
             <div className="bg-green-50 border-l-4 border-green-400 p-4 rounded-r-lg">
               <p className="font-medium text-green-900 mb-2">
-                <span className="text-green-600">→</span> If unemployment rate is dropping and GDP is rising
+                <span className="text-green-600">2</span> If unemployment rate is dropping and GDP is rising
               </p>
               <p className="text-green-800">
-                <strong>Action:</strong> Buy equities
-              </p>
-              <p className="text-green-700 text-sm mt-1">
-                A strong labor market combined with economic growth typically leads to better earnings and stock returns.
+                <strong>Action:</strong> Buy equities: A strong labor market combined with economic growth typically leads to better earnings and stock returns.
               </p>
             </div>
             
             <div className="bg-purple-50 border-l-4 border-purple-400 p-4 rounded-r-lg">
               <p className="font-medium text-purple-900 mb-2">
-                <span className="text-purple-600">→</span> If interest rates are rising
+                <span className="text-purple-600">3</span> If interest rates are rising
               </p>
               <p className="text-purple-800">
-                <strong>Action:</strong> Buy the dollar
-              </p>
-              <p className="text-purple-700 text-sm mt-1">
-                Higher interest rates attract global capital to USD-denominated assets, strengthening the dollar.
+                <strong>Action:</strong> Buy the dollar: Higher interest rates attract global capital to USD-denominated assets, strengthening the dollar.
               </p>
             </div>
           </div>
           <p className="mb-6">
-            The final output after all data processing and signal logic would be a simple dashboard showing economic regime predictions based on the trends in the data and which asset classes stand to perform better in those regimes.
+            The final output after all data processing and signal logic is a simple dashboard showing economic regime predictions based on the trends in the data and which asset classes stand to perform better in those regimes.
           </p> 
           <p className="mb-6">
             The goal of this project is not to predict the markets/future perfectly, but to identify when the macro environment is shifting and the corresponding effects on asset prices.          
@@ -100,7 +91,7 @@ export const blogPosts: BlogPostData[] = [
           </p> 
 
           <p className="mb-6">
-            The project, although ideation is complete, is not perfect yet, as many asset classes and further macro indicators are yet to be included. Backtesting is also yet to be done on the most of the asset classes used. Also, macroeconomic data often gets revised, which means there is always a risk of false signals which might not accurately predict what might be happening in the markets.
+            The project, although ideation is complete, is not perfect yet, as many asset classes and further macro indicators are yet to be included. Backtesting is also yet to be done on the most of the asset classes used.<br/><br/> Macroeconomic data also often gets revised, which means there is always a risk of false signals which might not accurately predict what might be happening in the markets.
           </p>  
 
           <p className="text-xl font-semibold mb-4 text-black">
