@@ -13,7 +13,7 @@ export default function Contact() {
           <div className="flex flex-col md:flex-row md:gap-16 md:items-start">
             {/* Left column - 20% */}
             <div className="mb-8 md:mb-0 md:w-1/4 md:sticky md:top-24">
-              <div className="text-xl md:text-4xl font-bold text-black font-mouse">Get In Touch!</div>
+              <div className="text-3xl md:text-4xl font-bold text-black uppercase font-mouse">Get In Touch!</div>
             </div>
 
             {/* Right column - 80% */}
