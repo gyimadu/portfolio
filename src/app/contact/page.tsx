@@ -1,6 +1,6 @@
 'use client';
 import Header from '@/components/Header';
-import { FaGithub, FaInstagram, FaLinkedin, FaPinterest } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
 
