@@ -39,7 +39,7 @@ export default function BlogPost({ post }: BlogPostProps) {
         </h1>
         
         {post.subtitle && (
-          <h2 className="text-lg text-gray-600 mb-4" style={{ fontFamily: 'Rethink Sans, sans-serif' }}>
+          <h2 className="text-lg font-semibold mb-4 text-black" style={{ fontFamily: 'Rethink Sans, sans-serif' }}>
             {post.subtitle}
           </h2>
         )}

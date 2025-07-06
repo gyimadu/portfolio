@@ -28,6 +28,11 @@ export default function Portfolio() {
       link: "https://bull-app.vercel.app/screener"
     },
     {
+      title: "ConvertiGo",
+      description: "A command-line currency converter built in C++ that provides real-time exchange rates for major global currencies. Features include interactive menu-driven interface, historical rate tracking, and support for major world currencies with accurate conversion calculations.",
+      link: "https://github.com/gyimadu/currency-converter"
+    },
+    {
       title: "TidyTable",
       description: "TidyTable is a Python-based data cleaning automation tool that speeds up the data cleaning process for large datasets. Performs commom data preprocessings tasks like duplicates removals, missing value imputations, outliers detection, and standardizing data formats.",
       image: {
@@ -37,6 +42,10 @@ export default function Portfolio() {
       link: "https://data-cleaning-automation.onrender.com/"
     },
     {
+      title: "Credit Default Prediction Model",
+      description: "Developed a simple logistic regression model to predict loan default probabilities of credit card clients using a synthetic dataset of 30,000+ records. The model includes comprehensive data preprocessing, feature engineering, and handling of imbalanced classes using SMOTENC.",
+    },
+    {
       title: "Grit: Workout Tracking App",
       description: "A minimalist web application for tracking workouts. This web app features personalized workout suggestions, visual streak tracking, and a mobile-optimized interface for easy progress monitoring.",
       image: {
@@ -44,10 +53,6 @@ export default function Portfolio() {
         mobile: "/habits.png"
       },
       link: "https://habits-io.vercel.app/"
-    },
-    {
-      title: "Credit Default Prediction Model",
-      description: "Developed a simple logistic regression model to predict loan default probabilities of credit card clients using a synthetic dataset of 30,000+ records. The model includes comprehensive data preprocessing, feature engineering, and handling of imbalanced classes using SMOTENC.",
     }
   ];
 
@@ -63,21 +68,7 @@ export default function Portfolio() {
                 className="project-section"
                 data-index={index}
               >
-                <div className="lg:hidden mb-8">
-                  {project.image && (
-                    <div className="w-full">
-                      <div className="relative">
-                        <Image
-                          src={project.image.mobile}
-                          alt={project.title}
-                          width={300}
-                          height={680}
-                          className="w-full h-auto border-2 border-gray-200 rounded-lg"
-                        />
-                      </div>
-                    </div>
-                  )}
-                </div>
+
 
                 <div className="md:flex md:gap-8 md:items-start">
                   {project.image && (
@@ -95,8 +86,25 @@ export default function Portfolio() {
                   )}
 
                   <div className="lg:w-1/2">
-                    <h3 className="text-xl md:text-3xl font-bold mb-4 font-sans">{project.title}</h3>
+                    <h3 className="text-2xl md:text-4xl font-bold mb-4 font-mouse">{project.title}</h3>
                     <div className="text-gray-500 text-base md:text-lg mb-2">{project.description}</div>
+
+                    {/* Mobile image between description and link */}
+                    <div className="lg:hidden mb-6">
+                      {project.image && (
+                        <div className="w-full">
+                          <div className="relative">
+                            <Image
+                              src={project.image.mobile}
+                              alt={project.title}
+                              width={300}
+                              height={680}
+                              className="w-full h-auto border-2 border-gray-200 rounded-lg"
+                            />
+                          </div>
+                        </div>
+                      )}
+                    </div>
 
                     {project.link && (
                       <a

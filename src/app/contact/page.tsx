@@ -13,7 +13,7 @@ export default function Contact() {
           <div className="flex flex-col md:flex-row md:gap-16 md:items-start">
             {/* Left column - 20% */}
             <div className="mb-8 md:mb-0 md:w-1/4 md:sticky md:top-24">
-              <div className="text-xl md:text-2xl font-bold text-black">Get In Touch!</div>
+              <div className="text-xl md:text-4xl font-bold text-black font-mouse">Get In Touch!</div>
             </div>
 
             {/* Right column - 80% */}
@@ -24,7 +24,7 @@ export default function Contact() {
                 className="space-y-6 md:space-y-8"
               >
                 <div className="space-y-3">
-                  <label htmlFor="name" className="block text-black text-lg md:text-lg">
+                  <label htmlFor="name" className="block text-black text-lg md:text-xl font-mouse">
                     Name
                   </label>
                   <input
@@ -38,7 +38,7 @@ export default function Contact() {
                 </div>
 
                 <div className="space-y-3">
-                  <label htmlFor="email" className="block text-black text-lg md:text-lg">
+                  <label htmlFor="email" className="block text-black text-lg md:text-xl font-mouse">
                     Email
                   </label>
                   <input
@@ -52,7 +52,7 @@ export default function Contact() {
                 </div>
 
                 <div className="space-y-3">
-                  <label htmlFor="message" className="block text-black text-lg md:text-lg">
+                  <label htmlFor="message" className="block text-black text-lg md:text-xl font-mouse">
                     Message
                   </label>
                   <textarea
@@ -68,9 +68,9 @@ export default function Contact() {
                 <div className="flex justify-center">
                   <button
                     type="submit"
-                    className="px-6 py-2 font-f1 bg-black text-white text-base md:text-lg rounded-md hover:bg-gray-800 transition-colors"
+                    className="px-6 py-2 font-f1 bg-black text-white text-base md:text-base rounded-md hover:bg-gray-800 transition-colors"
                   >
-                    SEND MESSAGE
+                    Send Message
                   </button>
                 </div>
               </form>
