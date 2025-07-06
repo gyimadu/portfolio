@@ -133,7 +133,7 @@ export default function Portfolio() {
               className="p-2 bg-gray-50 text-black rounded-xl hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
               aria-label="GitHub Profile"
             >
-              <FaGithub className="w-4 h-4" />
+              <FaGithub className="w-6 h-6" />
             </a>
             <a 
               href="https://twitter.com/gyimaduu" 
@@ -142,7 +142,7 @@ export default function Portfolio() {
               className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
               aria-label="X (Twitter) Profile"
             >
-              <FaXTwitter className="w-4 h-4" />
+              <FaXTwitter className="w-6 h-6" />
             </a>
             <a 
               href="https://instagram.com/gyimadu_" 
@@ -151,7 +151,7 @@ export default function Portfolio() {
               className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
               aria-label="Instagram Profile"
             >
-              <FaInstagram className="w-4 h-4" />
+              <FaInstagram className="w-6 h-6" />
             </a>
             <a 
               href="https://linkedin.com/in/michael-gyimadu" 
@@ -160,16 +160,7 @@ export default function Portfolio() {
               className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
               aria-label="LinkedIn Profile"
             >
-              <FaLinkedin className="w-4 h-4" />
-            </a>
-            <a 
-              href="https://pin.it/31jFT8j7h" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
-              aria-label="Pinterest Profile"
-            >
-              <FaPinterest className="w-4 h-4" />
+              <FaLinkedin className="w-6 h-6" />
             </a>
           </div>
           <div className="mb-2">Last Updated: May 2025</div>

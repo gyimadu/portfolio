@@ -121,15 +121,6 @@ export default function Home() {
               >
                 <FaLinkedin className="w-6 h-6" />
               </a>
-              <a 
-                href="https://pin.it/31jFT8j7h" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
-                aria-label="Pinterest Profile"
-              >
-                <FaPinterest className="w-6 h-6" />
-              </a>
             </div>
             <PolaroidImages />
           </div>
