@@ -46,7 +46,7 @@ export default function Home() {
                   Currently to-and-from Charlotte and San Francisco.
                 </div>
                 <div className='text-base md:text-lg mb-6'>
-                  Reach out to me <Link href="/contact" className='text-blue-600'>here</Link> or through email at <a href="mailto:mkwabenagyimadu@gmail.com" className='text-blue-600'>mkwabenagyimadu@gmail.com</a>.
+                  Reach out to me <Link href="/contact" className='text-blue-600'>here</Link> or via email at <a href="mailto:mkwabenagyimadu@gmail.com" className='text-blue-600'>mkwabenagyimadu@gmail.com</a>.
                 </div>
               </div>
 
