@@ -1,6 +1,6 @@
 'use client';
 import Header from '@/components/Header';
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaArrowUp } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import Image from 'next/image';
 
@@ -22,13 +22,13 @@ export default function Portfolio() {
     {
       title: "Macro Signal Builder",
       description: "A macroeconomic analysis engine designed to simulate recessionary vs expansionary impacts on equities, bonds, and commodities using lagging and leading macro indicators, and translate them into rule-basedinvestment signals.",
-      tools: ["Python", "Pandas", "NumPy", "Fred API", "Matplotlib", "Next.js", "TypeScript", "Tailwind CSS"],
+      tools: ["Python", "Pandas", "NumPy", "yFinance", "Fred API", "Matplotlib", "Next.js", "TypeScript", "Tailwind CSS"],
       link: "https://github.com/gyimadu/macro-signal-builder"
     },
     {
       title: "Equity Screening Platform",
       description: "A custom-built stock screener that helps you filter and discover US equities by valuation, yield, volatility, price changes and more in a responsive user-friendly interface.",
-      tools: ["Python", "FastAPI", "PostgreSQL", "Next.js", "TypeScript", "Tailwind CSS"],
+      tools: ["Python", "FastAPI", "yFinance", "PostgreSQL", "Next.js", "TypeScript", "Tailwind CSS"],
       image: {
         desktop: "/bultrade.png",
         mobile: "/bultrade.png"
@@ -98,8 +98,22 @@ export default function Portfolio() {
                   )}
 
                   <div className="lg:w-1/2">
-                    <h3 className="text-2xl md:text-4xl font-bold mb-4 uppercase font-mouse">{project.title}</h3>
-                    <div className="text-gray-600 text-lg md:text-lg mb-4">{project.description}</div>
+                    {project.link ? (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group"
+                      >
+                        <h3 className="text-2xl md:text-4xl font-bold mb-4 uppercase font-mouse text-black group-hover:text-gray-700 transition-colors flex items-center gap-2">
+                          {project.title}
+                          <FaArrowUp className="w-4 h-4 transform rotate-45 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                        </h3>
+                      </a>
+                    ) : (
+                      <h3 className="text-2xl md:text-4xl font-bold mb-4 uppercase font-mouse">{project.title}</h3>
+                    )}
+                    <div className="text-gray-600 text-lg md:text-xl mb-4">{project.description}</div>
 
                     {project.tools && (
                       <div className="mb-4">
@@ -133,17 +147,6 @@ export default function Portfolio() {
                         </div>
                       )}
                     </div>
-
-                    {project.link && (
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block mt-4 text-blue-600 hover:text-blue-800 transition-colors"
-                      >
-                        {project.title === "Equity Screening Platform" || project.title === "Habits: Anonymous Habit Tracking App" ? "View Project" : "View Project"}
-                      </a>
-                    )}
                   </div>
                 </div>
               </div>

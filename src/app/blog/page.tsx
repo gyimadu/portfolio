@@ -58,7 +58,7 @@ export default function Blog() {
               <FaLinkedin className="w-6 h-6" />
             </a>
           </div>
-          <div className="mb-2">Last Updated: January 2025</div>
+          <div className="mb-2">Last Updated: July 2025</div>
           <div>© {new Date().getFullYear()} Michael Gyimadu.</div>
         </footer>
       </main>

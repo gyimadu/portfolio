@@ -47,7 +47,7 @@ export default function Contact() {
                     name="email"
                     required
                     className="w-full px-5 py-3 bg-gray-50 text-black rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-200 text-base md:text-base"
-                    placeholder="your.email@example.com"
+                    placeholder="hello@example.com"
                   />
                 </div>
 
