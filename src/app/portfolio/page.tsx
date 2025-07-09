@@ -14,13 +14,21 @@ export default function Portfolio() {
       tools: ["Tools: Python, Pandas, NumPy, yFinance, Object-Oriented Programming"]
     },*/
     {
+      title: "Portfolio Simulation & Backtest Engine",
+      description: "A multi-asset portfolio construction and backtesting engine for major ETFs. Enables building custom ETF portfolios with percentage allocations and tracks performance over 25 years of historical data. Features include portfolio allocation tools, performance tracking, and comprehensive backtesting. (still under construction)",
+      tools: ["Python", "yFinance", "Pandas", "NumPy", "Matplotlib"],
+      link: "https://github.com/gyimadu/portfolio-backtest-engine"
+    },
+    {
       title: "Macro Signal Builder",
       description: "Built a macro signal builder that analyzes real economic indicators: GDP growth, inflation, unemployment, and interest rates, applies them across historical data for different asset classes and translates them into rule-based investment signals.",
+      tools: ["Python", "Pandas", "NumPy", "Fred API", "Matplotlib", "Next.js", "TypeScript", "Tailwind CSS"],
       link: "https://github.com/gyimadu/macro-signal-builder"
     },
     {
       title: "Equity Screening Platform",
-      description: "A custom-built stock screener that helps you filter and discover US equities by valuation, yield, volatility, price changes and more in a responsive user-friendly interface. Built in Python with FastAPI, PostgreSQL, and Next.JS.",
+      description: "A custom-built stock screener that helps you filter and discover US equities by valuation, yield, volatility, price changes and more in a responsive user-friendly interface.",
+      tools: ["Python", "FastAPI", "PostgreSQL", "Next.js", "TypeScript", "Tailwind CSS"],
       image: {
         desktop: "/bultrade.png",
         mobile: "/bultrade.png"
@@ -30,11 +38,13 @@ export default function Portfolio() {
     {
       title: "ConvertiGo",
       description: "A command-line currency converter built in C++ that provides real-time exchange rates for major global currencies. Features include interactive menu-driven interface, historical rate tracking, and support for major world currencies with accurate conversion calculations.",
+      tools: ["C++", "STL", "File I/O", "CLI", "cURL", "JSON"],
       link: "https://github.com/gyimadu/currency-converter"
     },
     {
       title: "TidyTable",
       description: "TidyTable is a Python-based data cleaning automation tool that speeds up the data cleaning process for large datasets. Performs commom data preprocessings tasks like duplicates removals, missing value imputations, outliers detection, and standardizing data formats.",
+      tools: ["Python", "Pandas", "NumPy", "Scikit-learn"],
       image: {
         desktop: "/tidytable.jpeg",
         mobile: "/tidytable.jpeg"
@@ -44,10 +54,12 @@ export default function Portfolio() {
     {
       title: "Credit Default Prediction Model",
       description: "Developed a simple logistic regression model to predict loan default probabilities of credit card clients using a synthetic dataset of 30,000+ records. The model includes comprehensive data preprocessing, feature engineering, and handling of imbalanced classes using SMOTENC.",
+      tools: ["Python", "Scikit-learn", "Pandas", "NumPy", "SMOTE", "Matplotlib"],
     },
     {
       title: "Grit: Workout Tracking App",
       description: "A minimalist web application for tracking workouts. This web app features personalized workout suggestions, visual streak tracking, and a mobile-optimized interface for easy progress monitoring.",
+      tools: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
       image: {
         desktop: "/habits.png",
         mobile: "/habits.png"
@@ -87,7 +99,23 @@ export default function Portfolio() {
 
                   <div className="lg:w-1/2">
                     <h3 className="text-2xl md:text-4xl font-bold mb-4 uppercase font-mouse">{project.title}</h3>
-                    <div className="text-gray-500 text-base md:text-lg mb-2">{project.description}</div>
+                    <div className="text-gray-500 text-base md:text-lg mb-4">{project.description}</div>
+
+                    {project.tools && (
+                      <div className="mb-4">
+                        <div className="text-sm text-gray-600 mb-2">Tools:</div>
+                        <div className="flex flex-wrap gap-2">
+                          {project.tools.map((tool, toolIndex) => (
+                            <span
+                              key={toolIndex}
+                              className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
+                            >
+                              {tool}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
 
                     {/* Mobile image between description and link */}
                     <div className="lg:hidden mb-6">
