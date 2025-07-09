@@ -39,7 +39,7 @@ export default function Portfolio() {
       title: "ConvertiGo",
       description: "A command-line currency converter built in C++ that provides real-time exchange rates for major global currencies. Features include interactive menu-driven interface, historical rate tracking, and support for major world currencies with accurate conversion calculations.",
       tools: ["C++", "STL", "File I/O", "CLI", "cURL", "JSON"],
-      link: "https://github.com/gyimadu/currency-converter"
+      link: "https://github.com/gyimadu/cpp-financial-toolkit/tree/main/currency_converter"
     },
     {
       title: "TidyTable",
