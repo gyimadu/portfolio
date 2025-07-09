@@ -34,7 +34,7 @@ export default function Home() {
                   Hi, I&apos;m Michael!
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
-                  I&apos;m studying math and econ at Wingate University and spend most ofmy time exploring how machine learning and computational methods can be applied to financial theory to improve risk management and investment decision-making.            
+                  I&apos;m studying math and econ at Wingate University and spend most of my time exploring how machine learning and computational methods can be applied to financial theory to reduce risk and improve investment decision-making.            
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
                   I build predictive models, portfolio optimization algorithms, and signal-based trading strategies to simulate and assess market behavior using economic and market data.
@@ -134,7 +134,7 @@ export default function Home() {
         </section>*/}
 
         <footer className="text-center border-t sm:border-t-0 border-gray-200 pt-4 text-black text-xs pb-4 mt-24">
-          <div className="mb-2">Last Updated: May 2025</div>
+          <div className="mb-2">Last Updated: July 2025</div>
           <div>© {new Date().getFullYear()} Michael Gyimadu.</div>
         </footer>
       </main>

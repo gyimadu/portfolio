@@ -191,7 +191,7 @@ export default function Portfolio() {
               <FaLinkedin className="w-6 h-6" />
             </a>
           </div>
-          <div className="mb-2">Last Updated: May 2025</div>
+          <div className="mb-2">Last Updated: July 2025</div>
           <div>© {new Date().getFullYear()} Michael Gyimadu.</div>
         </footer>
       </main>
