@@ -25,7 +25,7 @@ export default function Home() {
       <div className="md:hidden">
         <NeuralNetworkBall />
       </div>
-      <main className="max-w-3xl mx-auto px-4 md:px-4 py-10 md:pb-8 md:-pt-10">
+      <main className="max-w-3xl mx-auto px-6 md:px-4 py-10 md:pb-8 md:-pt-10">
         <section className="mb-12">
           <div className="mb-2">
             <div className="flex flex-col lg:flex-col lg:gap-10">
@@ -40,7 +40,7 @@ export default function Home() {
                   I build predictive models, portfolio optimization algorithms, and signal-based trading strategies to simulate and assess market behavior using economic and market data.
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
-                  Lately, I&apos;ve been working on Folio, a fintech startup, where we&apos;re exploring how adaptive systems can be used to personalize investment strategies based on user behavior patterns.                  
+                  Lately, I&apos;ve been working on <span className='text-blue-600'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Folio</Link></span>, a fintech startup, where we&apos;re exploring how adaptive systems can be used to personalize investment strategies based on user behavior patterns.                  
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
                   Currently to-and-from Charlotte and San Francisco.
