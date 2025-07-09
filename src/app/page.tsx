@@ -34,13 +34,13 @@ export default function Home() {
                   Hi!
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
-                  I&apos;m a junior studying math and economics at Wingate University. I&apos;m studying how machine learning and computational methods can be applied to financial theory to improve risk management and investment decision-making.            
+                  I&apos;m a math and econ major at Wingate University. I spend my time exploring how machine learning and computational methods can be applied to financial theory to improve risk management and investment decision-making.            
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
                   I build predictive models, portfolio optimization algorithms, and signal-based trading strategies to simulate and assess market behavior using economic and market data.
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
-                  Lately, I&apos;ve been working on Folio, where we&apos;re exploring how adaptive systems can be used to personalize investment strategies based on user behavior patterns; also applying this at an early-stage fintech startup.                  
+                  Lately, I&apos;ve been working on Folio, a fintech startup, where we&apos;re exploring how adaptive systems can be used to personalize investment strategies based on user behavior patterns.                  
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
                   Currently to-and-from Charlotte and San Francisco.
