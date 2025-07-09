@@ -16,7 +16,7 @@ export default function Portfolio() {
     {
       title: "Portfolio Simulation & Backtest Engine",
       description: "A multi-asset portfolio construction and backtesting engine for major ETFs. Enables custom ETF portfolio builds, backtesting, and performance tracking over 25 years of historical data // still under construction",
-      tools: ["Python", "yFinance", "Pandas", "NumPy", "Matplotlib"],
+      tools: ["Python", "yFinance", "Pandas", "NumPy", "Matplotlib", "C++"],
       link: "https://github.com/gyimadu/portfolio-backtest-engine"
     },
     {
