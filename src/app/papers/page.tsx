@@ -16,7 +16,7 @@ export default function Papers() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="max-w-3xl mx-auto px-4 py-16 relative">
+      <main className="max-w-3xl mx-auto px-6 py-16 relative">
         <div className="w-full">          
           <div className="space-y-16 md:space-y-24">
             {projects.map((paper, index) => (

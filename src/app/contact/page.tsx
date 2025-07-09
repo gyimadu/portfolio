@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="max-w-3xl mx-auto px-4 py-12 md:py-8">
+      <main className="max-w-3xl mx-auto px-6 py-12 md:py-8">
         <section className="mb-20">
           <div className="flex flex-col md:flex-row md:gap-16 md:items-start">
             {/* Left column - 20% */}
