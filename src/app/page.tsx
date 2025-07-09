@@ -34,7 +34,7 @@ export default function Home() {
                   Hi, I&apos;m Michael!
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
-                  I&apos;m studying math and econ at Wingate University and spend most of my time exploring how machine learning and computational methods can be applied to financial theory to reduce risk and improve investment decision-making.            
+                  I&apos;m studying math and economics at Wingate University and spend most of my time exploring how machine learning and computational methods can be applied to financial theory to reduce risk and improve investment decision-making.            
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
                   I build predictive models, portfolio optimization algorithms, and signal-based trading strategies to simulate and assess market behavior using economic and market data.
