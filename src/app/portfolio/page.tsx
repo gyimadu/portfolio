@@ -21,7 +21,7 @@ export default function Portfolio() {
     },
     {
       title: "Macro Signal Builder",
-      description: "A macroeconomic analysis engine that processes real-time economic indicators (GDP, inflation, unemployment, interest rates) and translates them into rule-based investment signals across multiple asset classes using historical data patterns.",
+      description: "A macroeconomic analysis engine designed to simulate recessionary vs expansionary impacts on equities, bonds, and commodities using lagging and leading macro indicators, and translate them into rule-basedinvestment signals.",
       tools: ["Python", "Pandas", "NumPy", "Fred API", "Matplotlib", "Next.js", "TypeScript", "Tailwind CSS"],
       link: "https://github.com/gyimadu/macro-signal-builder"
     },

@@ -31,10 +31,10 @@ export default function Home() {
             <div className="flex flex-col lg:flex-col lg:gap-10">
               <div className='flex flex-col justify-center text-gray-600 md:pt-0 mb-6'>
                 <div className='text-3xl md:text-4xl mb-4 text-gray-800 font-mouse'>
-                  Hi!
+                  Hi, I&apos;m Michael!
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
-                  I&apos;m a math and econ major at Wingate University. I spend my time exploring how machine learning and computational methods can be applied to financial theory to improve risk management and investment decision-making.            
+                  I&apos;m studying math and econ at Wingate University and spend most ofmy time exploring how machine learning and computational methods can be applied to financial theory to improve risk management and investment decision-making.            
                 </div>
                 <div className='text-lg md:text-lg mb-6'>
                   I build predictive models, portfolio optimization algorithms, and signal-based trading strategies to simulate and assess market behavior using economic and market data.
