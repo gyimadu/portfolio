@@ -15,7 +15,7 @@ export default function Portfolio() {
     },*/
     {
       title: "Portfolio Simulation & Backtest Engine",
-      description: "A multi-asset portfolio construction and backtesting engine for major ETFs. Enables building custom ETF portfolios with percentage allocations and tracks performance over 25 years of historical data. Features include portfolio allocation tools, performance tracking, and comprehensive backtesting. (still under construction)",
+      description: "A multi-asset portfolio construction and backtesting engine for major ETFs. Enables custom ETF portfolio builds, backtesting, and performance tracking over 25 years of historical data // still under construction",
       tools: ["Python", "yFinance", "Pandas", "NumPy", "Matplotlib"],
       link: "https://github.com/gyimadu/portfolio-backtest-engine"
     },
