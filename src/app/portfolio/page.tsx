@@ -26,7 +26,7 @@ export default function Portfolio() {
       link: "https://github.com/gyimadu/macro-signal-builder"
     },
     {
-      title: "Equity Screening Platform",
+      title: "Equity Screener",
       description: "A custom-built stock screener that helps you filter and discover US equities by valuation, yield, volatility, price changes and more in a responsive user-friendly interface.",
       tools: ["Python", "FastAPI", "yFinance", "PostgreSQL", "Next.js", "TypeScript", "Tailwind CSS"],
       image: {
