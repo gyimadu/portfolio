@@ -111,7 +111,7 @@ export default function Home() {
                   </div>
                   <div className="">
                     <div className="text-base md:text-base font-extrabold mb-1 text-gray-900">Matrix Decomposition + Eigenvalue Theory</div>
-                    <div className="text-gray-900 text-base md:text-base mb-2">A Comparative Analysis of Principal Component Analysis and Singular Value Decomposition as Dimensionality Reduction Techniques<br/><span className='italic'>with Gregory Bell, Ph.D.</span></div>
+                    <div className="text-gray-900 text-base leading-normal md:text-base mb-2">A Comparative Analysis of Principal Component Analysis and Singular Value Decomposition as Dimensionality Reduction Techniques<br/><span className='italic'>with Gregory Bell, Ph.D.</span></div>
                     [ <a
                       href="https://arxiv.org/abs/2506.16663"
                       target="_blank"
