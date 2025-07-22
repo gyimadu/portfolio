@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Rethink+Sans:wght@300;400;500&display=swap');
 
 @tailwind base;
@@ -16,14 +17,16 @@
   --font-secondary: 'Ancizar Sans', sans-serif;
   --font-exile: 'Exile', sans-serif;
   --font-sansation: 'Sansation', sans-serif;
-  --font-mouse: 'Mouse Memoirs', sans-serif;
   --font-rethink: 'Rethink Sans', sans-serif;
+  --font-mouse: 'Fjalla One', sans-serif;
+  --font-rethink: 'Courier New', Courier, monospace;
+  
 }
 
 body {
   background-color: #FAF9F6;
   color: #000000;
-  font-family: 'Rethink Sans', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -36,7 +39,7 @@ h1, h2, h3, nav a {
 }
 
 p, span, a:not(nav a) {
-  font-family: 'Rethink Sans', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   letter-spacing: -0.006em;
 }
 
@@ -54,6 +57,10 @@ p, span, a:not(nav a) {
 
 .font-mouse {
   font-family: 'Mouse Memoirs', sans-serif;
+}
+
+.font-rethink {
+  font-family: 'Rethink Sans', sans-serif;
 }
 
 .gradient-text {

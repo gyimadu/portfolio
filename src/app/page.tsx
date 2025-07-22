@@ -29,24 +29,24 @@ export default function Home() {
         <section className="mb-12">
           <div className="mb-2">
             <div className="flex flex-col lg:flex-col lg:gap-10">
-              <div className='flex flex-col justify-center text-gray-600 md:pt-0 mb-6'>
+              <div className='flex flex-col justify-center text-gray-900 md:pt-0 mb-6'>
                 <div className='text-3xl md:text-4xl mb-8 md:mb-8 text-gray-800 font-mouse'>
                   Hi, I&apos;m Michael!
                 </div>
-                <div className='text-lg md:text-xl mb-6'>
+                <div className='text-lg md:text-base mb-6'>
                   I&apos;m studying math and economics at Wingate University and spend most of my time exploring how machine learning and computational methods can be applied to financial theory to reduce risk and improve investment decision-making.            
                 </div>
-                <div className='text-lg md:text-xl mb-6'>
+                <div className='text-lg md:text-base mb-6'>
                   I build predictive models, portfolio optimization algorithms, and signal-based trading strategies to simulate and assess market behavior using economic and market data.
                 </div>
-                <div className='text-lg md:text-xl mb-6'>
-                  Lately, I&apos;ve been working on <span className='text-blue-600'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Meridian</Link></span>, a fintech startup, where we&apos;re exploring how smart, adaptive systems can be used to personalize investment strategies based on user behavior patterns.                  
+                <div className='text-lg md:text-base mb-6'>
+                  Lately, I&apos;ve been working on <span className='underline underline-offset-4 decoration-1'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Meridian</Link></span>, a fintech startup, where we&apos;re exploring how smart, adaptive systems can be used to personalize investment strategies based on user behavior patterns.                  
                 </div>
-                <div className='text-lg md:text-xl mb-6'>
+                  <div className='text-lg md:text-base mb-6'>
                   Currently to-and-from Charlotte and San Francisco.
                 </div>
-                <div className='text-lg md:text-xl mb-6'>
-                  Reach out to me <Link href="/contact" className='text-blue-600'>here</Link> or via email at <a href="mailto:mkwabenagyimadu@gmail.com" className='text-blue-600'>mkwabenagyimadu@gmail.com</a>.
+                <div className='text-lg md:text-base mb-6'>
+                  Reach out to me <Link href="/contact" className='underline underline-offset-4 decoration-1'>here</Link> or via email at <a href="mailto:mkwabenagyimadu@gmail.com" className='underline underline-offset-4 decoration-1'>mkwabenagyimadu@gmail.com</a>.
                 </div>
               </div>
 
