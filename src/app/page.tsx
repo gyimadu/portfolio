@@ -33,7 +33,7 @@ export default function Home() {
                 <div className='text-3xl md:text-4xl mb-4 md:mb-4 text-gray-800 font-mouse'>
                   Hi, I&apos;m Michael!
                 </div>
-                <div className="flex justify-start gap-4 md:gap-6 mb-10">
+                <div className="flex justify-start gap-4 md:gap-6 mb-2">
                   <a 
                     href="https://github.com/gyimadu" 
                     target="_blank"
@@ -71,6 +71,15 @@ export default function Home() {
                     <FaLinkedin className="w-4 md:w-5 h-4 md:h-5" />
                   </a>
                 </div>
+                <a
+                  href="https://scholar.google.com/citations?hl=en&authuser=1&user=DAStgxcAAAAJ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-gray-900 hover:text-gray-600 font-extrabold text-sm md:text-sm mb-8 underline underline-offset-4 decoration-1"
+                  aria-label="Google Scholar Profile"
+                >
+                  Google Scholar
+                </a>
                 <div className='text-base md:text-base leading-normal font-medium mb-6'>
                   I study mathematics and economics at Wingate University and spend most of my time exploring applications of machine learning in financial risk management and investment decision-making.            
                 </div>
@@ -146,7 +155,7 @@ export default function Home() {
                           <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
                         </a>
                       </div>
-                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>Simulates macroeconomic impacts on assets.<br/>Generates rule-based investment signals.</p></div>
+                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>Simulates macroeconomic impacts on selected assets.<br/>Generates rule-based investment signals.</p></div>
                     </div>
                     {/* Equity Screener */}
                     <div className="">
@@ -156,7 +165,7 @@ export default function Home() {
                           <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
                         </a>
                       </div>
-                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>Screener for US based equities.<br/>Filter by valuation, yield, volatility, and more.</p></div>
+                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>Custom stock screener for US based equities.<br/>Filter by price, valuation, yield, volatility, and more.</p></div>
                     </div>
                     {/* ConvertiGo */}
                     <div className="">
@@ -166,7 +175,7 @@ export default function Home() {
                           <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
                         </a>
                       </div>
-                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>C++ command-line currency converter.<br/>Real-time rates and historical tracking.</p></div>
+                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>C++ command-line currency converter.<br/>Real-time rates and historical rates tracking.</p></div>
                     </div>
                     {/* TidyTable */}
                     <div className="">
