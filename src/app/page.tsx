@@ -75,7 +75,7 @@ export default function Home() {
                   href="https://scholar.google.com/citations?hl=en&authuser=1&user=DAStgxcAAAAJ"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-gray-900 hover:text-gray-600 font-extrabold text-sm md:text-sm mb-8 underline underline-offset-4 decoration-1"
+                  className="block text-gray-900 hover:text-gray-600 font-extrabold text-xs md:text-sm mb-8 underline underline-offset-4 decoration-1"
                   aria-label="Google Scholar Profile"
                 >
                   Google Scholar
