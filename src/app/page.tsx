@@ -131,7 +131,7 @@ export default function Home() {
                     {/* PortfolioLab */}
                     <div className="">
                       <div className="flex items-center gap-2 mb-1">
-                        <a href="https://github.com/gyimadu/portfolio-backtest-engine" target="_blank" rel="noopener noreferrer" className="text-base md:text-base font-semibold text-black hover:text-blue-700 transition-colors flex items-center group mb-1">
+                        <a href="https://github.com/gyimadu/portfolio-backtest-engine" target="_blank" rel="noopener noreferrer" className="text-base md:text-base font-semibold text-black hover:text-blue-700 transition-colors flex items-center group mb-1 underline underline-offset-4 decoration-1">
                           PortfolioLab
                           <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
                         </a>
@@ -141,7 +141,7 @@ export default function Home() {
                     {/* Macro Signal Builder */}
                     <div className="">
                       <div className="flex items-center gap-2 mb-1">
-                        <a href="https://github.com/gyimadu/macro-signal-builder" target="_blank" rel="noopener noreferrer" className="text-base md:text-base font-semibold text-black hover:text-blue-700 transition-colors flex items-center group mb-1">
+                        <a href="https://github.com/gyimadu/macro-signal-builder" target="_blank" rel="noopener noreferrer" className="text-base md:text-base font-semibold text-black hover:text-blue-700 transition-colors flex items-center group mb-1 underline underline-offset-4 decoration-1">
                           Macro Signal Builder
                           <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
                         </a>
@@ -151,7 +151,7 @@ export default function Home() {
                     {/* Equity Screener */}
                     <div className="">
                       <div className="flex items-center gap-2 mb-1">
-                        <a href="https://bull-app.vercel.app/screener" target="_blank" rel="noopener noreferrer" className="text-base md:text-base font-semibold text-black hover:text-blue-700 transition-colors flex items-center group mb-1">
+                        <a href="https://bull-app.vercel.app/screener" target="_blank" rel="noopener noreferrer" className="text-base md:text-base font-semibold text-black hover:text-blue-700 transition-colors flex items-center group mb-1 underline underline-offset-4 decoration-1">
                           Equity Screener
                           <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
                         </a>
@@ -161,7 +161,7 @@ export default function Home() {
                     {/* ConvertiGo */}
                     <div className="">
                       <div className="flex items-center gap-2 mb-1">
-                          <a href="https://github.com/gyimadu/cpp-financial-toolkit/tree/main/currency_converter" target="_blank" rel="noopener noreferrer" className="text-base md:text-base font-semibold text-black hover:text-blue-700 transition-colors flex items-center group mb-1">
+                          <a href="https://github.com/gyimadu/cpp-financial-toolkit/tree/main/currency_converter" target="_blank" rel="noopener noreferrer" className="text-base md:text-base font-semibold text-black hover:text-blue-700 transition-colors flex items-center group mb-1 underline underline-offset-4 decoration-1">
                           ConvertiGo
                           <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
                         </a>
@@ -171,7 +171,7 @@ export default function Home() {
                     {/* TidyTable */}
                     <div className="">
                       <div className="flex items-center gap-2 mb-1">
-                        <a href="https://data-cleaning-automation.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-base md:text-base font-semibold text-black hover:text-blue-700 transition-colors flex items-center group mb-1">
+                        <a href="https://data-cleaning-automation.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-base md:text-base font-semibold text-black hover:text-blue-700 transition-colors flex items-center group mb-1 underline underline-offset-4 decoration-1">
                           TidyTable
                           <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
                         </a>
