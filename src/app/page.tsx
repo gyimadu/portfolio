@@ -81,7 +81,7 @@ export default function Home() {
                   Lately, I&apos;ve been working on <span className='underline underline-offset-4 decoration-1'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Meridian</Link></span>, a fintech startup, where we&apos;re leveraging AI/ML to personalize investment strategies based on user behavior patterns.                  
                 </div>
                 <div className='text-base md:text-base leading-normal mb-6'>
-                  Currently to-and-from Charlotte and San Francisco.
+                  Currently based between Charlotte and San Francisco.
                 </div>
                 <div className='text-base md:text-base leading-normal mb-6'>
                   Feel free to reach out to me through a mutual friend or via email at <a href="mailto:mi.gyimadu430@wingate.edu" className='underline underline-offset-4 decoration-1'>mi.gyimadu430@wingate.edu</a>.
