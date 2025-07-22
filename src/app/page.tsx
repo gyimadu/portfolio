@@ -84,7 +84,7 @@ export default function Home() {
                   Currently to-and-from Charlotte and San Francisco.
                 </div>
                 <div className='text-base md:text-base leading-tight mb-6'>
-                  Reach out to me <Link href="/contact" className='underline underline-offset-4 decoration-1'>here</Link> or via email at <a href="mailto:mkwabenagyimadu@gmail.com" className='underline underline-offset-4 decoration-1'>mkwabenagyimadu@gmail.com</a>.
+                  Reach out to me through a mutual friend or via email at <a href="mailto:mkwabenagyimadu@gmail.com" className='underline underline-offset-4 decoration-1'>mkwabenagyimadu@gmail.com</a>.
                 </div>
                 <div className="flex flex-row gap-2 mb-8">
                   <a

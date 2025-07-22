@@ -15,7 +15,7 @@ export default function MobileMenu() {
         aria-label={isOpen ? "Close Menu" : "Open Menu"}
         className="relative p-2 z-50"
       >
-        <div className="w-8 h-8 flex flex-col justify-center items-center gap-1">
+        <div className="w-8 h-8 flex flex-col justify-center items-center gap-1.5">
           <span 
             className={`bg-black block h-px w-7 rounded-sm transition-all duration-500 ease-in-out ${
               isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'
