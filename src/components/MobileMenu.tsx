@@ -56,15 +56,6 @@ export default function MobileMenu() {
               Work
             </Link>
             <Link
-              href="/papers"
-              onClick={() => setIsOpen(false)}
-              className={`text-3xl transform transition-all duration-500 delay-150 ${
-                isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
-              } ${pathname === '/papers' ? 'text-black underline underline-offset-4' : 'text-gray-500'}`}
-            >
-              Papers
-            </Link>
-            <Link
               href="/blog"
               onClick={() => setIsOpen(false)}
               className={`text-3xl transform transition-all duration-500 delay-150 ${

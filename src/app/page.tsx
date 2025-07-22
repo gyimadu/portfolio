@@ -106,7 +106,7 @@ export default function Home() {
 
                 {/* Selected Publication Section */}
                 <div className="mb-8 mt-10">
-                  <div className="font-bold mb-2 text-gray-900" style={{ fontFamily: 'Courier New, sans-serif' }}>
+                  <div className="font-bold mb-6 text-gray-900" style={{ fontFamily: 'Courier New, sans-serif' }}>
                     <p className='text-base md:text-base bg-gray-100 w-fit px-1 py-1 font-extrabold'>Selected Publications</p>
                   </div>
                   <div className="">
