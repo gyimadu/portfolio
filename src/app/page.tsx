@@ -33,19 +33,34 @@ export default function Home() {
                 <div className='text-3xl md:text-4xl mb-8 md:mb-8 text-gray-800 font-mouse'>
                   Hi, I&apos;m Michael!
                 </div>
-                <div className='text-lg md:text-base mb-6'>
+                <div className="flex flex-row gap-2 mb-8">
+                  <a
+                    href="/resume.pdf"
+                    target='_blank'
+                    className="px-4 py-1.5 bg-gray-50 text-black rounded-xl text-sm hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
+                  >
+                    View My Resume
+                  </a>
+                  <Link
+                    href="/portfolio"
+                    className="px-4 py-1.5 bg-gray-50 text-black rounded-xl text-sm hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
+                  >
+                    View Projects
+                  </Link>
+                </div>
+                <div className='text-base md:text-base mb-6'>
                   I&apos;m studying math and economics at Wingate University and spend most of my time exploring how machine learning and computational methods can be applied to financial theory to reduce risk and improve investment decision-making.            
                 </div>
-                <div className='text-lg md:text-base mb-6'>
+                <div className='text-base md:text-base mb-6'>
                   I build predictive models, portfolio optimization algorithms, and signal-based trading strategies to simulate and assess market behavior using economic and market data.
                 </div>
-                <div className='text-lg md:text-base mb-6'>
+                <div className='text-base md:text-base mb-6'>
                   Lately, I&apos;ve been working on <span className='underline underline-offset-4 decoration-1'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Meridian</Link></span>, a fintech startup, where we&apos;re exploring how smart, adaptive systems can be used to personalize investment strategies based on user behavior patterns.                  
                 </div>
-                  <div className='text-lg md:text-base mb-6'>
+                  <div className='text-base md:text-base mb-6'>
                   Currently to-and-from Charlotte and San Francisco.
                 </div>
-                <div className='text-lg md:text-base mb-6'>
+                <div className='text-base md:text-base mb-6'>
                   Reach out to me <Link href="/contact" className='underline underline-offset-4 decoration-1'>here</Link> or via email at <a href="mailto:mkwabenagyimadu@gmail.com" className='underline underline-offset-4 decoration-1'>mkwabenagyimadu@gmail.com</a>.
                 </div>
               </div>
@@ -68,62 +83,45 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mb-10">
-            <div className="flex flex-col sm:flex-row justify-center sm:space-x-4 space-y-4 sm:space-y-0 mb-20">
-              <a
-                href="/resume.pdf"
-                target='_blank'
-                className="px-4 py-1.5 bg-gray-50 text-black rounded-xl text-sm sm:text-base lg:text-sm hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
-              >
-                View My Resume
-              </a>
-              <Link
-                href="/portfolio"
-                className="px-4 py-1.5 bg-gray-50 text-black rounded-xl text-sm sm:text-base lg:text-sm hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
-              >
-                View Projects
-              </Link>
-            </div>
-            <div className="flex justify-center gap-2 md:gap-4 mb-4">
-              <a 
-                href="https://github.com/gyimadu" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-gray-50 text-black rounded-xl hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
-                aria-label="GitHub Profile"
-              >
-                <FaGithub className="w-6 h-6" />
-              </a>
-              <a
-                href="https://twitter.com/gyimaduu" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
-                aria-label="X (Twitter) Profile"
-              >
-                <FaXTwitter className="w-6 h-6" />
-              </a>
-              <a 
-                href="https://instagram.com/gyimadu_" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
-                aria-label="Instagram Profile"
-              >
-                <FaInstagram className="w-6 h-6" />
-              </a>
-              <a 
-                href="https://linkedin.com/in/michael-gyimadu" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
-                aria-label="LinkedIn Profile"
-              >
-                <FaLinkedin className="w-6 h-6" />
-              </a>
-            </div>
-            <PolaroidImages />
+          <div className="flex justify-center gap-2 md:gap-4 mb-4">
+            <a 
+              href="https://github.com/gyimadu" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-gray-50 text-black rounded-xl hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
+              aria-label="GitHub Profile"
+            >
+              <FaGithub className="w-6 h-6" />
+            </a>
+            <a
+              href="https://twitter.com/gyimaduu" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+              aria-label="X (Twitter) Profile"
+            >
+              <FaXTwitter className="w-6 h-6" />
+            </a>
+            <a 
+              href="https://instagram.com/gyimadu_" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+              aria-label="Instagram Profile"
+            >
+              <FaInstagram className="w-6 h-6" />
+            </a>
+            <a 
+              href="https://linkedin.com/in/michael-gyimadu" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-[#F5F5F1] text-black rounded-xl hover:bg-[#EFEEE9] text-center transition-all shadow-sm hover:shadow-md"
+              aria-label="LinkedIn Profile"
+            >
+              <FaLinkedin className="w-6 h-6" />
+            </a>
           </div>
+          <PolaroidImages />
         </section>
 
         {/*<section className="mb-28 lg:mb-28">
