@@ -25,7 +25,7 @@ export default function Home() {
       <div className="md:hidden">
         <NeuralNetworkBall />
       </div>
-      <main className="max-w-3xl mx-auto px-8 md:px-4 py-10 md:pb-8 md:-pt-10">
+      <main className="max-w-3xl mx-auto px-6 md:px-4 py-10 md:pb-8 md:-pt-10">
         <section className="mb-12">
           <div className="mb-2">
             <div className="flex flex-col lg:flex-col lg:gap-10">
@@ -71,19 +71,19 @@ export default function Home() {
                     <FaLinkedin className="w-4 md:w-5 h-4 md:h-5" />
                   </a>
                 </div>
-                <div className='text-base md:text-base mb-6'>
+                <div className='text-base md:text-base leading-tight font-medium mb-6'>
                   I&apos;m studying math and economics at Wingate University and spend most of my time exploring how machine learning and computational methods can be applied to financial theory to reduce risk and improve investment decision-making.            
                 </div>
-                <div className='text-base md:text-base mb-6'>
+                <div className='text-base md:text-base leading-tight mb-6'>
                   I build predictive models, portfolio optimization algorithms, and signal-based trading strategies to simulate and assess market behavior using economic and market data.
                 </div>
-                <div className='text-base md:text-base mb-6'>
+                <div className='text-base md:text-base leading-tight mb-6'>
                   Lately, I&apos;ve been working on <span className='underline underline-offset-4 decoration-1'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Meridian</Link></span>, a fintech startup, where we&apos;re exploring how smart, adaptive systems can be used to personalize investment strategies based on user behavior patterns.                  
                 </div>
-                  <div className='text-base md:text-base mb-6'>
+                  <div className='text-base md:text-base leading-tight mb-6'>
                   Currently to-and-from Charlotte and San Francisco.
                 </div>
-                <div className='text-base md:text-base mb-6'>
+                <div className='text-base md:text-base leading-tight mb-6'>
                   Reach out to me <Link href="/contact" className='underline underline-offset-4 decoration-1'>here</Link> or via email at <a href="mailto:mkwabenagyimadu@gmail.com" className='underline underline-offset-4 decoration-1'>mkwabenagyimadu@gmail.com</a>.
                 </div>
                 <div className="flex flex-row gap-2 mb-8">

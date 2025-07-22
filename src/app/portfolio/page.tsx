@@ -113,7 +113,7 @@ export default function Portfolio() {
                     ) : (
                       <h3 className="text-2xl md:text-2xl font-bold mb-4 uppercase font-mouse">{project.title}</h3>
                     )}
-                    <div className="text-gray-900 text-base md:text-base mb-4">{project.description}</div>
+                    <div className="text-gray-900 text-base md:text-base leading-tight mb-4">{project.description}</div>
 
                     {project.tools && (
                       <div className="mb-4">
