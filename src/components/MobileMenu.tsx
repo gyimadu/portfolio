@@ -17,12 +17,12 @@ export default function MobileMenu() {
       >
         <div className="w-8 h-8 flex flex-col justify-center items-center gap-1">
           <span 
-            className={`bg-black block h-px w-9 rounded-sm transition-all duration-500 ease-in-out ${
+            className={`bg-black block h-px w-7 rounded-sm transition-all duration-500 ease-in-out ${
               isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'
             }`}
           />
           <span 
-            className={`bg-black block h-px w-9 rounded-sm transition-all duration-500 ease-in-out ${
+            className={`bg-black block h-px w-7 rounded-sm transition-all duration-500 ease-in-out ${
               isOpen ? '-rotate-45 -translate-y-0.5' : 'translate-y-0.5'
             }`}
           />
