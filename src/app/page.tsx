@@ -80,7 +80,7 @@ export default function Home() {
                 <div className='text-base md:text-base leading-normal mb-6'>
                   Lately, I&apos;ve been working on <span className='underline underline-offset-4 decoration-1'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Meridian</Link></span>, a fintech startup, where we&apos;re leveraging AI/ML to personalize investment strategies based on user behavior patterns.                  
                 </div>
-                  <div className='text-base md:text-base leading-normal mb-6'>
+                <div className='text-base md:text-base leading-normal mb-6'>
                   Currently to-and-from Charlotte and San Francisco.
                 </div>
                 <div className='text-base md:text-base leading-normal mb-6'>
@@ -107,7 +107,7 @@ export default function Home() {
                 {/* Selected Publication Section */}
                 <div className="mb-8 mt-10">
                   <div className="font-bold mb-2 text-gray-900" style={{ fontFamily: 'Courier New, sans-serif' }}>
-                    <p className='text-lg md:text-lg font-extrabold'>Selected Publications</p>
+                    <p className='text-base md:text-base bg-gray-100 w-fit px-1 py-1 font-extrabold'>Selected Publications</p>
                   </div>
                   <div className="">
                     <div className="text-base md:text-base font-extrabold mb-1 text-gray-900">Matrix Decomposition + Eigenvalue Theory</div>
