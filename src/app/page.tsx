@@ -25,7 +25,7 @@ export default function Home() {
       <div className="md:hidden">
         <NeuralNetworkBall />
       </div>
-      <main className="max-w-3xl mx-auto px-6 md:px-4 py-10 md:pb-8 md:-pt-10">
+      <main className="max-w-3xl mx-auto px-6 md:px-4 py-10 md:pb-8 md:-pt-20">
         <section className="mb-12">
           <div className="mb-2">
             <div className="flex flex-col lg:flex-col lg:gap-10">
@@ -84,14 +84,14 @@ export default function Home() {
                   Currently to-and-from Charlotte and San Francisco.
                 </div>
                 <div className='text-base md:text-base leading-normal mb-6'>
-                  Feel free to reach out to me through a mutual friend or via email at <a href="mailto:mkwabenagyimadu@gmail.com" className='underline underline-offset-4 decoration-1'>mkwabenagyimadu@gmail.com</a>.
+                  Feel free to reach out to me through a mutual friend or via email at <a href="mailto:mi.gyimadu430@wingate.edu" className='underline underline-offset-4 decoration-1'>mi.gyimadu430@wingate.edu</a>.
                 </div>
 
 
                 <div className="flex flex-row gap-2 mb-8">
                   <a
                     href="/resume.pdf"
-                    target='_blank'
+                    target='_self'
                     className="px-4 py-1.5 bg-gray-50 text-black rounded-xl text-sm hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
                   >
                     View My Resume
@@ -104,10 +104,10 @@ export default function Home() {
                   </Link>
                 </div>
 
-                {/* Selected Publication Section */}
+                {/* Selected Papers Section */}
                 <div className="mb-8 mt-10">
                   <div className="font-bold mb-6 text-gray-900" style={{ fontFamily: 'Courier New, sans-serif' }}>
-                    <p className='text-base md:text-base bg-gray-100 w-fit px-1 py-1 font-extrabold'>Selected Publications</p>
+                    <p className='text-base md:text-base bg-gray-100 w-fit px-1 py-1 font-extrabold'>Selected Papers</p>
                   </div>
                   <div className="">
                     <div className="text-base md:text-base font-extrabold mb-1 text-gray-900">Matrix Decomposition + Eigenvalue Theory</div>
@@ -120,6 +120,64 @@ export default function Home() {
                     >
                       arXiv
                     </a> ]
+                  </div>
+                </div>
+                {/* Past + Ongoing Projects Section */}
+                <div className="mb-8 mt-10">
+                  <div className="font-bold mb-6 text-gray-900" style={{ fontFamily: 'Courier New, sans-serif' }}>
+                    <p className='text-base md:text-base bg-gray-100 w-fit px-1 py-1 font-extrabold'>Past + Ongoing Projects</p>
+                  </div>
+                  <div className="space-y-4">
+                    {/* PortfolioLab */}
+                    <div className="">
+                      <div className="flex items-center gap-2 mb-1">
+                        <a href="https://github.com/gyimadu/portfolio-backtest-engine" target="_blank" rel="noopener noreferrer" className="text-base md:text-base font-semibold text-black hover:text-blue-700 transition-colors flex items-center group mb-2">
+                          PortfolioLab
+                          <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
+                        </a>
+                      </div>
+                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>Multi-asset ETF portfolio builder and backtester.<br/>Allocate, simulate, and track performance.</p></div>
+                    </div>
+                    {/* Macro Signal Builder */}
+                    <div className="">
+                      <div className="flex items-center gap-2 mb-1">
+                        <a href="https://github.com/gyimadu/macro-signal-builder" target="_blank" rel="noopener noreferrer" className="text-base md:text-base font-semibold text-black hover:text-blue-700 transition-colors flex items-center group mb-2">
+                          Macro Signal Builder
+                          <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
+                        </a>
+                      </div>
+                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>Simulates macroeconomic impacts on assets.<br/>Generates rule-based investment signals.</p></div>
+                    </div>
+                    {/* Equity Screener */}
+                    <div className="">
+                      <div className="flex items-center gap-2 mb-1">
+                        <a href="https://bull-app.vercel.app/screener" target="_blank" rel="noopener noreferrer" className="text-base md:text-base font-semibold text-black hover:text-blue-700 transition-colors flex items-center group mb-2">
+                          Equity Screener
+                          <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
+                        </a>
+                      </div>
+                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>Screener for US based equities.<br/>Filter by valuation, yield, volatility, and more.</p></div>
+                    </div>
+                    {/* ConvertiGo */}
+                    <div className="">
+                      <div className="flex items-center gap-2 mb-1">
+                        <a href="https://github.com/gyimadu/cpp-financial-toolkit/tree/main/currency_converter" target="_blank" rel="noopener noreferrer" className="text-base md:text-base font-semibold text-black hover:text-blue-700 transition-colors flex items-center group mb-2">
+                          ConvertiGo
+                          <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
+                        </a>
+                      </div>
+                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>C++ command-line currency converter.<br/>Real-time rates and historical tracking.</p></div>
+                    </div>
+                    {/* TidyTable */}
+                    <div className="">
+                      <div className="flex items-center gap-2 mb-1">
+                        <a href="https://data-cleaning-automation.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-base md:text-base font-semibold text-black hover:text-blue-700 transition-colors flex items-center group mb-2">
+                          TidyTable
+                          <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
+                        </a>
+                      </div>
+                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>Automates data cleaning for large datasets.<br/>Handles missing values and outliers.</p></div>
+                    </div>
                   </div>
                 </div>
               </div>

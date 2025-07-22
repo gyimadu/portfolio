@@ -27,17 +27,19 @@ export default function Header() {
             >
               WORK
             </Link>
+            <a
+              href="/resume.pdf"
+              target="_self"
+              rel="noopener noreferrer"
+              className="text-2xl hover:text-gray-600 transition-colors text-gray-500"
+            >
+              RESUME
+            </a>
             <Link
               href="/blog"
               className={`text-2xl hover:text-gray-600 transition-colors ${pathname === '/blog' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
             >
               BLOG
-            </Link>
-            <Link 
-              href="/contact" 
-              className={`text-2xl hover:text-gray-600 transition-colors ${pathname === '/contact' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
-            >
-              CONTACT
             </Link>
           </div>
           
