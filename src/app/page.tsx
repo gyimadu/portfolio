@@ -71,19 +71,19 @@ export default function Home() {
                     <FaLinkedin className="w-4 md:w-5 h-4 md:h-5" />
                   </a>
                 </div>
-                <div className='text-base md:text-base leading-tight font-medium mb-6'>
+                <div className='text-base md:text-base leading-normal font-medium mb-6'>
                   I study mathematics and economics at Wingate University and spend most of my time exploring applications of machine learning in financial risk management and investment decision-making.            
                 </div>
-                <div className='text-base md:text-base leading-tight mb-6'>
+                <div className='text-base md:text-base leading-normal mb-6'>
                   I build models for predictive analytics, portfolio-optimization, and signal-based trading using economic and market data.
                 </div>
-                <div className='text-base md:text-base leading-tight mb-6'>
+                <div className='text-base md:text-base leading-normal mb-6'>
                   Lately, I&apos;ve been working on <span className='underline underline-offset-4 decoration-1'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Meridian</Link></span>, a fintech startup, where we&apos;re leveraging AI/ML to personalize investment strategies based on user behavior patterns.                  
                 </div>
-                  <div className='text-base md:text-base leading-tight mb-6'>
+                  <div className='text-base md:text-base leading-normal mb-6'>
                   Currently to-and-from Charlotte and San Francisco.
                 </div>
-                <div className='text-base md:text-base leading-tight mb-6'>
+                <div className='text-base md:text-base leading-normal mb-6'>
                   Feel free to reach out to me through a mutual friend or via email at <a href="mailto:mkwabenagyimadu@gmail.com" className='underline underline-offset-4 decoration-1'>mkwabenagyimadu@gmail.com</a>.
                 </div>
                 <div className="flex flex-row gap-2 mb-8">
