@@ -86,6 +86,8 @@ export default function Home() {
                 <div className='text-base md:text-base leading-normal mb-6'>
                   Feel free to reach out to me through a mutual friend or via email at <a href="mailto:mkwabenagyimadu@gmail.com" className='underline underline-offset-4 decoration-1'>mkwabenagyimadu@gmail.com</a>.
                 </div>
+
+
                 <div className="flex flex-row gap-2 mb-8">
                   <a
                     href="/resume.pdf"
@@ -100,6 +102,25 @@ export default function Home() {
                   >
                     View Projects
                   </Link>
+                </div>
+
+                {/* Selected Publication Section */}
+                <div className="mb-8 mt-10">
+                  <div className="font-bold mb-2 text-gray-900" style={{ fontFamily: 'Courier New, sans-serif' }}>
+                    <p className='text-lg md:text-lg font-extrabold'>Selected Publications</p>
+                  </div>
+                  <div className="">
+                    <div className="text-base md:text-base font-extrabold mb-1 text-gray-900">Matrix Decomposition + Eigenvalue Theory</div>
+                    <div className="text-gray-900 text-base md:text-base mb-2">A Comparative Analysis of Principal Component Analysis and Singular Value Decomposition as Dimensionality Reduction Techniques<br/><span className='italic'>with Gregory Bell, Ph.D.</span></div>
+                    [ <a
+                      href="https://arxiv.org/abs/2506.16663"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-blue-600 hover:text-blue-900 transition-colors underline underline-offset-4 decoration-1 text-sm md:text-base font-bold mt-1"
+                    >
+                      arXiv
+                    </a> ]
+                  </div>
                 </div>
               </div>
 
