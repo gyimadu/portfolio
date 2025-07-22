@@ -66,9 +66,10 @@ export default function MobileMenu() {
             </Link>
             <Link
               href="/resume.pdf"
-              target="_self"
-              rel="noopener noreferrer"
-              className="text-3xl transform transition-all duration-500 delay-300"
+              onClick={() => setIsOpen(false)}
+              className={`text-3xl transform transition-all duration-500 delay-150 ${
+                isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
+              } ${pathname === '/resume.pdf' ? 'text-black underline underline-offset-4' : 'text-gray-500'}`}
             >
               Resume
             </Link>
