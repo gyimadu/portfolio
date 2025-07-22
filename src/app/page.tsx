@@ -30,7 +30,7 @@ export default function Home() {
           <div className="mb-2">
             <div className="flex flex-col lg:flex-col lg:gap-10">
               <div className='flex flex-col justify-center text-gray-900 md:pt-0 mb-6'>
-                <div className='text-3xl md:text-4xl mb-4 md:mb-4 text-gray-800 font-mouse'>
+                <div className='text-3xl md:text-4xl mb-3 md:mb-3 text-gray-800 font-mouse'>
                   Hi, I&apos;m Michael!
                 </div>
                 <div className="flex justify-start gap-4 md:gap-6 mb-2">
