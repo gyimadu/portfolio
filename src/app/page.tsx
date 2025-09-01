@@ -89,7 +89,7 @@ export default function Home() {
                   Bio
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
-                   I am a third-year undergraduate student studying Mathematics with minors in Economics and Finance at Wingate University. 
+                   I am a third-year undergraduate student studying Mathematics with minors in Economics and Finance at <span className='underline underline-offset-4 decoration-1 text-blue-400'><Link href="https://www.wingate.edu/" target="_blank" rel="noopener noreferrer">Wingate University</Link></span>. 
                    Alongside academics, I enjoy building practical systems at the intersection of machine learning, data science, and finance, 
                    having worked on projects spanning portfolio backtesting & optimization, signal-based trading, and predictive analytics for financial data.          
                 </div>
@@ -97,10 +97,10 @@ export default function Home() {
                   I have broad research interests in applied machine learning, computational finance, and algorithmic trading, and I&apos;m currently exploring optimization and probabilistic methods.
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
-                  Currently based between Charlotte and San Francisco, and lately, I&apos;ve been working on <span className='underline underline-offset-4 decoration-1'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Meridian</Link></span>, a fintech startup, where we&apos;re leveraging AI/ML to personalize investment strategies based on user behavior patterns.
+                  Currently based between Charlotte and San Francisco, and lately, I&apos;ve been working on <span className='underline underline-offset-4 decoration-1 text-blue-400'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Meridian</Link></span>, a fintech startup, where we&apos;re leveraging AI/ML to personalize investment strategies based on user behavior patterns.
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
-                  Feel free to reach out to me through a mutual friend or via email at <a href="mailto:mi.gyimadu430@wingate.edu" className='underline underline-offset-4 decoration-1'>mi.gyimadu430@wingate.edu</a>.
+                  Feel free to reach out to me at <a href="mailto:mi.gyimadu430@wingate.edu" className='underline underline-offset-4 decoration-1 text-blue-400'>mi.gyimadu430 [at] wingate [dot] edu</a>.
                 </div>
 
 
@@ -108,13 +108,13 @@ export default function Home() {
                   <a
                     href="/resume.pdf"
                     target='_self'
-                    className="px-4 py-1 text-gray-600 hover:text-gray-700 border border-gray-200 rounded-md text-sm text-center transition-all"
+                    className="px-4 py-1 text-blue-400 hover:text-gray-700 border border-gray-200 rounded-md text-sm text-center transition-all"
                   >
                     View My Resume
                   </a>
                   <Link
                     href="/portfolio"
-                    className="px-4 py-1 text-gray-600 hover:text-gray-700 border border-gray-200 rounded-md text-sm text-center transition-all"
+                    className="px-4 py-1 text-blue-400 hover:text-gray-700 border border-gray-200 rounded-md text-sm text-center transition-all"
                   >
                     View Projects
                   </Link>
@@ -127,12 +127,12 @@ export default function Home() {
                   </div>
                   <div className="">
                     {/* <div className="text-base md:text-base font-extrabold mb-1 text-black">Matrix Decomposition + Eigenvalue Theory</div> */}
-                    <div className="text-black text-base font-extrabold leading-relaxed md:text-base mb-2">A Comparative Analysis of Principal Component Analysis and Singular Value Decomposition as Dimensionality Reduction Techniques<br/><span className='font-normal leading-relaxed'>Michael Gyimadu, Gregory Bell, Ph.D.</span></div>
+                    <div className="text-black text-base font-extrabold leading-relaxed md:text-base mb-2">A Comparative Analysis of Principal Component Analysis and Singular Value Decomposition as Dimensionality Reduction Techniques<br/><span className='font-light text-base md:text-base leading-relaxed'>Michael Gyimadu, Gregory Bell, Ph.D.</span></div>
                       <a
                         href="https://arxiv.org/abs/2506.16663"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block text-gray-600 hover:text-gray-700 transition-colors border border-gray-200 rounded-md px-6 py-1 text-sm md:text-sm font-medium mt-1"
+                        className="inline-block text-blue-400 hover:text-gray-700 transition-colors border border-gray-200 rounded-md px-6 py-1 text-sm md:text-sm font-medium mt-1"
                       >
                         Paper
                       </a>
@@ -152,7 +152,7 @@ export default function Home() {
                           <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
                         </a>
                       </div>
-                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>Multi-asset ETF portfolio builder and backtester.<br/>Allocate, simulate, and track performance.</p></div>
+                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>A multi-asset portfolio simulator and backtester. Implements allocation logic, contribution schedules, and performance tracking with Python and C++, wrapped in a Next.js interface..</p></div>
                     </div>
                     {/* Macro Signal Builder */}
                     <div className="">
@@ -162,7 +162,7 @@ export default function Home() {
                           <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
                         </a>
                       </div>
-                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>Simulates macroeconomic impacts on selected assets.<br/>Generates rule-based investment signals.</p></div>
+                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>A rules-based signal generator that models macroeconomic factors and their impact on selected assets. Designed for flexible testing of strategy ideas.</p></div>
                     </div>
                     {/* Equity Screener */}
                     <div className="">
@@ -172,7 +172,7 @@ export default function Home() {
                           <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
                         </a>
                       </div>
-                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>Custom stock screener for US based equities.<br/>Filter by price, valuation, yield, volatility, and more.</p></div>
+                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>A custom stock screener for U.S. equities. Filters by valuation, yield, volatility, and other factors, built with a focus on extensible screening logic.</p></div>
                     </div>
                     {/* ConvertiGo */}
                     <div className="">
@@ -182,7 +182,7 @@ export default function Home() {
                           <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
                         </a>
                       </div>
-                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>C++ command-line currency converter.<br/>Real-time rates and historical rates tracking.</p></div>
+                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>A C++ command-line currency converter with support for both real-time exchange rates and historical rate lookups.</p></div>
                     </div>
                     {/* TidyTable */}
                     <div className="">
@@ -192,7 +192,7 @@ export default function Home() {
                           <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
                         </a>
                       </div>
-                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>Automates data cleaning for large datasets.<br/>Handles missing values and outliers.</p></div>
+                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>A Python utility that automates common data cleaning steps for large datasets, handling missing values, outliers, and formatting.</p></div>
                     </div>
                   </div>
                 </div>
