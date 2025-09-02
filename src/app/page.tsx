@@ -100,7 +100,7 @@ export default function Home() {
                   I have broad research interests in applied machine learning, computational finance, and algorithmic trading, and I&apos;m currently exploring optimization and probabilistic methods.
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
-                  Currently based between Charlotte and San Francisco, and lately, I&apos;ve been working on <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Meridian</Link></span>, a fintech startup, where we&apos;re leveraging AI/ML to personalize investment strategies based on user behavior patterns.
+                  Currently based between Charlotte and San Francisco. Lately, I&apos;ve been working on <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Meridian</Link></span>, a fintech startup, where we&apos;re leveraging AI/ML to personalize investment strategies based on user behavior patterns.
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
                   Feel free to reach out to me at <a href="mailto:mi.gyimadu430@wingate.edu" className='underline underline-offset-4 decoration-1 text-blue-600'>mi.gyimadu430 [at] wingate [dot] edu</a>.
@@ -111,15 +111,15 @@ export default function Home() {
                   <a
                     href="/resume.pdf"
                     target='_self'
-                    className="px-4 py-1 text-blue-400 hover:text-gray-700 border border-gray-200 rounded-md text-sm text-center transition-all"
+                    className="px-5 py-2 text-blue-600 hover:text-gray-700 border border-gray-200 rounded-md text-sm text-center transition-all"
                   >
-                    View My Resume
+                    Resume
                   </a>
                   <Link
                     href="/portfolio"
-                    className="px-4 py-1 text-blue-400 hover:text-gray-700 border border-gray-200 rounded-md text-sm text-center transition-all"
+                    className="px-5 py-2 text-blue-600 hover:text-gray-700 border border-gray-200 rounded-md text-sm text-center transition-all"
                   >
-                    View Projects
+                    Projects [Expanded]
                   </Link>
                 </div>
 
@@ -135,7 +135,7 @@ export default function Home() {
                         href="https://arxiv.org/abs/2506.16663"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block text-blue-400 hover:text-gray-700 transition-colors border border-gray-200 rounded-md px-6 py-1 text-sm md:text-sm font-medium mt-1"
+                        className="inline-block text-blue-400 hover:text-gray-700 transition-colors border border-gray-200 rounded-md px-5 py-2 text-sm md:text-sm font-medium mt-1"
                       >
                         Paper
                       </a>
@@ -230,7 +230,7 @@ export default function Home() {
         </section>*/}
 
         <footer className="text-center border-t sm:border-t-0 border-gray-200 pt-4 text-black text-xs pb-4 mt-24">
-          <div className="mb-2">Last Updated: July 2025</div>
+          <div className="mb-2">Last Updated: September 2025</div>
           <div>© {new Date().getFullYear()} Michael Gyimadu.</div>
         </footer>
       </main>
