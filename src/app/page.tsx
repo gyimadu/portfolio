@@ -89,18 +89,21 @@ export default function Home() {
                   Bio
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
-                   I am a third-year undergraduate student studying Mathematics with minors in Economics and Finance at <span className='underline underline-offset-4 decoration-1 text-blue-400'><Link href="https://www.wingate.edu/" target="_blank" rel="noopener noreferrer">Wingate University</Link></span>. 
+                   I am a third-year undergraduate student studying Mathematics with minors in Economics and Finance at <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://www.wingate.edu/" target="_blank" rel="noopener noreferrer">Wingate University</Link></span>. 
                    Alongside academics, I enjoy building practical systems at the intersection of machine learning, data science, and finance, 
-                   having worked on projects spanning portfolio backtesting & optimization, signal-based trading, and predictive analytics for financial data.          
+                   having worked on projects spanning <span className="text-blue-600 underline underline-offset-4 decoration-1"><a href="https://portfolio-backtest-engine.vercel.app/" target="_blank" rel="noopener noreferrer">portfolio backtesting</a></span> & optimization, <span className="text-blue-600 underline underline-offset-4 decoration-1"><a href="https://github.com/gyimadu/macro-signal-builder" target="_blank" rel="noopener noreferrer">signal-based trading</a></span>, and predictive analytics for financial data.          
+                </div>
+                <div className='text-black text-base md:text-base leading-normal font-bold mb-6'>
+                  <span className='font-extrabold underline underline-offset-4 decoration-1'>Highlight:</span> I am looking for internship/Co-op opportunities in the fintech/investment management and Data Science/ML space.
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
                   I have broad research interests in applied machine learning, computational finance, and algorithmic trading, and I&apos;m currently exploring optimization and probabilistic methods.
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
-                  Currently based between Charlotte and San Francisco, and lately, I&apos;ve been working on <span className='underline underline-offset-4 decoration-1 text-blue-400'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Meridian</Link></span>, a fintech startup, where we&apos;re leveraging AI/ML to personalize investment strategies based on user behavior patterns.
+                  Currently based between Charlotte and San Francisco, and lately, I&apos;ve been working on <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Meridian</Link></span>, a fintech startup, where we&apos;re leveraging AI/ML to personalize investment strategies based on user behavior patterns.
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
-                  Feel free to reach out to me at <a href="mailto:mi.gyimadu430@wingate.edu" className='underline underline-offset-4 decoration-1 text-blue-400'>mi.gyimadu430 [at] wingate [dot] edu</a>.
+                  Feel free to reach out to me at <a href="mailto:mi.gyimadu430@wingate.edu" className='underline underline-offset-4 decoration-1 text-blue-600'>mi.gyimadu430 [at] wingate [dot] edu</a>.
                 </div>
 
 
