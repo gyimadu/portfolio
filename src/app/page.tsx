@@ -90,11 +90,11 @@ export default function Home() {
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
                    I am a third-year undergraduate student studying Mathematics with minors in Economics and Finance at <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://www.wingate.edu/" target="_blank" rel="noopener noreferrer">Wingate University</Link></span>. 
-                   Alongside academics, I enjoy building practical systems at the intersection of machine learning, data science, and finance, 
+                   Alongside academics, I enjoy building practical systems at the intersection of machine learning, actuarial risk analytics, and finance, 
                    having worked on projects spanning <span className="text-blue-600 underline underline-offset-4 decoration-1"><a href="https://portfolio-backtest-engine.vercel.app/" target="_blank" rel="noopener noreferrer">portfolio backtesting</a></span> & optimization, <span className="text-blue-600 underline underline-offset-4 decoration-1"><a href="https://github.com/gyimadu/macro-signal-builder" target="_blank" rel="noopener noreferrer">signal-based trading</a></span>, and predictive analytics for financial data.          
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-bold mb-6'>
-                  <span className='font-extrabold underline underline-offset-4 decoration-1'>Highlight:</span> I am looking for internship/Co-op opportunities in the fintech/investment management and Data Science/ML space. Would love to talk if you find us a good match!
+                  <span className='font-extrabold underline underline-offset-4 decoration-1'>Highlight:</span> I am looking for actuarial and risk analytics internship opportunities as well as opportunities in the fintech/investment management space. Would love to talk if you find us a good match!
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
                   I have broad research interests in applied machine learning, computational finance, and algorithmic trading, and I&apos;m currently exploring optimization and probabilistic methods.
