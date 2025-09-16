@@ -10,7 +10,7 @@ export default function Header() {
     <header className="bg-white md:bg-transparent sticky top-0 z-50">
       <div className="max-w-full mx-auto px-6 md:px-4 py-3 md:pt-8">
         <nav className="flex justify-between items-center md:items-start md:px-4">
-          <Link href="/" className="text-2xl md:text-4xl hover:text-gray-600 transition-colors font-medium">
+          <Link href="/" className="text-3xl md:text-4xl hover:text-gray-600 transition-colors font-medium">
             <span className="gradient-text font-mouse">MICHAEL GYIMADU</span>
           </Link>
           
