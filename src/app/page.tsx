@@ -98,9 +98,9 @@ export default function Home() {
                 <div className='text-black text-base md:text-base leading-normal font-bold mb-6'>
                   <span className='font-extrabold underline underline-offset-4 decoration-1'>Highlight:</span> I am looking for actuarial and risk analytics internship opportunities as well as opportunities in the fintech space. Would love to talk if you find us a good match!
                 </div>
-                <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
+                {/* <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
                   I have broad research interests in applied machine learning, computational finance, and algorithmic trading, and I&apos;m currently exploring optimization and probabilistic methods.
-                </div>
+                </div> */}
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
                   Currently based between Charlotte and San Francisco. Lately, I&apos;ve been working on <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Meridian</Link></span>, a fintech startup, where we&apos;re leveraging AI/ML to personalize investment strategies based on user behavior patterns.
                 </div>
