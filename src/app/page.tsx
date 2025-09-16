@@ -96,7 +96,7 @@ export default function Home() {
                    having worked on projects spanning risk modeling and analysis, <span className="text-blue-600 underline underline-offset-4 decoration-1"><a href="https://portfolio-backtest-engine.vercel.app/" target="_blank" rel="noopener noreferrer">portfolio backtesting</a></span> & optimization, <span className="text-blue-600 underline underline-offset-4 decoration-1"><a href="https://github.com/gyimadu/macro-signal-builder" target="_blank" rel="noopener noreferrer">signal-based trading</a></span>, and predictive analytics for financial data.          
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-bold mb-6'>
-                  <span className='font-extrabold underline underline-offset-4 decoration-1'>Highlight:</span> I am looking for actuarial and risk analytics internship opportunities as well as opportunities in the fintech/investment management space. Would love to talk if you find us a good match!
+                  <span className='font-extrabold underline underline-offset-4 decoration-1'>Highlight:</span> I am looking for actuarial and risk analytics internship opportunities as well as opportunities in the fintech space. Would love to talk if you find us a good match!
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
                   I have broad research interests in applied machine learning, computational finance, and algorithmic trading, and I&apos;m currently exploring optimization and probabilistic methods.
