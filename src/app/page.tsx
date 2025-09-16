@@ -92,7 +92,7 @@ export default function Home() {
                    I am a third-year undergraduate student studying Mathematics with minors in Economics and Finance at <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://www.wingate.edu/" target="_blank" rel="noopener noreferrer">Wingate University</Link></span>. 
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
-                   Alongside academicsI enjoy building practical systems at the intersection of machine learning, actuarial risk analytics, and finance, 
+                   Alongside academics, I enjoy building practical systems at the intersection of machine learning, actuarial risk analytics, and finance, 
                    having worked on projects spanning risk modeling and analysis, <span className="text-blue-600 underline underline-offset-4 decoration-1"><a href="https://portfolio-backtest-engine.vercel.app/" target="_blank" rel="noopener noreferrer">portfolio backtesting</a></span> & optimization, <span className="text-blue-600 underline underline-offset-4 decoration-1"><a href="https://github.com/gyimadu/macro-signal-builder" target="_blank" rel="noopener noreferrer">signal-based trading</a></span>, and predictive analytics for financial data.          
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-bold mb-6'>
