@@ -85,7 +85,7 @@ export default function Home() {
                     </svg>
                   </a>
                 </div>
-                <div className='text-base md:text-2xl font-medium leading-normal mb-6'>
+                <div className='text-2xl md:text-2xl font-medium leading-normal mb-6'>
                   Bio
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
@@ -128,7 +128,7 @@ export default function Home() {
                 {/* Selected Papers Section */}
                 <div className="mb-8 mt-10">
                   <div className="mb-6 text-gray-900" style={{ fontFamily: 'Raleway, sans-serif' }}>
-                    <p className='text-base md:text-2xl font-medium'>Publications</p>
+                    <p className='text-2xl md:text-2xl font-medium'>Publications</p>
                   </div>
                   <div className="">
                     {/* <div className="text-base md:text-base font-extrabold mb-1 text-black">Matrix Decomposition + Eigenvalue Theory</div> */}
@@ -146,7 +146,7 @@ export default function Home() {
                 {/* Past + Ongoing Projects Section */}
                 <div className="mb-8 mt-10">
                   <div className="mb-6 text-gray-900" style={{ fontFamily: 'Raleway, sans-serif' }}>
-                    <p className='text-base md:text-2xl font-medium'>Past + Ongoing Projects</p>
+                    <p className='text-2xl md:text-2xl font-medium'>Past + Ongoing Projects</p>
                   </div>
                   <div className="space-y-4">
                     {/* PortfolioLab */}
