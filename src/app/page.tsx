@@ -89,7 +89,7 @@ export default function Home() {
                   Bio
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
-                   I am a third-year undergraduate student completing a Bachelor's degree in Mathematics with minors in Economics and Finance at <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://www.wingate.edu/" target="_blank" rel="noopener noreferrer">Wingate University</Link></span>. 
+                   I am a third-year undergraduate student completing a Bachelor&apos;s degree in Mathematics with minors in Economics and Finance at <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://www.wingate.edu/" target="_blank" rel="noopener noreferrer">Wingate University</Link></span>. 
                 </div>
 
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
