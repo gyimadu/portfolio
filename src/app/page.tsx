@@ -89,11 +89,15 @@ export default function Home() {
                   Bio
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
-                   I am a third-year undergraduate student studying Mathematics with minors in Economics and Finance at <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://www.wingate.edu/" target="_blank" rel="noopener noreferrer">Wingate University</Link></span>. 
+                   I am a third-year undergraduate student completing a Bachelor's degree in Mathematics with minors in Economics and Finance at <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://www.wingate.edu/" target="_blank" rel="noopener noreferrer">Wingate University</Link></span>. 
                 </div>
+
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
-                   Alongside academics, I enjoy building practical systems at the intersection of machine learning, actuarial risk analytics, and finance, 
-                   having worked on projects spanning risk modeling and analysis, <span className="text-blue-600 underline underline-offset-4 decoration-1"><a href="https://portfolio-backtest-engine.vercel.app/" target="_blank" rel="noopener noreferrer">portfolio backtesting</a></span> & optimization, <span className="text-blue-600 underline underline-offset-4 decoration-1"><a href="https://github.com/gyimadu/macro-signal-builder" target="_blank" rel="noopener noreferrer">signal-based trading</a></span>, and predictive analytics for financial data.          
+                  I double as an undergraduate researcher with broad research interests in applied machine learning, computational finance, and optimization methods. I spent my sophomore spring semester exploring dimensionality reduction in facial recognition with Principal Component Analysis and Singular Value Decomposition, and I&apos;m currently working with Dr. Lisa Schwartz on classical vs deep learning factor extraction models for high-dimensional portfolio risk management.
+                </div>
+
+                <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
+                   When I have time to spare, I enjoy building practical systems for machine learning applications in actuarial risk analytics, computer vision, and finance. I&apos;m especially interested in projects involving risk modeling and analysis, <span className="text-blue-600 underline underline-offset-4 decoration-1"><a href="https://portfolio-backtest-engine.vercel.app/" target="_blank" rel="noopener noreferrer">portfolio backtesting</a></span> & optimization, <span className="text-blue-600 underline underline-offset-4 decoration-1"><a href="https://github.com/gyimadu/macro-signal-builder" target="_blank" rel="noopener noreferrer">signal-based trading</a></span>, and predictive analytics for financial data.          
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-bold mb-6'>
                   <span className='font-extrabold underline underline-offset-4 decoration-1'>Highlight:</span> I am looking for actuarial and risk analytics internship opportunities as well as opportunities in the fintech space. Would love to talk if you find us a good match!
@@ -102,7 +106,7 @@ export default function Home() {
                   I have broad research interests in applied machine learning, computational finance, and algorithmic trading, and I&apos;m currently exploring optimization and probabilistic methods.
                 </div> */}
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
-                  Currently based between Charlotte and San Francisco. Lately, I&apos;ve been working on <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Meridian</Link></span>, a fintech startup, where we&apos;re leveraging AI/ML to personalize investment strategies based on user behavior patterns.
+                  Currently based between Charlotte and San Francisco, and will be moving to Hartford, CT in the summer. Lately, I&apos;ve been working on <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Meridian</Link></span>, a fintech startup, where we&apos;re leveraging AI/ML to personalize investment strategies based on user behavior patterns.
                 </div>
                 <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
                   Feel free to reach out to me at <a href="mailto:mi.gyimadu430@wingate.edu" className='underline underline-offset-4 decoration-1 text-blue-600'>mi.gyimadu430 [at] wingate [dot] edu</a>.
