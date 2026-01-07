@@ -47,6 +47,15 @@ export default function MobileMenu() {
               Home
             </Link>
             <Link
+              href="/about"
+              onClick={() => setIsOpen(false)}
+              className={`text-3xl transform transition-all duration-500 delay-75 ${
+                isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
+              } ${pathname === '/about' ? 'text-white font-bold underline underline-offset-4' : 'text-gray-500'}`}
+            >
+              About
+            </Link>
+            <Link
               href="/portfolio"
               onClick={() => setIsOpen(false)}
               className={`text-3xl transform transition-all duration-500 delay-150 ${
@@ -58,7 +67,7 @@ export default function MobileMenu() {
             <Link
               href="/blog"
               onClick={() => setIsOpen(false)}
-              className={`text-3xl transform transition-all duration-500 delay-150 ${
+              className={`text-3xl transform transition-all duration-500 delay-[225ms] ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
               } ${pathname === '/blog' ? 'text-white font-bold underline underline-offset-4' : 'text-gray-500'}`}
             >
@@ -67,7 +76,7 @@ export default function MobileMenu() {
             <Link
               href="/resume.pdf"
               onClick={() => setIsOpen(false)}
-              className={`text-3xl transform transition-all duration-500 delay-150 ${
+              className={`text-3xl transform transition-all duration-500 delay-[300ms] ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
               } ${pathname === '/resume.pdf' ? 'text-white font-bold underline underline-offset-4' : 'text-gray-500'}`}
             >

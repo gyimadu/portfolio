@@ -17,13 +17,19 @@ export default function Header() {
           <div className="md:flex md:flex-col hidden items-end justify-between space-y-1">
             <Link 
               href="/" 
-              className={`text-2xl hover:text-gray-600 transition-colors ${pathname === '/' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
+              className={`text-2xl hover:text-gray-600 transition-colors ${pathname === '/' ? 'text-white font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
             >
               HOME
             </Link>
             <Link 
+              href="/about" 
+              className={`text-2xl hover:text-gray-600 transition-colors ${pathname === '/about' ? 'text-white font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
+            >
+              ABOUT
+            </Link>
+            <Link 
               href="/portfolio" 
-              className={`text-2xl hover:text-gray-600 transition-colors ${pathname === '/portfolio' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
+              className={`text-2xl hover:text-gray-600 transition-colors ${pathname === '/portfolio' ? 'text-white font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
             >
               WORK
             </Link>
@@ -37,7 +43,7 @@ export default function Header() {
             </a>
             <Link
               href="/blog"
-              className={`text-2xl hover:text-gray-600 transition-colors ${pathname === '/blog' ? 'text-black font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
+              className={`text-2xl hover:text-gray-600 transition-colors ${pathname === '/blog' ? 'text-white font-light underline underline-offset-4 decoration-1' : 'text-gray-500'}`}
             >
               BLOG
             </Link>

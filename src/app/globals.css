@@ -67,11 +67,11 @@ p, span, a:not(nav a) {
 .gradient-text {
   background: linear-gradient(
     90deg,
-    #4285f4,
+    #fff,
     #000000,
-    #34a853,
+    #fafafa,
     #000000,
-    #4285f4
+    #fff
   );
   background-size: 200% auto;
   color: transparent;

@@ -86,11 +86,11 @@ export default function Home() {
                   </a>
                 </div>
                 <div className='text-white text-base md:text-lg leading-normal font-semibold mb-6'>
-                   I am a third-year undergraduate student completing a Bachelor&apos;s degree in Mathematics with minors in Economics and Finance at <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://www.wingate.edu/" target="_blank" rel="noopener noreferrer">Wingate University</Link></span>. 
+                   I am a rising senior at <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://www.wingate.edu/" target="_blank" rel="noopener noreferrer">Wingate University</Link></span> completing a Bachelor&apos;s degree in Mathematics with minors in Economics and Finance.
                 </div>
 
                 <div className='text-white text-base md:text-lg leading-normal font-semibold mb-6'>
-                  I double as an undergraduate researcher with broad research interests in applied ML, computational finance, and optimization methods. I&apos;m currently working with Dr. Lisa Schwartz on classical vs deep learning factor extraction models for high-dimensional portfolio risk management.
+                  I double as an undergraduate researcher with broad research interests in applied ML, computational finance, and optimization methods. I&apos;m currently working under the supersion of Dr. Lisa Schwartz on classical vs deep learning factor extraction models for high-dimensional portfolio risk management.
                 </div>
 
                 <div className='text-white text-base md:text-lg leading-normal font-semibold mb-6'>
@@ -131,24 +131,6 @@ export default function Home() {
                   </Link>
                 </div>
 
-                {/* Selected Papers Section */}
-                <div className="mb-8 mt-10">
-                  <div className="mb-6 text-white" style={{ fontFamily: 'Raleway, sans-serif' }}>
-                    <p className='text-2xl md:text-2xl font-medium'>Publications</p>
-                  </div>
-                  <div className="">
-                    {/* <div className="text-base md:text-base font-extrabold mb-1 text-black">Matrix Decomposition + Eigenvalue Theory</div> */}
-                    <div className="text-white text-base font-bold leading-relaxed md:text-lg mb-2">A Comparative Analysis of Principal Component Analysis and Singular Value Decomposition as Dimensionality Reduction Techniques<br/><span className='font-light text-base md:text-lg leading-relaxed'>Michael Gyimadu, Gregory Bell, Ph.D.</span></div>
-                      <a
-                        href="https://arxiv.org/abs/2506.16663"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block text-blue-600 hover:text-blue-400 transition-colors border border-gray-200 rounded-md px-5 py-2 text-sm md:text-base font-medium mt-1"
-                      >
-                        Paper
-                      </a>
-                  </div>
-                </div>
                 {/* Past + Ongoing Projects Section */}
                 <div className="mb-8 mt-10">
                   <div className="mb-6 text-white" style={{ fontFamily: 'Raleway, sans-serif' }}>
