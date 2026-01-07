@@ -25,22 +25,16 @@ export default function NeuralNetworkBall() {
 
     // Color palette
     const colors = [
-      '#FF6B6B', // Coral Red
-      '#4ECDC4', // Turquoise
-      '#45B7D1', // Sky Blue
       '#96CEB4', // Sage Green
       '#FFEEAD', // Cream
-      '#D4A5A5', // Dusty Rose
       '#9B59B6', // Purple
       '#3498DB', // Blue
-      '#E67E22', // Orange
       '#2ECC71', // Emerald
-      '#F1C40F', // Yellow
       '#1ABC9C'  // Teal
     ];
 
     const nodes: { x: number; y: number; vx: number; vy: number; color: string }[] = [];
-    const numNodes = 12;
+    const numNodes = 6;
     const nodeRadius = 2;
     const connectionDistance = 100;
     const speed = 0.5;

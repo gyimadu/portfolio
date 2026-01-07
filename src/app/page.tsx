@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import Link from 'next/link';
-import NeuralNetworkBall from '@/components/NeuralNetworkBall';
+{/*import NeuralNetworkBall from '@/components/NeuralNetworkBall';*/}
 import PolaroidImages from '@/components/PolaroidImages';
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
     <div className="min-h-screen bg-black">
       <Header />
       <div className="md:hidden">
-        <NeuralNetworkBall />
+        {/*<NeuralNetworkBall />*/}
       </div>
       <main className="max-w-3xl mx-auto px-6 md:px-4 py-10 md:pb-8 md:-pt-20">
         <section className="mb-12">
@@ -50,7 +50,7 @@ export default function Home() {
                     className="text-white hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
                     aria-label="X (Twitter) Profile"
                   >
-                    <FaXTwitter className="w-4 md:w-6 h-4 md:h-6" />
+                    <FaXTwitter className="w-6 md:w-6 h-6 md:h-6" />
                   </a>
                   {/* <a 
                     href="https://instagram.com/gyimadu_" 
@@ -68,7 +68,7 @@ export default function Home() {
                     className="text-white hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
                     aria-label="LinkedIn Profile"
                   >
-                    <FaLinkedin className="w-4 md:w-6 h-4 md:h-6" />
+                    <FaLinkedin className="w-6 md:w-6 h-6 md:h-6" />
                   </a>
                   <a
                     href="https://scholar.google.com/citations?hl=en&authuser=1&user=DAStgxcAAAAJ"
@@ -77,7 +77,7 @@ export default function Home() {
                     className="text-white hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
                     aria-label="Google Scholar Profile"
                   >
-                    <svg className="w-4 md:w-6 h-4 md:h-6" viewBox="0 0 24 24" fill="currentColor">
+                    <svg className="w-6 md:w-6 h-6 md:h-6" viewBox="0 0 24 24" fill="currentColor">
                       {/* Graduation Cap */}
                       <path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/>
                       {/* Letter G */}
@@ -85,24 +85,22 @@ export default function Home() {
                     </svg>
                   </a>
                 </div>
-                <div className='text-2xl md:text-2xl font-bold leading-normal mb-6'>
-                  Bio
-                </div>
                 <div className='text-white text-base md:text-lg leading-normal font-semibold mb-6'>
                    I am a third-year undergraduate student completing a Bachelor&apos;s degree in Mathematics with minors in Economics and Finance at <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://www.wingate.edu/" target="_blank" rel="noopener noreferrer">Wingate University</Link></span>. 
                 </div>
 
                 <div className='text-white text-base md:text-lg leading-normal font-semibold mb-6'>
-                  I double as an undergraduate researcher with broad research interests in applied machine learning, computational finance, and optimization methods. 
-                </div>
-                
-                <div className='text-white text-base md:text-lg leading-normal font-semibold mb-6'>
-                  I spent my sophomore spring semester exploring dimensionality reduction in facial recognition with Principal Component Analysis and Singular Value Decomposition, and I&apos;m currently working with Dr. Lisa Schwartz on classical vs deep learning factor extraction models for high-dimensional portfolio risk management.
+                  I double as an undergraduate researcher with broad research interests in applied ML, computational finance, and optimization methods. I&apos;m currently working with Dr. Lisa Schwartz on classical vs deep learning factor extraction models for high-dimensional portfolio risk management.
                 </div>
 
                 <div className='text-white text-base md:text-lg leading-normal font-semibold mb-6'>
-                   When I have time to spare, I enjoy building practical systems for machine learning applications in actuarial risk analytics, computer vision, and finance. I&apos;m especially interested in projects involving risk modeling and analysis, <span className="text-blue-600 underline underline-offset-4 decoration-1"><a href="https://portfolio-backtest-engine.vercel.app/" target="_blank" rel="noopener noreferrer">portfolio backtesting</a></span> & optimization, <span className="text-blue-600 underline underline-offset-4 decoration-1"><a href="https://github.com/gyimadu/macro-signal-builder" target="_blank" rel="noopener noreferrer">signal-based trading</a></span>, and predictive analytics for financial data.          
+                   Outside of academics & research, I enjoy building practical systems & models for actuarial risk analytics, computer vision, and finance, especially for projects involving risk modeling and analysis, <span className="text-blue-600 underline underline-offset-4 decoration-1"><a href="https://portfolio-backtest-engine.vercel.app/" target="_blank" rel="noopener noreferrer">portfolio backtesting</a></span> & optimization, <span className="text-blue-600 underline underline-offset-4 decoration-1"><a href="https://github.com/gyimadu/macro-signal-builder" target="_blank" rel="noopener noreferrer">signal-based trading</a></span>, and predictive analytics for financial data.          
                 </div>
+
+                <div className='text-white text-base md:text-lg leading-normal font-semibold mb-6'>
+                  When I have time to spare, I play soccer, game occassionally, or practice music. I love to trying out new food and currently on a personal food-tasting adventure across Charlotte; always on the lookout for great spots.
+                </div>
+
                 {/* <div className='text-black text-base md:text-base leading-normal font-bold mb-6'>
                   <span className='font-extrabold underline underline-offset-4 decoration-1'>Highlight:</span> I am looking for actuarial and risk analytics internship opportunities as well as opportunities in the fintech space. Would love to talk if you find us a good match!
                 </div>

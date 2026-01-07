@@ -17,12 +17,12 @@ export default function MobileMenu() {
       >
         <div className="w-8 h-8 flex flex-col justify-center items-center gap-1.5">
           <span 
-            className={`bg-black block h-px w-7 rounded-sm transition-all duration-500 ease-in-out ${
+            className={`bg-white block h-px w-7 rounded-sm transition-all duration-500 ease-in-out ${
               isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'
             }`}
           />
           <span 
-            className={`bg-black block h-px w-7 rounded-sm transition-all duration-500 ease-in-out ${
+            className={`bg-white block h-px w-7 rounded-sm transition-all duration-500 ease-in-out ${
               isOpen ? '-rotate-45 -translate-y-0.5' : 'translate-y-0.5'
             }`}
           />
@@ -31,7 +31,7 @@ export default function MobileMenu() {
 
       {/* Menu Overlay */}
       <div
-        className={`fixed inset-0 bg-white transition-opacity duration-400 ease-in-out z-40
+        className={`fixed inset-0 bg-black transition-opacity duration-400 ease-in-out z-40
           ${isOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}
         `}
       >
@@ -42,7 +42,7 @@ export default function MobileMenu() {
               onClick={() => setIsOpen(false)}
               className={`text-3xl transform transition-all duration-500 ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
-              } ${pathname === '/' ? 'text-black underline underline-offset-4' : 'text-gray-500'}`}
+              } ${pathname === '/' ? 'text-white font-bold underline underline-offset-4' : 'text-gray-500'}`}
             >
               Home
             </Link>
@@ -51,7 +51,7 @@ export default function MobileMenu() {
               onClick={() => setIsOpen(false)}
               className={`text-3xl transform transition-all duration-500 delay-150 ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
-              } ${pathname === '/portfolio' ? 'text-black underline underline-offset-4' : 'text-gray-500'}`}
+              } ${pathname === '/portfolio' ? 'text-white font-bold underline underline-offset-4' : 'text-gray-500'}`}
             >
               Work
             </Link>
@@ -60,7 +60,7 @@ export default function MobileMenu() {
               onClick={() => setIsOpen(false)}
               className={`text-3xl transform transition-all duration-500 delay-150 ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
-              } ${pathname === '/blog' ? 'text-black underline underline-offset-4' : 'text-gray-500'}`}
+              } ${pathname === '/blog' ? 'text-white font-bold underline underline-offset-4' : 'text-gray-500'}`}
             >
               Blog
             </Link>
@@ -69,7 +69,7 @@ export default function MobileMenu() {
               onClick={() => setIsOpen(false)}
               className={`text-3xl transform transition-all duration-500 delay-150 ${
                 isOpen ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
-              } ${pathname === '/resume.pdf' ? 'text-black underline underline-offset-4' : 'text-gray-500'}`}
+              } ${pathname === '/resume.pdf' ? 'text-white font-bold underline underline-offset-4' : 'text-gray-500'}`}
             >
               Resume
             </Link>
