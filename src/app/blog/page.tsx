@@ -7,10 +7,10 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 export default function Blog() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black text-white">
       <Header />
       <main className="max-w-3xl mx-auto px-6 py-16">
-        <div className="text-3xl font-bold md:text-4xl text-black mb-10 uppercase font-mouse">Blog</div>
+        <div className="text-3xl font-bold md:text-4xl text-white mb-10 uppercase font-mouse">Blog</div>
         
         <div className="space-y-0">
           {blogPosts.map((post) => (

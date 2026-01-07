@@ -69,9 +69,9 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black text-white">
       <Header />
-      <main className="max-w-5xl mx-auto px-8 md:px-4 py-16 relative">
+      <main className="max-w-5xl mx-auto px-8 md:px-4 py-16 relative text-white">
         <div className="w-full">          
           <div className="space-y-16 lg:space-y-32">
             {projects.map((project, index) => (
@@ -80,8 +80,6 @@ export default function Portfolio() {
                 className="project-section"
                 data-index={index}
               >
-
-
                 <div className="md:flex md:gap-8 md:items-start">
                   {project.image && (
                     <div className="hidden md:block md:w-1/2">
@@ -105,7 +103,7 @@ export default function Portfolio() {
                         rel="noopener noreferrer"
                         className="group"
                       >
-                        <h3 className="text-2xl md:text-2xl font-bold mb-4 uppercase font-mouse text-black group-hover:text-gray-700 transition-colors flex items-center gap-2">
+                        <h3 className="text-2xl md:text-3xl font-bold mb-4 uppercase font-mouse text-white group-hover:text-gray-700 transition-colors flex items-center gap-2">
                           {project.title}
                           <FaArrowUp className="w-4 h-4 transform rotate-45 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                         </h3>
@@ -113,11 +111,11 @@ export default function Portfolio() {
                     ) : (
                       <h3 className="text-2xl md:text-2xl font-bold mb-4 uppercase font-mouse">{project.title}</h3>
                     )}
-                    <div className="text-gray-900 text-base md:text-base leading-tight mb-4">{project.description}</div>
+                    <div className="text-white text-base md:text-lg leading-tight mb-4">{project.description}</div>
 
                     {project.tools && (
                       <div className="mb-4">
-                        <div className="text-sm text-gray-600 mb-2">Tools:</div>
+                        <div className="text-sm text-white mb-2">Tools:</div>
                         <div className="flex flex-wrap gap-2">
                           {project.tools.map((tool, toolIndex) => (
                             <span

@@ -20,7 +20,7 @@ export default function Home() {
   ];*/}
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-black">
       <Header />
       <div className="md:hidden">
         <NeuralNetworkBall />
@@ -29,8 +29,8 @@ export default function Home() {
         <section className="mb-12">
           <div className="mb-2">
             <div className="flex flex-col lg:flex-col lg:gap-10">
-              <div className='flex flex-col justify-center text-gray-900 md:pt-0 mb-6'>
-                <div className='text-3xl md:text-4xl mb-3 md:mb-3 text-gray-800 font-mouse'>
+              <div className='flex flex-col justify-center text-white md:pt-0 mb-6'>
+                <div className='text-3xl md:text-5xl mb-3 md:mb-4 text-white font-mouse'>
                   Hi, I&apos;m Michael!
                 </div>
                 <div className="flex justify-start gap-4 md:gap-2 mb-16">
@@ -38,19 +38,19 @@ export default function Home() {
                     href="https://github.com/gyimadu" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-black hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
+                    className="text-white hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
                     aria-label="GitHub Profile"
                   >
-                    <FaGithub className="w-4 md:w-5 h-4 md:h-5" />
+                    <FaGithub className="w-6 md:w-6 h-6 md:h-6" />
                   </a>
                   <a
                     href="https://twitter.com/gyimaduu" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-black hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
+                    className="text-white hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
                     aria-label="X (Twitter) Profile"
                   >
-                    <FaXTwitter className="w-4 md:w-5 h-4 md:h-5" />
+                    <FaXTwitter className="w-4 md:w-6 h-4 md:h-6" />
                   </a>
                   {/* <a 
                     href="https://instagram.com/gyimadu_" 
@@ -65,19 +65,19 @@ export default function Home() {
                     href="https://linkedin.com/in/michael-gyimadu" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-black hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
+                    className="text-white hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
                     aria-label="LinkedIn Profile"
                   >
-                    <FaLinkedin className="w-4 md:w-5 h-4 md:h-5" />
+                    <FaLinkedin className="w-4 md:w-6 h-4 md:h-6" />
                   </a>
                   <a
                     href="https://scholar.google.com/citations?hl=en&authuser=1&user=DAStgxcAAAAJ"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-black hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
+                    className="text-white hover:bg-gray-100 text-center transition-all shadow-sm hover:shadow-md"
                     aria-label="Google Scholar Profile"
                   >
-                    <svg className="w-4 md:w-5 h-4 md:h-5" viewBox="0 0 24 24" fill="currentColor">
+                    <svg className="w-4 md:w-6 h-4 md:h-6" viewBox="0 0 24 24" fill="currentColor">
                       {/* Graduation Cap */}
                       <path d="M12 3L1 9l11 6l9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82Z"/>
                       {/* Letter G */}
@@ -85,30 +85,34 @@ export default function Home() {
                     </svg>
                   </a>
                 </div>
-                <div className='text-2xl md:text-2xl font-medium leading-normal mb-6'>
+                <div className='text-2xl md:text-2xl font-bold leading-normal mb-6'>
                   Bio
                 </div>
-                <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
+                <div className='text-white text-base md:text-lg leading-normal font-semibold mb-6'>
                    I am a third-year undergraduate student completing a Bachelor&apos;s degree in Mathematics with minors in Economics and Finance at <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://www.wingate.edu/" target="_blank" rel="noopener noreferrer">Wingate University</Link></span>. 
                 </div>
 
-                <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
-                  I double as an undergraduate researcher with broad research interests in applied machine learning, computational finance, and optimization methods. I spent my sophomore spring semester exploring dimensionality reduction in facial recognition with Principal Component Analysis and Singular Value Decomposition, and I&apos;m currently working with Dr. Lisa Schwartz on classical vs deep learning factor extraction models for high-dimensional portfolio risk management.
+                <div className='text-white text-base md:text-lg leading-normal font-semibold mb-6'>
+                  I double as an undergraduate researcher with broad research interests in applied machine learning, computational finance, and optimization methods. 
+                </div>
+                
+                <div className='text-white text-base md:text-lg leading-normal font-semibold mb-6'>
+                  I spent my sophomore spring semester exploring dimensionality reduction in facial recognition with Principal Component Analysis and Singular Value Decomposition, and I&apos;m currently working with Dr. Lisa Schwartz on classical vs deep learning factor extraction models for high-dimensional portfolio risk management.
                 </div>
 
-                <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
+                <div className='text-white text-base md:text-lg leading-normal font-semibold mb-6'>
                    When I have time to spare, I enjoy building practical systems for machine learning applications in actuarial risk analytics, computer vision, and finance. I&apos;m especially interested in projects involving risk modeling and analysis, <span className="text-blue-600 underline underline-offset-4 decoration-1"><a href="https://portfolio-backtest-engine.vercel.app/" target="_blank" rel="noopener noreferrer">portfolio backtesting</a></span> & optimization, <span className="text-blue-600 underline underline-offset-4 decoration-1"><a href="https://github.com/gyimadu/macro-signal-builder" target="_blank" rel="noopener noreferrer">signal-based trading</a></span>, and predictive analytics for financial data.          
                 </div>
-                <div className='text-black text-base md:text-base leading-normal font-bold mb-6'>
+                {/* <div className='text-black text-base md:text-base leading-normal font-bold mb-6'>
                   <span className='font-extrabold underline underline-offset-4 decoration-1'>Highlight:</span> I am looking for actuarial and risk analytics internship opportunities as well as opportunities in the fintech space. Would love to talk if you find us a good match!
                 </div>
-                {/* <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
+                <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
                   I have broad research interests in applied machine learning, computational finance, and algorithmic trading, and I&apos;m currently exploring optimization and probabilistic methods.
                 </div> */}
-                <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
-                  Currently based between Charlotte and San Francisco, and will be moving to Hartford, CT in the summer. Lately, I&apos;ve been working on <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Meridian</Link></span>, a fintech startup, where we&apos;re leveraging AI/ML to personalize investment strategies based on user behavior patterns.
+                <div className='text-white text-base md:text-lg leading-normal font-semibold mb-6'>
+                  Based between Charlotte and San Francisco. This summer, I&apos;ll be in Hartford, CT working out of the Aetna HQ as an Actuarial intern. {/* Lately, I&apos;ve been working on <span className='underline underline-offset-4 decoration-1 text-blue-600'><Link href="https://bull-app.vercel.app" target="_blank" rel="noopener noreferrer">Meridian</Link></span>, a fintech startup, where we&apos;re leveraging AI/ML to personalize investment strategies based on user behavior patterns. */}
                 </div>
-                <div className='text-black text-base md:text-base leading-normal font-semibold mb-6'>
+                <div className='text-white text-base md:text-lg leading-normal font-semibold mb-6'>
                   Feel free to reach out to me at <a href="mailto:mi.gyimadu430@wingate.edu" className='underline underline-offset-4 decoration-1 text-blue-600'>mi.gyimadu430 [at] wingate [dot] edu</a>.
                 </div>
 
@@ -117,13 +121,13 @@ export default function Home() {
                   <a
                     href="/resume.pdf"
                     target='_self'
-                    className="px-5 py-2 text-blue-600 hover:text-gray-700 border border-gray-200 rounded-md text-sm text-center transition-all"
+                    className="px-5 py-2 text-blue-600 hover:text-blue-400 border border-gray-200 rounded-md text-base text-center transition-all"
                   >
                     Resume
                   </a>
                   <Link
                     href="/portfolio"
-                    className="px-5 py-2 text-blue-600 hover:text-gray-700 border border-gray-200 rounded-md text-sm text-center transition-all"
+                    className="px-5 py-2 text-blue-600 hover:text-blue-400 border border-gray-200 rounded-md text-base text-center transition-all"
                   >
                     Projects [Expanded]
                   </Link>
@@ -131,17 +135,17 @@ export default function Home() {
 
                 {/* Selected Papers Section */}
                 <div className="mb-8 mt-10">
-                  <div className="mb-6 text-gray-900" style={{ fontFamily: 'Raleway, sans-serif' }}>
+                  <div className="mb-6 text-white" style={{ fontFamily: 'Raleway, sans-serif' }}>
                     <p className='text-2xl md:text-2xl font-medium'>Publications</p>
                   </div>
                   <div className="">
                     {/* <div className="text-base md:text-base font-extrabold mb-1 text-black">Matrix Decomposition + Eigenvalue Theory</div> */}
-                    <div className="text-black text-base font-extrabold leading-relaxed md:text-base mb-2">A Comparative Analysis of Principal Component Analysis and Singular Value Decomposition as Dimensionality Reduction Techniques<br/><span className='font-light text-base md:text-base leading-relaxed'>Michael Gyimadu, Gregory Bell, Ph.D.</span></div>
+                    <div className="text-white text-base font-extrabold leading-relaxed md:text-lg mb-2">A Comparative Analysis of Principal Component Analysis and Singular Value Decomposition as Dimensionality Reduction Techniques<br/><span className='font-light text-base md:text-lg leading-relaxed'>Michael Gyimadu, Gregory Bell, Ph.D.</span></div>
                       <a
                         href="https://arxiv.org/abs/2506.16663"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block text-blue-400 hover:text-gray-700 transition-colors border border-gray-200 rounded-md px-5 py-2 text-sm md:text-sm font-medium mt-1"
+                        className="inline-block text-blue-600 hover:text-blue-400 transition-colors border border-gray-200 rounded-md px-5 py-2 text-sm md:text-base font-medium mt-1"
                       >
                         Paper
                       </a>
@@ -149,59 +153,59 @@ export default function Home() {
                 </div>
                 {/* Past + Ongoing Projects Section */}
                 <div className="mb-8 mt-10">
-                  <div className="mb-6 text-gray-900" style={{ fontFamily: 'Raleway, sans-serif' }}>
+                  <div className="mb-6 text-white" style={{ fontFamily: 'Raleway, sans-serif' }}>
                     <p className='text-2xl md:text-2xl font-medium'>Past + Ongoing Projects</p>
                   </div>
                   <div className="space-y-4">
                     {/* PortfolioLab */}
                     <div className="">
                       <div className="flex items-center gap-2 mb-1">
-                        <a href="https://portfolio-backtest-engine.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-base md:text-base text-black hover:text-blue-700 transition-colors flex items-center group mb-1 underline underline-offset-4 decoration-1">
+                        <a href="https://portfolio-backtest-engine.vercel.app/" target="_blank" rel="noopener noreferrer" className="font-bold text-base md:text-lg text-white hover:text-blue-700 transition-colors flex items-center group mb-1 underline underline-offset-4 decoration-1">
                           PortfolioLab
                           <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
                         </a>
                       </div>
-                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>A multi-asset portfolio simulator and backtester. Implements allocation logic, contribution schedules, and performance tracking with Python and C++, wrapped in a Next.js interface..</p></div>
+                      <div className="text-white"><p className='leading-normal text-base md:text-lg'>A multi-asset portfolio simulator and backtester. Implements allocation logic, contribution schedules, and performance tracking with Python and C++, wrapped in a Next.js interface..</p></div>
                     </div>
                     {/* Macro Signal Builder */}
                     <div className="">
                       <div className="flex items-center gap-2 mb-1">
-                        <a href="https://github.com/gyimadu/macro-signal-builder" target="_blank" rel="noopener noreferrer" className="text-base md:text-base text-black hover:text-blue-700 transition-colors flex items-center group mb-1 underline underline-offset-4 decoration-1">
+                        <a href="https://github.com/gyimadu/macro-signal-builder" target="_blank" rel="noopener noreferrer" className="font-bold text-base md:text-lg text-white hover:text-blue-700 transition-colors flex items-center group mb-1 underline underline-offset-4 decoration-1">
                           Macro Signal Builder
                           <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
                         </a>
                       </div>
-                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>A rules-based signal generator that models macroeconomic factors and their impact on selected assets. Designed for flexible testing of strategy ideas.</p></div>
+                      <div className="text-white"><p className='leading-normal text-base md:text-lg'>A rules-based signal generator that models macroeconomic factors and their impact on selected assets. Designed for flexible testing of strategy ideas.</p></div>
                     </div>
                     {/* Equity Screener */}
                     <div className="">
                       <div className="flex items-center gap-2 mb-1">
-                        <a href="https://bull-app.vercel.app/screener" target="_blank" rel="noopener noreferrer" className="text-base md:text-base text-black hover:text-blue-700 transition-colors flex items-center group mb-1 underline underline-offset-4 decoration-1">
+                        <a href="https://bull-app.vercel.app/screener" target="_blank" rel="noopener noreferrer" className="font-bold text-base md:text-lg text-white hover:text-blue-700 transition-colors flex items-center group mb-1 underline underline-offset-4 decoration-1">
                           Equity Screener
                           <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
                         </a>
                       </div>
-                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>A custom stock screener for U.S. equities. Filters by valuation, yield, volatility, and other factors, built with a focus on extensible screening logic.</p></div>
+                      <div className="text-white"><p className='leading-normal text-base md:text-lg'>A custom stock screener for U.S. equities. Filters by valuation, yield, volatility, and other factors, built with a focus on extensible screening logic.</p></div>
                     </div>
                     {/* ConvertiGo */}
                     <div className="">
                       <div className="flex items-center gap-2 mb-1">
-                          <a href="https://github.com/gyimadu/cpp-financial-toolkit/tree/main/currency_converter" target="_blank" rel="noopener noreferrer" className="text-base md:text-base text-black hover:text-blue-700 transition-colors flex items-center group mb-1 underline underline-offset-4 decoration-1">
+                          <a href="https://github.com/gyimadu/cpp-financial-toolkit/tree/main/currency_converter" target="_blank" rel="noopener noreferrer" className="font-bold text-base md:text-lg text-white hover:text-blue-700 transition-colors flex items-center group mb-1 underline underline-offset-4 decoration-1">
                           ConvertiGo
                           <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
                         </a>
                       </div>
-                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>A C++ command-line currency converter with support for both real-time exchange rates and historical rate lookups.</p></div>
+                      <div className="text-white"><p className='leading-normal text-base md:text-lg'>A C++ command-line currency converter with support for both real-time exchange rates and historical rate lookups.</p></div>
                     </div>
                     {/* TidyTable */}
                     <div className="">
                       <div className="flex items-center gap-2 mb-1">
-                        <a href="https://data-cleaning-automation.onrender.com/" target="_blank" rel="noopener noreferrer" className="text-base md:text-base text-black hover:text-blue-700 transition-colors flex items-center group mb-1 underline underline-offset-4 decoration-1">
+                        <a href="https://data-cleaning-automation.onrender.com/" target="_blank" rel="noopener noreferrer" className="font-bold text-base md:text-lg text-white hover:text-blue-700 transition-colors flex items-center group mb-1 underline underline-offset-4 decoration-1">
                           TidyTable
                           <span className="ml-1"><svg className="inline w-4 h-4 group-hover:text-blue-700 transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M7 17L17 7M7 7h10v10" /></svg></span>
                         </a>
                       </div>
-                      <div className="text-gray-700"><p className='leading-normal text-base md:text-base'>A Python utility that automates common data cleaning steps for large datasets, handling missing values, outliers, and formatting.</p></div>
+                      <div className="text-white"><p className='leading-normal text-base md:text-lg'>A Python utility that automates common data cleaning steps for large datasets, handling missing values, outliers, and formatting.</p></div>
                     </div>
                   </div>
                 </div>
@@ -235,8 +239,8 @@ export default function Home() {
           </div>
         </section>*/}
 
-        <footer className="text-center border-t sm:border-t-0 border-gray-200 pt-4 text-black text-xs pb-4 mt-24">
-          <div className="mb-2">Last Updated: September 2025</div>
+        <footer className="text-center border-t sm:border-t-0 border-gray-200 pt-4 text-white text-sm pb-4 mt-24">
+          <div className="mb-2">Last Updated: January 2026</div>
           <div>© {new Date().getFullYear()} Michael Gyimadu.</div>
         </footer>
       </main>
